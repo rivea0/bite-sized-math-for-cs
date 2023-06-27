@@ -60,6 +60,7 @@ That's correct, and it's intentional.
 Again, the point is to be as short as possible, only to explore concepts, so it mostly just scratches the surface.
 
 So, it's normal that `${subject}` is left out in `${section}`. There are many things left out.
+
 ---
 
 ## Some points on notation:
