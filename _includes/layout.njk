@@ -32,14 +32,14 @@ title: Bite-Sized Mathematics for Computer Science
         <summary>Table of Contents</summary>
         {%- for entry in introAll %}
           <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
+            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           </p>
         {%- endfor %}
         <div>
           <p class="unit">Unit 1: Proofs</p>
           {%- for entry in proofsAll %}
             <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </p>
           {%- endfor %}
         </div>
@@ -47,7 +47,7 @@ title: Bite-Sized Mathematics for Computer Science
           <p class="unit">Unit 2: Structures</p>
           {%- for entry in structuresAll %}
             <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </p>
           {%- endfor %}
         </div>
@@ -55,7 +55,7 @@ title: Bite-Sized Mathematics for Computer Science
           <p class="unit">Unit 3: Counting</p>
           {%- for entry in countingAll %}
             <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </p>
           {%- endfor %}
         </div>
@@ -63,7 +63,7 @@ title: Bite-Sized Mathematics for Computer Science
           <p class="unit">Unit 4: Probability</p>
           {%- for entry in probabilityAll %}
             <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </p>
           {%- endfor %}
         </div>
@@ -76,8 +76,8 @@ title: Bite-Sized Mathematics for Computer Science
         {%- set nextPost = collections.pages | getNextCollectionItem %}
         {%- if nextPost or previousPost %}
           <ul class="links-nextprev">
-            {%- if previousPost %}<li><a href="{{ previousPost.url }}">previous</a></li>{% endif %}
-            {%- if nextPost %}<li><a href="{{ nextPost.url }}">next</a></li>{% endif %}
+            {%- if previousPost %}<li><a href="{{ previousPost.url | url }}">previous</a></li>{% endif %}
+            {%- if nextPost %}<li><a href="{{ nextPost.url | url }}">next</a></li>{% endif %}
           </ul>
         {%- endif %}
       {%- endif %} 
