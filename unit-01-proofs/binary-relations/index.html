@@ -1,0 +1,254 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Binary Relations</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Binary Relations</h1>
+<p>A <mark>binary relation</mark> is a mathematical object that maps elements from one set, called the <mark>domain</mark>, to another set, called the <mark>codomain</mark>.</p>
+<p>Now, let's look at the definition of a function:</p>
+<blockquote>
+<p><mark>Functions</mark> are mappings that assign elements from one set (<em>domain</em>) to another (<em>codomain</em>).</p>
+</blockquote>
+<p>The distinction is that in a function, every element should only map to at most one element, so, for example, an element <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> in domain <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> can only be mapped to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> in codomain <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, not both <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span></eq>, etc.</p>
+<p>So, <em>a function is a special case of a binary relation</em>.</p>
+<p>A function that maps elements in domain <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to elements in codomain <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> is denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">f : A \rightarrow B</annotation></semantics></math></span></eq>.</p>
+<p>If a function is a <mark><em>partial function</em></mark>, some elements in the domain can be undefined (some elements in the domain don't have an arrow coming out). For example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">f(x) = \frac{1}{x^2}</annotation></semantics></math></span></eq> does not assign a value to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>.<br>
+On the other hand, if every element in the domain is defined, it is called a <mark><em>total function</em></mark>.</p>
+<p>Function <mark><em>composition</em></mark> is as simple as taking the value of one function, and passing it to another one:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>g</mi><mo>∘</mo><mi>f</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(g \circ f)(x) = g(f(x))</annotation></semantics></math></span></eqn></section><hr>
+<p>A binary relation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> has a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, <em>domain</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>; a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, <em>codomain</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>; and a subset of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \times B</annotation></semantics></math></span></eq>, the <em>graph</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> (this is the relation part — arrows from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>).</p>
+<p>The notation is similar to functions: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">R : A \rightarrow B</annotation></semantics></math></span></eq>. This is a relation &quot;between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>&quot; (or, &quot;from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>&quot;).<br>
+If the domain and codomain are the same set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, we can say that the relation is &quot;on <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>&quot;.</p>
+<p>When a pair <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a, \ b)</annotation></semantics></math></span></eq> is in the graph of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>, it is denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>b</mi></mrow><annotation encoding="application/x-tex">a \ R \ b</annotation></semantics></math></span></eq>.</p>
+<p>The <em>image</em> of a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq>, under a relation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>, is written as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(X)</annotation></semantics></math></span></eq>. It is the codomain set.</p>
+<p>For example, look at this diagram:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Injection_keine_Injektion_2a.svg/200px-Injection_keine_Injektion_2a.svg.png" alt="An example of binary relation"></p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq> is the domain, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span></eq> is the codomain, graph of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mi>D</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>2</mn><mo separator="true">,</mo><mi>C</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mi>C</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{(1, D), \ (2, C), \ (3, C)\}</annotation></semantics></math></span></eq></p>
+<p><mark><em>Range</em></mark> is the actual elements with arrows coming in. In this example, while <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span></eq> is the codomain, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>D</mi><mo separator="true">,</mo><mtext> </mtext><mi>C</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{D, \ C\}</annotation></semantics></math></span></eq> is the range.<br>
+So, the range is not always equal to codomain — it can be equal to, or smaller than the codomain.</p>
+<p>The set of points with an arrow coming in from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq> is the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(X)</annotation></semantics></math></span></eq>, the image of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq>.</p>
+<p>We can write it in logical notation as such:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>b</mi><mo>∈</mo><mi>Y</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi mathvariant="normal">∃</mi><mi>a</mi><mo>∈</mo><mi>X</mi><mtext> </mtext><mi>a</mi><mi>R</mi><mi>b</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">R(X) = \{b \in Y \ | \ \exists a \in X \ a R b\}</annotation></semantics></math></span></eqn></section></p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span></eq> is the codomain set, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> is an element in it; <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq> is the domain set, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is an element in it.</p>
+<p>So, the formula above says that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(X)</annotation></semantics></math></span></eq> is the set of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span></eq> such that there exists an <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a, \ b)</annotation></semantics></math></span></eq> is a pair that's in the graph of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> (remember that's what <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>R</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">a R b</annotation></semantics></math></span></eq> means).</p>
+<p>This part itself <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi mathvariant="normal">∃</mi><mi>a</mi><mo>∈</mo><mi>X</mi><mtext> </mtext><mi>a</mi><mi>R</mi><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\exists a \in X \ a R b]</annotation></semantics></math></span></eq> indicates that there is an arrow to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> coming from the set of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>The <mark><em>inverse</em></mark> of a relation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">R : A \rightarrow B</annotation></semantics></math></span></eq> is denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">R^{-1}</annotation></semantics></math></span></eq>, and it is the relation from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>. It just flips the arrows around, so the codomain becomes the domain, and the domain becomes the codomain.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R^{-1}(x)</annotation></semantics></math></span></eq> called the <em>inverse image</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> under <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>.</p>
+<p>This formula holds true: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>R</mi><mi>b</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi>b</mi><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>a</mi></mrow><annotation encoding="application/x-tex">aRb \iff bR^{-1}a</annotation></semantics></math></span></eq><br>
+An arrow coming from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> ends in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>, and vice versa, an arrow that ends in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> is coming from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Now, there are some terms that we are going to take a look at:</p>
+<ul>
+<li>
+<p><mark>total relation</mark>: there is at least one arrow out of every domain element. (in a relation from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, every element in set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> has to have an arrow going out)</p>
+<ul>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is total iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A = R^{-1}(B)</annotation></semantics></math></span></eq>.</li>
+<li>If a relation is both total and a function, that means there is exactly one arrow coming out of every domain element.</li>
+</ul>
+</li>
+<li>
+<p><mark>surjective relation</mark>: there is at least one arrow into every codomain element (the range is the entire codomain).</p>
+<ul>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is surjective iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">R(A) = B</annotation></semantics></math></span></eq></li>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>≥</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>for finite </mtext><mi>A</mi><mo separator="true">,</mo><mtext> </mtext><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">|A| \geq |B| \ (\text{for finite } A, \ B)</annotation></semantics></math></span></eq></li>
+<li>Example of a <em>non-injective surjective</em> function:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Surjection.svg/200px-Surjection.svg.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p><mark>injective relation</mark>: there is at most one arrow into every codomain element.</p>
+<ul>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>≤</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>for finite </mtext><mi>A</mi><mo separator="true">,</mo><mtext> </mtext><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">|A| \leq |B| \ (\text{for finite } A, \ B)</annotation></semantics></math></span></eq></li>
+<li>Example of an <em>injective non-surjective</em> function:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Injection.svg/200px-Injection.svg.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p><mark>bijective relation</mark>: there is exactly one arrow out in every domain element, and exactly one arrow in every codomain element (one-to-one correspondence).</p>
+<ul>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>for finite </mtext><mi>A</mi><mo separator="true">,</mo><mtext> </mtext><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">|A| = |B| \ (\text{for finite } A, \ B)</annotation></semantics></math></span></eq></li>
+<li>Example of a <em>bijection</em> (<em>injective surjective</em> function):<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bijection.svg/200px-Bijection.svg.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>Here is a nice way to keep these in mind: think of <em>totality</em>, <em>surjection</em>, <em>function</em>, and <em>injection</em> as superheroes who are responsible for inspecting the arrows from one set to another.</p>
+<p><em>Totality</em> is concerned with the domain, <em>surjection</em> is concerned with the codomain. Both of them want <em>at least</em> one arrow.</p>
+<p><em>Function</em> is concerned with the domain, <em>injection</em> is concerned with the codomain. Both of them want <em>at most</em> one arrow.</p>
+<p><em>Bijection</em> always wants one-to-one correspondence.</p>
+<hr>
+<blockquote>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is a function iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">R^{-1}</annotation></semantics></math></span></eq> is an injection.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is a surjection iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">R^{-1}</annotation></semantics></math></span></eq> is total.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is an injection iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">R^{-1}</annotation></semantics></math></span></eq> is a function.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is a bijection iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">R^{-1}</annotation></semantics></math></span></eq> is a bijection.</p>
+</blockquote>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/sets/">previous</a></li><li><a href="/unit-01-proofs/induction/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

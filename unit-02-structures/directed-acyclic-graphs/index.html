@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Directed Acyclic Graphs</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Directed Acyclic Graphs</h1>
+<p>A directed graph with no cycles is called a <mark>directed acyclic graph</mark>.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Directed_acyclic_graph_3.svg/320px-Directed_acyclic_graph_3.svg.png" alt="Directed acyclic graph example"></p>
+<p>By definition, they also don't have closed walks (remember that a closed walk is a walk that begins and ends at the same vertex).</p>
+<p>Also called DAGs, directed acyclic graphs are helpful for things such as task <em>scheduling</em>:</p>
+<blockquote>
+<p>A <em>schedule</em> for performing tasks specifies which tasks to do at successive steps.</p>
+</blockquote>
+<p>In a scheduling problem, some tasks depend on other tasks being completed beforehand. Because of that, we need to order the tasks. Such ordering is called <mark>topological sorting</mark>:</p>
+<blockquote>
+<p>A <em>topological sort</em> of a finite DAG is a list of all the vertices such that each vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> appears earlier in the list than every other vertex reachable from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>.</p>
+</blockquote>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">A vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> of a DAG, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span></eq>, is <mark>minimum</mark> iff every other vertex is reachable from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">A vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> is <mark>minimal</mark> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> is not reachable from any other vertex.</td>
+</tr>
+</tbody>
+</table>
+<p>There is a possibility that there is no minimum vertex in a DAG, but there can be a lot of minimal ones.</p>
+<hr>
+<p>Two vertices are said to be <mark>comparable</mark> if one of them is reachable from the other.</p>
+<p>In a set of vertices, when any two of them are comparable, it is called a <mark>chain</mark>. It implies that the sequence of elements has an order.</p>
+<p>The opposite of that, when <strong>no</strong> two elements are comparable, is the <mark>antichain</mark>.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> is <em>incomparable</em> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> iff there is no path from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> and no path from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq>.</p>
+<p>When a vertex in a chain is reachable from all the other vertices, it is the <mark>maximum element</mark> of the chain.</p>
+<p>Every <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>-vertex DAG has a chain of size greater than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{n}</annotation></semantics></math></span></eq>, or an antichain of size greater than or equal to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>n</mi></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{n}</annotation></semantics></math></span></eq>. If we have a DAG with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> number of vertices, for any number <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t \gt 0</annotation></semantics></math></span></eq>, it either has a chain of size bigger than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span></eq>, or it has an antichain of size greater than or equal to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{n}{t}</annotation></semantics></math></span></eq> for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1 \leq t \leq n</annotation></semantics></math></span></eq>.</p>
+<p>The product of the maximum chain size and the maximum antichain size is greater than or equal to the number of vertices:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>c</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">n \geq c \cdot a</annotation></semantics></math></span></eqn></section><p>This is <a href="https://mathworld.wolfram.com/DilworthsLemma.html">Dilworth's lemma</a>.</p>
+<p>To help visualize it better in our mind's eye, it'd be good to know that the size of the longest chain is called the <a href="https://mathworld.wolfram.com/PartialOrderLength.html">length</a>, and the size of the longest antichain the <a href="https://mathworld.wolfram.com/PartialOrderWidth.html">width</a>.</p>
+<p>Then, this image taken from the slides of the lecture would make more sense:</p>
+<img src="../images/antichains-chains.png" alt="Antichains times chains" width="50%">
+<hr>
+<p>A <mark>partition</mark> of a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is a set of nonempty subsets of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> such that every element of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is in exactly one of them. These nonempty subsets are called <mark>blocks</mark> of the partition.</p>
+<p>So, every element of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> has to be in exactly one block.</p>
+<p>Let's imagine a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo separator="true">,</mo><mtext> </mtext><mi>c</mi><mo separator="true">,</mo><mtext> </mtext><mi>d</mi><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, \ b, \ c, \ d, \ e\}</annotation></semantics></math></span></eq>.<br>
+We can think of a partition of it into three blocks, such as: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>c</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">{</mo><mi>b</mi><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">{</mo><mi>d</mi><mo stretchy="false">}</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\{a, \ c\}, \ \{b, \ e\}, \ \{d\}\}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>A <mark>parallel schedule</mark> for a DAG is a partition of its vertices into blocks <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>0</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">A_0, \ A_1, \ ...,</annotation></semantics></math></span></eq> such that when <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">j \lt k</annotation></semantics></math></span></eq>, no vertex in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">A_j</annotation></semantics></math></span></eq> is reachable from any vertex in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">A_k</annotation></semantics></math></span></eq>.<br>
+So, for example, the vertices in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">A_0</annotation></semantics></math></span></eq> can't be reachable from any vertex in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_1</annotation></semantics></math></span></eq>.</p>
+<p>The block <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">A_k</annotation></semantics></math></span></eq> is the set of elements <em>scheduled at step <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq></em>.<br>
+The number of blocks is the <em>time</em> of the schedule.</p>
+<p>The <em>largest</em> chain ending at element <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is the <mark>critical path</mark> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq>.<br>
+The number of elements in the chain that are less than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is the <em>depth</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq>.<br>
+So, in a parallel schedule, before task <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> can even be started, there must be at least <code>depth(a)</code> steps.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/digraphs-walks-and-paths/">previous</a></li><li><a href="/unit-02-structures/partial-orders-and-equivalence/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

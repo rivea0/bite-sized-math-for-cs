@@ -1,0 +1,235 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>The Well Ordering Principle</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>The Well Ordering Principle</h1>
+<p>This is what the well ordering principle says:</p>
+<blockquote>
+<p>Every nonempty set of nonnegative integers has a <em>smallest</em> element.</p>
+</blockquote>
+<p>Yes, it looks like a grammatical mistake, but it isn't here. Let's see.</p>
+<p>When we proved <a href="/unit-01-proofs/two-proof-methods">that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{2}</annotation></semantics></math></span></eq> is irrational</a>, we actually have taken this principle for granted, we assumed that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{a}{b}</annotation></semantics></math></span></eq> can be written in the <em>lowest terms</em>.</p>
+<p>We also have taken advantage of the <em>Prime Factorization Theorem</em> in the proof mentioned above, so let's use Well Ordering Principle to prove it.</p>
+<p>Remember, the Prime Factorization Theorem states that <em>every positive integer greater than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> can be factored as a product of primes</em>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">The proof is by well ordering.</td>
+</tr>
+<tr>
+<td style="text-align:left">Let's say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is the set of all integers greater than one that can't be factored as a product of primes. (we have chosen the letter <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> to stand for <em>counterexamples</em>).</td>
+</tr>
+<tr>
+<td style="text-align:left">Now, if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is a nonempty set, that means we have at least one counterexample that makes the theorem false.</td>
+</tr>
+<tr>
+<td style="text-align:left">So, we have to show that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is empty in order to come to a conclusion that the theorem is true.</td>
+</tr>
+<tr>
+<td style="text-align:left">We are going to show a contradiction here, so let's assume that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is nonempty. (that there is at least one element in it that is greater than one, and can't be factored as a product of primes.)</td>
+</tr>
+<tr>
+<td style="text-align:left">In that case, by well ordering, there has to be a <em>smallest</em> element <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Let's call it <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>, it has to be an integer greater than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and it can't be factored as a product of primes. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> also can't be prime because it would then still be considered as a product of one prime.</td>
+</tr>
+<tr>
+<td style="text-align:left">But still, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> has to be a product of two integers, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>. Of course, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> have to be less than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>, and both of them have to be greater than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Remember that the smallest element in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>, and that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> are smaller than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>. So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> are not in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq>. If they are not in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq>, that means both <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> can be written as a product of primes.</td>
+</tr>
+<tr>
+<td style="text-align:left">Here is the thing: if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> can be written as a product of primes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>p</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">p_1 ... p_k</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> can be written as a product of primes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>q</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">q_1 ... q_k</annotation></semantics></math></span></eq>, we can write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>p</mi><mi>k</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub><mi>q</mi><mn>1</mn></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>q</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(p_1 ... p_k)(q_1 ... q_k)</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">That shows that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> can be written as a product of primes, and it contradicts our first assumption!</td>
+</tr>
+<tr>
+<td style="text-align:left">So, our assumption that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is nonempty must be false.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq> is empty, therefore there are no counterexamples to our theorem.</td>
+</tr>
+<tr>
+<td style="text-align:left">Therefore, every positive integer greater that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> can be factored as a product of primes. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">■</mi></mrow><annotation encoding="application/x-tex">\blacksquare</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<p>That is actually a template to use Well Ordering Principle in proofs.</p>
+<p>We first define a set of counterexamples <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq>, and assume that it is not empty. Since it is a nonempty set (of nonnegative integers), by well ordering principle it has to have a smallest element <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq>. At this point, we have to show a contradiction about this smallest element <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq>. There is no one way to go about it, but one is to find a counterexample that is smaller than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq>, thus contradicting that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq> is the smallest element in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span></eq>.<br>
+Another way is to show that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq> is not a counterexample by showing that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(m)</annotation></semantics></math></span></eq> (that the theorem holds true for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq>).</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/two-proof-methods/">previous</a></li><li><a href="/unit-01-proofs/logic-and-propositions/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

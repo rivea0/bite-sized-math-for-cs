@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>RSA Encryption</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>RSA Encryption</h1>
+<p>In <a href="https://en.wikipedia.org/wiki/A_Mathematician%27s_Apology"><em>A Mathematician's Apology</em></a>, G. H. Hardy wrote:</p>
+<blockquote>
+<p>[Number theorists] may be justified in rejoicing that there is one science, at any rate, and that their own, whose very remoteness from ordinary human activities should keep it gentle and clean.</p>
+</blockquote>
+<p>How wrong he was.</p>
+<p>Number theory is the core of modern cryptography today, which is central to all kinds of online activity.</p>
+<p>RSA, first proposed by Ronald Rivest, Adi Shamir, and Leonard Adleman in 1977, is a cryptosystem that also—you guessed it—relies on number theory.</p>
+<hr>
+<p>So, we have two players: a sender and a receiver.<br>
+The receiver has two keys: public and private. The sender encrypts their message with the <em>public key</em> of the receiver, which is obviously public, and the receiver can decrypt the message using their <em>private key</em> which is known only to the receiver. The beauty of it is that the sender and the receiver don't need to agree on a key beforehand.</p>
+<p>Let's see how the receiver can generate public and private keys.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">First, generate two primes, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq>. (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> tend to be, you know, <em>As Random As Possible</em> and <em>Many Digits Long</em>).</td>
+</tr>
+<tr>
+<td style="text-align:left">Multiply <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> to get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>. In other words, let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>p</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">n = pq</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Then, find an integer <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>e</mi><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(e, \ (p - 1)(q - 1)) = 1</annotation></semantics></math></span></eq>, that is, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span></eq> is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(p - 1)(q - 1)</annotation></semantics></math></span></eq>. <span style="color: #7852ee">*</span></td>
+</tr>
+<tr>
+<td style="text-align:left">The pair <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>e</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(e, \ n)</annotation></semantics></math></span></eq> is the public key which can be distributed.</td>
+</tr>
+<tr>
+<td style="text-align:left">Because <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span></eq> is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(p - 1)(q - 1)</annotation></semantics></math></span></eq>, it has an inverse (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">e^{-1}</annotation></semantics></math></span></eq>) in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_{(p - 1)(q - 1)}</annotation></semantics></math></span></eq>, let's call it <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span></eq>. <span style="color: #7852ee">**</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span></eq> is the private key that the receiver keeps hidden.</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #7852ee">*</span> <em>Remember <a href="/unit-02-structures/eulers-theorem">Euler's totient function</a>? (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>p</mi><mi>q</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(pq) = (p - 1)(q - 1)</annotation></semantics></math></span></eq> for primes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo mathvariant="normal">≠</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \neq q</annotation></semantics></math></span></eq>.)</em><br>
+<span style="color: #7852ee">**</span> <em>Remember that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n</annotation></semantics></math></span></eq> is the set of numbers in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[0, \ n)</annotation></semantics></math></span></eq> that are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq></em>.</p>
+<p>If you knew what <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> are, it'd be easy to figure out what the private key is. Well, the thing with one-way functions is that they are <em>easy to compute</em> but <em>hard to invert</em>. So, even if it's easy to compute the product of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> to get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>, it's hard to factor <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> to get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>What about the sender?</p>
+<p>First, the message <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq> that they are going to send to the receiver has to be in the range <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[1, n)</annotation></semantics></math></span></eq>, which means it can be represented by a <em>Many Digits Long</em> number.</p>
+<p>Because the sender knows the receiver's public key, they need to raise the message <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">Z</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_n</annotation></semantics></math></span></eq> (has to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq>) to get the encoded message <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>m</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{m}</annotation></semantics></math></span></eq>:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>m</mi><mo>^</mo></mover><mo>=</mo><msup><mi>m</mi><mi>e</mi></msup><mtext>  </mtext><mo stretchy="false">(</mo><msub><mi mathvariant="double-struck">Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{m} = m^e \ \ (\mathbb{Z}_n)</annotation></semantics></math></span></eqn></section></p>
+<p>Then, how does the receiver decode <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>m</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{m}</annotation></semantics></math></span></eq>?<br>
+They just need to raise <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>m</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">\hat{m}</annotation></semantics></math></span></eq> to their private key <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="double-struck">Z</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_n</annotation></semantics></math></span></eq> (again, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq>) to get the decoded message:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>m</mi><mo>=</mo><msup><mover accent="true"><mi>m</mi><mo>^</mo></mover><mi>d</mi></msup><mtext>  </mtext><mo stretchy="false">(</mo><msub><mi mathvariant="double-struck">Z</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">m = \hat{m}^d \ \ (\mathbb{Z}_n)</annotation></semantics></math></span></eqn></section></p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/eulers-theorem/">previous</a></li><li><a href="/unit-02-structures/digraphs-walks-and-paths/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

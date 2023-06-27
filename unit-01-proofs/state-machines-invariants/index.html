@@ -1,0 +1,236 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>State Machines — Invariants</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>State Machines — Invariants</h1>
+<p>State machines are abstract models of step-by-step processes.</p>
+<p>We can think of a state machine as a binary relation on a set.<br>
+In this case, the elements will be called <em>states</em>, the relation will be called <em>transition relation</em> or <em>state graph</em>, and an arrow in the graph will be called a <em>transition</em>.<br>
+A transition from state <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> to state <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq> is written as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⟶</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">q \longrightarrow r</annotation></semantics></math></span></eq>.<br>
+State machines also have a specific <em>start state</em>.</p>
+<p>An example below is one that counts from 0 to 99 and overflows at 100. Not very useful.</p>
+<img src="../images/state-machine.png" alt="State machine example" width="50%">
+<p style="font-size: 14px; margin-bottom: 0;"><i>Figure 5.7 State transitions for the 99-bounded counter.</i></p>
+<p style="font-size: 14px; margin-top: 0;"><i>From the course notes <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/3d66c5674cdf557081ff5baf836eb321/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Unit_I_1.9pdf.pdf">Mathematics for Computer Science</a>.</i></p>
+<p>State machines that have at most one transition out of each state is called <em>deterministic</em>. One example is the one above that counts from 1 to 99, and overflows after that. The only transition is from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n + 1</annotation></semantics></math></span></eq>.</p>
+<p><em>Note: The general model of a state machine is also about responding to the inputs given, but we are not looking at this for simplicity's sake.</em></p>
+<hr>
+<p>When we used induction the last time, we were showing that a property holds in every step of the process.<br>
+A property that is preserved through the whole process is called the <mark>preserved invariant</mark>.</p>
+<p>The <em>invariant principle</em> says that:</p>
+<blockquote>
+<p>If a preserved invariant of a state machine is true for the start state, then it is true for all reachable states.</p>
+</blockquote>
+<p>A reachable state is a state that appears in some execution.<br>
+And, what is execution?<br>
+It's a sequence of states with the property that:<br>
+a) it begins with the start state<br>
+b) if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq> are consecutive states, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⟶</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">q \longrightarrow r</annotation></semantics></math></span></eq></p>
+<p>Realize that the invariant principle is just induction, applied to state machines.</p>
+<hr>
+<p>There is a technique called <em>fast exponentiation</em>. Take a look at this code:</p>
+<pre class="language-python"><code class="language-python">base <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'Enter base: '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+exp <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'Enter exponent: '</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">fast_exp</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> z <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">return</span> <span class="token string">'Nonnegative integers only!'</span>
+    <span class="token keyword">if</span> z <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span> <span class="token keyword">return</span> y
+    <span class="token keyword">if</span> z <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> fast_exp<span class="token punctuation">(</span>x <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">//</span> <span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> z <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span> 
+        <span class="token keyword">return</span> fast_exp<span class="token punctuation">(</span>x <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">,</span> x <span class="token operator">*</span> y<span class="token punctuation">,</span> z <span class="token operator">//</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>fast_exp<span class="token punctuation">(</span>base<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> exp<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Notice that we assume <code>z</code> (the exponent) to be an integer as we use integer division (<code>z // 2</code>) like so.</p>
+<p>Here, our start state is <code>(base, 1, exp)</code>.</p>
+<p>Transitions will be according to this rule:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo separator="true">,</mo><mtext> </mtext><mi>z</mi><mo stretchy="false">)</mo><mo>⟶</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo separator="true">,</mo><mtext> quotient</mtext><mo stretchy="false">(</mo><mi>z</mi><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mi>z</mi><mtext> is nonzero and even</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo separator="true">,</mo><mtext> </mtext><mi>x</mi><mi>y</mi><mo separator="true">,</mo><mtext> quotient</mtext><mo stretchy="false">(</mo><mi>z</mi><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>if </mtext><mi>z</mi><mtext> is nonzero and odd</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">(x, \ y, \ z) \longrightarrow
+\begin{cases}
+(x^2, \ y, \ \text{quotient}(z, \ 2)) &amp; \text{if } z \text{ is nonzero and even}\\
+(x^2, \ xy, \ \text{quotient}(z, \ 2)) &amp; \text{if  } z \text{ is nonzero and odd}
+\end{cases}
+</annotation></semantics></math></span></eqn></section><p>And, our preserved invariant is that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span></eq> is a nonnegative integer, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msup><mi>x</mi><mi>z</mi></msup><mo>=</mo><msup><mtext>base</mtext><mtext>exp</mtext></msup></mrow><annotation encoding="application/x-tex">yx^z = \text{base}^{\text{exp}}</annotation></semantics></math></span></eq>.</p>
+<p>One way to verify <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msup><mi>x</mi><mi>z</mi></msup><mo>=</mo><msup><mtext>base</mtext><mtext>exp</mtext></msup></mrow><annotation encoding="application/x-tex">yx^z = \text{base}^{\text{exp}}</annotation></semantics></math></span></eq> is to see if the transitioned state is what we think it is.</p>
+<p>Since we're only looking at the case when <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span></eq> is odd, we can use <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(z - 1) / 2</annotation></semantics></math></span></eq> to do the &quot;integer division,&quot; and steer clear of a remainder.</p>
+<p>In this transition, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq> becomes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">xy</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> becomes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span></eq> becomes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">(z - 1) / 2</annotation></semantics></math></span></eq>.</p>
+<p>In order to write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msup><mi>x</mi><mi>z</mi></msup></mrow><annotation encoding="application/x-tex">yx^z</annotation></semantics></math></span></eq>, we have to write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><msup><mo stretchy="false">)</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(xy)(x^2)^{(z - 1) / 2}</annotation></semantics></math></span></eq>.</p>
+<p>Doing a little simplifying, we get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false">)</mo><msup><mi>x</mi><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(xy)x^{z - 1}</annotation></semantics></math></span></eq>, and further simplifying we get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><msup><mi>x</mi><mi>z</mi></msup></mrow><annotation encoding="application/x-tex">yx^z</annotation></semantics></math></span></eq> which is indeed what we assumed to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>base</mtext><mtext>exp</mtext></msup></mrow><annotation encoding="application/x-tex">\text{base}^{\text{exp}}</annotation></semantics></math></span></eq>!<br>
+So, the new values of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span></eq> satisfy the invariant.</p>
+<hr>
+<p>To verify a program, there are two properties to look at: <em>partial correctness</em> and <em>termination</em>.</p>
+<p>In the fast exponential example, we've proved the correctness, so let's see if we can figure out if it terminates.</p>
+<p>One thing to notice is that at each transition, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span></eq> becomes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>quotient</mtext><mo stretchy="false">(</mo><mi>z</mi><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{quotient}(z, \ 2)</annotation></semantics></math></span></eq>, so it gets smaller. Since it is a nonnegative integer, there is a point where it can't get any smaller, in fact, it can't get smaller more than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mtext>exp</mtext><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">log_2(\text{exp})</annotation></semantics></math></span></eq> times, by then it'd already hit <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>. So, it indeed terminates.</p>
+<hr>
+<p>A <mark>derived variable</mark> is a function assigning a &quot;value&quot; to each state.</p>
+<p>So, take a derived variable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>:</mo><mtext>States</mtext><mo>→</mo><mtext>Values</mtext></mrow><annotation encoding="application/x-tex">v : \text{States} \rightarrow \text{Values}</annotation></semantics></math></span></eqn></section></p>
+<p>If the values are natural numbers, it can be said that &quot;<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span></eq> valued&quot;.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/induction/">previous</a></li><li><a href="/unit-01-proofs/recursive-definitions/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

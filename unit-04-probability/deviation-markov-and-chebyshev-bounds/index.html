@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Deviation: Markov &amp; Chebyshev Bounds</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Deviation: Markov &amp; Chebyshev Bounds</h1>
+<p>The main focus in this section is <em>finding the probability that an estimate deviates by a given amount from its expected value</em>.</p>
+<p>The mean, or, <em>the expectation</em>, is not always good enough to predict a random variable's behavior.</p>
+<p>When a random variable takes a value much larger than its mean, its probability can be estimated with <mark>Markov's theorem</mark>.</p>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is nonnegative, then for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x \gt 0</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>≥</mo><mi>x</mi><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[R \geq x] \leq \frac{E[R]}{x}</annotation></semantics></math></span></eqn></section><p>The example given in the lectures is the disputable IQ score. The average IQ is said to be 100, and this means that only a <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span></eq> of a population can have an IQ of 300:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mn>300</mn><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">\frac{1}{3} \cdot 300 = 100</annotation></semantics></math></span></eq>.<br>
+Because if it were more than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span></eq>, average would have to be more than 100.</p>
+<p>So, the probability of having an IQ of 300 is less than or equal to the expectation divided by 300:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mtext>IQ</mtext><mo>≥</mo><mn>300</mn><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mrow><mi>E</mi><mo stretchy="false">[</mo><mtext>IQ</mtext><mo stretchy="false">]</mo></mrow><mn>300</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[\text{IQ} \geq 300] \leq \frac{E[\text{IQ}]}{300}</annotation></semantics></math></span></eq>.</p>
+<p>The average (the expectation) is 100, so:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mtext>IQ</mtext><mo>≥</mo><mn>300</mn><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mn>100</mn><mn>300</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[\text{IQ} \geq 300] \leq \frac{100}{300} = \frac{1}{3}</annotation></semantics></math></span></eq>.</p>
+<p><em>As the factor of expectation increases, the probability decreases proportionally</em>.</p>
+<p>If we are given that IQ score is always more than or equal to 50, we can get a better bound by adjusting the formula a little, namely, <em>shifting <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> to have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> as minimum</em>.</p>
+<p>So, in that case, it would look like:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mtext>IQ</mtext><mo>−</mo><mn>50</mn><mo>≥</mo><mn>300</mn><mo>−</mo><mn>50</mn><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mrow><mn>100</mn><mo>−</mo><mn>50</mn></mrow><mrow><mn>300</mn><mo>−</mo><mn>50</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[\text{IQ} - 50 \geq 300 - 50] \leq \frac{100 - 50}{300 - 50} = \frac{1}{5}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Another example is from the <a href="https://cs.rice.edu/~as143/COMP480_580_Fall22/scribe/Lec3.pdf">Rice University's lecture notes</a>:</p>
+<blockquote>
+<p>Assume the expected time it takes Algorithm A to traverse a graph with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> nodes is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">2n</annotation></semantics></math></span></eq>. What is the probability that the algorithm takes more than 10 times that?</p>
+</blockquote>
+<p>Since we're looking for the outcome that is 10 times more than the expectation:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>≥</mo><mn>10</mn><mo>⋅</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><mrow><mn>10</mn><mo>⋅</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[R \geq 10 \cdot E[R]] \leq \frac{E[R]}{10 \cdot E[R]} = \frac{1}{10}</annotation></semantics></math></span></eq></p>
+<p>So, the probability is not more than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.10</mn></mrow><annotation encoding="application/x-tex">0.10</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Another example from the practice exercises:</p>
+<blockquote>
+<p>Given a random variable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">E[R] = 50</annotation></semantics></math></span></eq>, give the smallest value <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> such that the Markov Bound guarantees <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>≥</mo><mi>x</mi><mo stretchy="false">]</mo><mo>≤</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\text{Pr}[R \geq x] \leq 0.5</annotation></semantics></math></span></eq> if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is nonnegative.</p>
+</blockquote>
+<p>Well, in this case, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>≥</mo><mi>x</mi><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mn>50</mn><mi>x</mi></mfrac><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\text{Pr}[R \geq x] \leq \frac{50}{x} = 0.5</annotation></semantics></math></span></eq>. Then, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span></eq> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>50</mn><mn>0.5</mn></mfrac><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">\frac{50}{0.5} = 100</annotation></semantics></math></span></eq>).</p>
+<hr>
+<p><em>The <mark>Chebyshev bound</mark> says that the probability that the distance between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> and its mean is greater than or equal to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> is the variance of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> divided by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2</annotation></semantics></math></span></eq></em>.</p>
+<p>The term <mark>variance</mark> stands out, it is the expectation of the square of the distance between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> and its mean, that is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>−</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">R - E[R]</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mi>R</mi><mo>−</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><msup><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mn>2</mn></msup><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[\big(R - E[R]\big)^2]</annotation></semantics></math></span></eqn></section><p>Let's call it <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Var</mtext><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Var}[R]</annotation></semantics></math></span></eq>.</p>
+<p>So, the Chebyshev bound is:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><mi>R</mi><mo>−</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mi mathvariant="normal">∣</mi><mo>≥</mo><mi>x</mi><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mrow><mtext>Var</mtext><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[|R - E[R]| \geq x] \leq \frac{\text{Var}[R]}{x^2}</annotation></semantics></math></span></eqn></section><hr>
+<p>The square root of variance is the <mark>standard deviation</mark>, denoted by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>σ</mi><mi>R</mi></msub><mo>=</mo><msqrt><mrow><mtext>Var</mtext><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sigma_R = \sqrt{\text{Var}[R]}</annotation></semantics></math></span></eqn></section><p>Now, let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq> denote the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[R]</annotation></semantics></math></span></eq>. The Chebyshev bound can then be restated as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><mi>R</mi><mo>−</mo><mi>μ</mi><mi mathvariant="normal">∣</mi><mo>≥</mo><mi>x</mi><mo stretchy="false">]</mo><mo>≤</mo><mfrac><msubsup><mi>σ</mi><mi>R</mi><mn>2</mn></msubsup><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[|R - \mu| \geq x] \leq \frac{\sigma_R^2}{x^2}</annotation></semantics></math></span></eqn></section>
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-04-probability/expectation/">previous</a></li><li><a href="/unit-04-probability/sampling-and-confidence/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

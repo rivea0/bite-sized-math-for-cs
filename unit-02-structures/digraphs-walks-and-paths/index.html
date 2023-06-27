@@ -1,0 +1,224 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Digraphs: Walks and Paths</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Digraphs: Walks and Paths</h1>
+<p>A digraph (<mark>directed graph</mark>) is a type of graph to represent how things are connected together.<br>
+As with many other graphs, digraphs have <em>nodes</em> (or, <em>vertices</em>) and <em>directed edges.</em> That's what gives their name: their edges are directed.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Directed_graph_no_background.svg/320px-Directed_graph_no_background.svg.png" alt="Digraph example"></p>
+<p>One example is the World Wide Web itself, we can think of webpages as vertices, and the hyperlinks as edges.</p>
+<p>A directed edge <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span></eq> starts at what is called a <mark>tail</mark> vertex, and ends at the <mark>head</mark> vertex.<br>
+If we denote it as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mtext>〈</mtext><mrow><mi>u</mi><mo>→</mo><mi>v</mi></mrow><mtext>〉</mtext></mrow><annotation encoding="application/x-tex">e = \textlangle{u \rightarrow v} \textrangle</annotation></semantics></math></span></eq>, then, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> is the tail vertex, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> is the head vertex. We can represent this edge as an ordered pair as well, such as: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>u</mi><mo separator="true">,</mo><mtext> </mtext><mi>v</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(u, \ v)</annotation></semantics></math></span></eq>.</p>
+<p>The set of vertices in a directed graph <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq>, denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V(G)</annotation></semantics></math></span></eq>, is a binary relation where the domain and the codomain are the same set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span></eq>.</p>
+<p>The set of edges in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq> are denoted as—you guessed it—<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E(G)</annotation></semantics></math></span></eq>.</p>
+<p>So, we can write the set of vertices of the example graph above as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">V = \{1, \ 2, \ 3, \ 4\}</annotation></semantics></math></span></eq>, and the set of edges as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">E = \{(1, \ 2), \ (1, \ 3), \ (3, \ 2), \ (3, \ 4), (4, \ 3)\}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>There are some terms we need to be familiar with.</p>
+<p>The <mark>in-degree</mark> of a vertex is the number of arrows coming into it:</p>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq> is a digraph, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>∈</mo><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">v \in V(G)</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>indeg</mtext><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>e</mi><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> head</mtext><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mi>v</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">\text{indeg}(v) = |\{e \in E(G) \ | \ \text{head}(e) = v\}|</annotation></semantics></math></span></eqn></section><p>The <mark>out-degree</mark> of a vertex is the number of arrows coming out of it:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>outdeg</mtext><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mo stretchy="false">{</mo><mi>e</mi><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> tail</mtext><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mi>v</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">\text{outdeg}(v) = |\{e \in E(G) \ | \ \text{tail}(e) = v\}|</annotation></semantics></math></span></eqn></section><p>The total number of in-degrees and out-degrees will be the number of edges in the graph, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|E(G)|</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></munder><mtext>indeg</mtext><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mtext> </mtext><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></munder><mtext>outdeg</mtext><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mi>E</mi><mi mathvariant="normal">∣</mi></mstyle></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{v \in V(G)} \text{indeg}(v) \ = \displaystyle\sum_{v \in V(G)} \text{outdeg}(v) = |E|</annotation></semantics></math></span></eqn></section><hr>
+<p>A <mark>walk</mark> is a sequence of edges you follow. In the above diagram, for example, we can start at 1, go to 3, then go to 4, then go to 3 again. The length of a walk will be the number of edges that we go through (one less than the number of vertices), <strong>not</strong> the number of vertices we visit.<br>
+A <mark>path</mark> is a special type of walk where you don't visit the same vertex twice. So, if we go back to 3 after visiting 4, it won't be a path.</p>
+<p>We can represent a walk <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> as such:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mtext> 〈</mtext><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>→</mo><msub><mi>v</mi><mn>1</mn></msub></mrow><mtext>〉 </mtext><msub><mi>v</mi><mn>1</mn></msub><mtext> 〈</mtext><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>→</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><mtext>〉 </mtext><msub><mi>v</mi><mn>2</mn></msub><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> 〈</mtext><mrow><msub><mi>v</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>→</mo><msub><mi>v</mi><mi>k</mi></msub></mrow><mtext>〉 </mtext><msub><mi>v</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">v = v_0 \ \textlangle{v_0 \rightarrow v_1} \textrangle \ v_1 \ \textlangle{v_1 \rightarrow v_2} \textrangle \ v_2 \ ... \ \textlangle{v_{k - 1} \rightarrow v_k} \textrangle \ v_k</annotation></semantics></math></span></eqn></section><p>where <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>→</mo><msub><mi>v</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mtext>〉</mtext><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\textlangle{v_i \rightarrow v_{i + 1}} \textrangle \in E(G)</annotation></semantics></math></span></eq> for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">i \in [0, k)</annotation></semantics></math></span></eq>.</p>
+<p>In order for this walk to be a path, all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">v_i</annotation></semantics></math></span></eq>'s should be different, because if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i \neq j</annotation></semantics></math></span></eq> then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>i</mi></msub><mo mathvariant="normal">≠</mo><msub><mi>v</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">v_i \neq v_j</annotation></semantics></math></span></eq>.</p>
+<p>A walk that begins and ends at the same vertex is called a <mark>closed walk</mark>.<br>
+A <mark>cycle</mark> is a closed walk where vertices are different except for the beginning and end vertices. Cycles must have a positive length.</p>
+<hr>
+<h4>What about a single vertex?</h4>
+<p>If a digraph has only one vertex, its length is zero, as it is considered to begin and end at itself. It is a closed walk as well, but since its length is not positive, it is not a cycle.</p>
+<h4>When is a walk not a walk?</h4>
+<p>An example: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><mi>c</mi><mo>→</mo><mi>b</mi></mrow><mtext>〉 〈</mtext><mrow><mi>b</mi><mo>←</mo><mi>a</mi></mrow><mtext>〉 〈</mtext><mrow><mi>a</mi><mo>→</mo><mi>d</mi></mrow><mtext>〉</mtext></mrow><annotation encoding="application/x-tex">\textlangle{c \rightarrow b} \textrangle \ \textlangle{b \leftarrow a} \textrangle \ \textlangle{a \rightarrow d} \textrangle</annotation></semantics></math></span></eq>.<br>
+This is not considered a walk because its edges are in a wrong direction.</p>
+<hr>
+<p>Just like your daily walk, we can also have rests during these walks, too. For example, if a walk <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span></eq> ends at vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>, and a walk <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq> starts with this same vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>, their <em>merge</em> (denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="bold">f</mtext><mover accent="true"><mrow><mtext> </mtext><mi>v</mi><mtext> </mtext></mrow><mo stretchy="true">^</mo></mover><mtext mathvariant="bold">r</mtext></mrow><annotation encoding="application/x-tex">\textbf{f} \widehat{ \ v \ } \textbf{r}</annotation></semantics></math></span></eq> ) is the walk starting with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span></eq>, continuing with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq>.</p>
+<p><em>Note that the term <strong>merge</strong> does not really imply concatenation because the vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> would appear twice in such case.</em></p>
+<p>The length of a merge is exactly as you thought it would be: the sum of those two walks: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mtext mathvariant="bold">f</mtext><mover accent="true"><mrow><mtext> </mtext><mi>v</mi><mtext> </mtext></mrow><mo stretchy="true">^</mo></mover><mtext mathvariant="bold">r</mtext><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mtext mathvariant="bold">f</mtext><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mtext mathvariant="bold">r</mtext><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|\textbf{f} \widehat{ \ v \ } \textbf{r}| = |\textbf{f}| + |\textbf{r}|</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>We can represent a digraph using an <em>adjacency matrix</em>.<br>
+Simply, we put <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> where there is an edge between two vertices, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> otherwise.<br>
+Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">A_G</annotation></semantics></math></span></eq> define the adjacency matrix of a graph <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>G</mi></msub><msub><mo stretchy="false">)</mo><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mspace width="1em"/><mtext>if 〈</mtext><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>→</mo><msub><mi>v</mi><mi>j</mi></msub></mrow><mtext>〉</mtext><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo separator="true">,</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mspace width="1em"/><mtext>otherwise.</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">(A_G)_{ij} =
+\begin{cases}
+1 \quad  \text{if } \textlangle{v_i \rightarrow v_j} \textrangle \in E(G), \\
+0 \quad \text{otherwise.}
+\end{cases}
+</annotation></semantics></math></span></eqn></section><p>Let's use the diagram example we have at the start of this section.<br>
+Remember that its set of edges is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">E = \{(1, \ 2), \ (1, \ 3), \ (3, \ 2), \ (3, \ 4), (4, \ 3)\}</annotation></semantics></math></span></eq>.<br>
+Its adjacency matrix will then look like this:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><menclose notation="top bottom left right"><mtable rowspacing="0.16em" columnalign="center center center center center" columnlines="solid solid solid solid" columnspacing="1em" rowlines="solid solid solid solid"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">1</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">2</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">3</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">4</mtext><mtext> </mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">1</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>1</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>1</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">2</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">3</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>1</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>1</mn><mtext> </mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mtext mathvariant="bold">4</mtext><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>1</mn><mtext> </mtext></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext> </mtext><mn>0</mn><mtext> </mtext></mrow></mstyle></mtd></mtr></mtable></menclose></mrow><annotation encoding="application/x-tex">
+\begin{array}{|c|c|c|c|c|} \hline  &amp; \ \textbf{1} \ &amp; \ \textbf{2} \ &amp; \ \textbf{3} \ &amp; \ \textbf{4} \ \\ \hline \ \textbf{1} \ &amp; \ 0 \ &amp; \ 1 \ &amp; \ 1 \ &amp; \ 0 \ \\ \hline \ \textbf{2} \ &amp; \ 0 \ &amp; \ 0 \ &amp; \ 0 \ &amp; \ 0 \ \\ \hline \ \textbf{3} \ &amp; \ 0 \ &amp; \ 1 \ &amp; \ 0 \ &amp; \ 1 \ \\ \hline \ \textbf{4} \ &amp; \ 0 \ &amp; \ 0 \ &amp; \ 1 \ &amp; \ 0 \ \\ \hline \end{array}
+</annotation></semantics></math></span></eqn></section><hr>
+<p>One of the questions we can ask of a digraph is whether there is a walk from one vertex to another — in other words, whether they are <em>connected</em>, or whether one is <em>reachable</em> from the other.</p>
+<p>We can denote this <em>walk relation</em> as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mtext> </mtext><msup><mi>G</mi><mo>∗</mo></msup><mtext> </mtext><mi>v</mi><mo>=</mo><mtext>there is a walk in </mtext><mi>G</mi><mtext> from </mtext><mi>u</mi><mtext> to </mtext><mi>v</mi></mrow><annotation encoding="application/x-tex">u \ G^* \ v = \text{there is a walk in } G \text{ from } u \text{ to } v</annotation></semantics></math></span></eqn></section><p>Also, a <em>positive walk relation</em> as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>u</mi><mtext> </mtext><msup><mi>G</mi><mo>+</mo></msup><mtext> </mtext><mi>v</mi><mo>=</mo><mtext>there is a positive length walk in </mtext><mi>G</mi><mtext> from </mtext><mi>u</mi><mtext> to </mtext><mi>v</mi></mrow><annotation encoding="application/x-tex">u \ G^+ \ v = \text{there is a positive length walk in } G \text{ from } u \text{ to } v</annotation></semantics></math></span></eqn></section>
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/rsa-encryption/">previous</a></li><li><a href="/unit-02-structures/directed-acyclic-graphs/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

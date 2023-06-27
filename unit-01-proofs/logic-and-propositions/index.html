@@ -1,0 +1,338 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Logic &amp; Propositions</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Logic &amp; Propositions</h1>
+<p>In place of specific propositions, usually the letters <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span></eq> or <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span></eq> are used to indicate that these can only take on the values <strong>T</strong> (true) or <strong>F</strong> (false).</p>
+<h4>Connectives:</h4>
+<p>These are the connectives that are mostly used:</p>
+<table>
+<thead>
+<tr>
+<th><strong>connective</strong></th>
+<th><strong>symbol</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>negation</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">\neg P</annotation></semantics></math></span></eq> (or <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>P</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline P</annotation></semantics></math></span></eq>)</td>
+<td>&quot;not&quot;</td>
+</tr>
+<tr>
+<td>conjunction</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∧</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \land Q</annotation></semantics></math></span></eq></td>
+<td>&quot;and&quot;</td>
+</tr>
+<tr>
+<td>disjunction</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∨</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \lor Q</annotation></semantics></math></span></eq></td>
+<td>&quot;or&quot;</td>
+</tr>
+<tr>
+<td>exclusive disjunction</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⊕</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \oplus Q</annotation></semantics></math></span></eq></td>
+<td>&quot;xor (exclusive or)&quot;</td>
+</tr>
+<tr>
+<td>implication</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \implies Q</annotation></semantics></math></span></eq></td>
+<td>&quot;if ... then&quot;</td>
+</tr>
+<tr>
+<td>biconditional</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \iff Q</annotation></semantics></math></span></eq></td>
+<td>&quot;iff&quot; (&quot;if and only if&quot;)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>Negation</strong> just inverses the truth value of a proposition.</p>
+</li>
+<li>
+<p>A <strong>conjunction</strong> is true only if both propositions are true.</p>
+</li>
+<li>
+<p>A <strong>disjunction</strong> is true if one of the propositions is true.</p>
+</li>
+<li>
+<p>An <strong>exclusive disjunction</strong>, &quot;exclusive or (XOR),&quot; is true when the both of the propositions are of different truth values.</p>
+</li>
+<li>
+<p>A <strong>biconditional</strong> is true when both of the propositions are of the same value.</p>
+</li>
+<li>
+<p>An <strong>implication</strong> is only false when the antecedent (the &quot;<strong>if</strong> part&quot;) is true, and the consequent (the &quot;<strong>then</strong> part&quot;) is false; in all other cases it is true. In fact, let's take a look at one example:<br>
+The statement is: &quot;<em>If Goldbach's conjecture is true, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^2 \geq 0</annotation></semantics></math></span></eq> for every real number <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq></em>.&quot;</p>
+<p>Remember that <a href="https://en.wikipedia.org/wiki/Goldbach%27s_conjecture">Goldbach's conjecture</a> says that <em>every even integer greater than 2 is the sum of two primes</em>.</p>
+<p>We don't know for certain if it is true or not, but &quot;<em><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^2 \geq 0</annotation></semantics></math></span></eq> for every real number <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq></em>&quot; is definitely true. So, it doesn't matter if the antecedent (<em>If Goldbach's conjecture is true</em>) is true or not, the fact that the consequent (<em>then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^2 \geq 0</annotation></semantics></math></span></eq> for every real number <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq></em>) is true makes the whole proposition true.</p>
+</li>
+</ul>
+<hr>
+<p>From an implication (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>q</mi></mrow><annotation encoding="application/x-tex">p \implies q</annotation></semantics></math></span></eq>), we can construct 3 new conditional statements:</p>
+<ul>
+<li><mark>converse</mark> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>p</mi></mrow><annotation encoding="application/x-tex">q \implies p</annotation></semantics></math></span></eq>)  — switching <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq></li>
+<li><mark>inverse</mark> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>p</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">¬</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg p \implies \neg q</annotation></semantics></math></span></eq>) —  negate both <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq></li>
+<li><mark>contrapositive</mark> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>q</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">¬</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\neg q \implies \neg p</annotation></semantics></math></span></eq>) —  switch &amp; negate both <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq></li>
+</ul>
+<p>An implication and its contrapositive are equivalent:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>Q</mi><mo>=</mo><mi mathvariant="normal">¬</mi><mi>Q</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">¬</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P \implies Q = \neg Q \implies \neg P</annotation></semantics></math></span></eqn></section></p>
+<p>An implication <strong>and</strong> its converse is the same as the biconditional:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>P</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>Q</mi><mo stretchy="false">)</mo><mo>∧</mo><mo stretchy="false">(</mo><mi>Q</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mi>P</mi><mtext>  </mtext><mo>⟺</mo><mtext>  </mtext><mi>Q</mi></mrow><annotation encoding="application/x-tex">(P \implies Q) \land (Q \implies P) = P \iff Q</annotation></semantics></math></span></eqn></section></p>
+<hr>
+<p>A <mark>tautology</mark> is a proposition that is always true (e.g., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∨</mo><mi mathvariant="normal">¬</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">p \lor \neg p</annotation></semantics></math></span></eq>)</p>
+<p>A <mark>contradiction</mark> is a proposition that is always false (e.g., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">p \land \neg p</annotation></semantics></math></span></eq>)</p>
+<p>A <mark>contingency</mark> is a proposition that is neither a tautology nor a contradiction (e.g., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq>)</p>
+<h4>Equivalence</h4>
+<p>Assignment of values to variables is called an <em>environment</em>.<br>
+For example, environment <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> assigning truth values to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo><mo>=</mo><mi>T</mi><mo separator="true">,</mo><mtext> </mtext><mi>v</mi><mo stretchy="false">(</mo><mi>Q</mi><mo stretchy="false">)</mo><mo>=</mo><mi>T</mi><mo separator="true">,</mo><mtext> </mtext><mi>v</mi><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">v(P) = T, \ v(Q) = T, \ v(R) = F</annotation></semantics></math></span></eq>.<br>
+Two propositional formulas are <em>equivalent</em> iff they have the same truth value in all environments. That is, the compound propositions <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> are logically equivalent if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>q</mi></mrow><annotation encoding="application/x-tex">p \implies q</annotation></semantics></math></span></eq> is a tautology.  Equivalency is denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p \equiv q</annotation></semantics></math></span></eq> (e.g., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>p</mi><mo>∨</mo><mi>q</mi><mo>≡</mo><mi>p</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg p \lor q \equiv p \implies q</annotation></semantics></math></span></eq>).</p>
+<p>An example is <strong>De Morgan's Laws</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>q</mi><mo stretchy="false">)</mo><mo>≡</mo><mi mathvariant="normal">¬</mi><mi>p</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg (p \lor q) \equiv \neg p \land \neg q</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>p</mi><mo>∧</mo><mi>q</mi><mo stretchy="false">)</mo><mo>≡</mo><mi mathvariant="normal">¬</mi><mi>p</mi><mo>∨</mo><mi mathvariant="normal">¬</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">\neg (p \land q) \equiv \neg p \lor \neg q</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>A <em>half adder</em> is a digital circuit that adds two 1-bit numbers. A <em>full adder</em> also adds two 1-bit numbers, but the difference is that a half adder does not have a <em>carry</em> input while a full adder does. (Carry is the same thing when you do decimal addition, for example, with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mo>+</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">21 + 9</annotation></semantics></math></span></eq>, you first add <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, the result is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span></eq>, so you <em>carry</em> the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> to add it to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>.)</p>
+<table>
+<thead>
+<tr>
+<th><strong>1-bit half adder</strong></th>
+<th><strong>1-bit full adder</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/1-bit_half-adder.svg/215px-1-bit_half-adder.svg.png" alt="1-bit half adder"></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Full_Adder_Block.svg/200px-Full_Adder_Block.svg.png" alt="1-bit full adder"></td>
+</tr>
+</tbody>
+</table>
+<p>A binary addition circuit example (a &quot;ripple carry&quot;) is as follows:</p>
+<img src="../images/lgate.png" alt="Binary addition circuit example" width="50%" >
+<p>We can say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">d_0</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>⊕</mo><msub><mi>b</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">a_0 \oplus b_0</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">c_0</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>∧</mo><msub><mi>b</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">a_0 \land b_0</annotation></semantics></math></span></eq>.<br>
+(Imagine <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">a_0</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">b_0</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, adding them will result in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span></eq> in binary — so, you write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> and carry the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and the operations hold. The bit you write is the <strong>xor</strong> of two bits, and the carry is the <strong>and</strong> of them).</p>
+<p>If we define <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">s_i</annotation></semantics></math></span></eq> to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>⊕</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i \oplus b_i</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">d_i</annotation></semantics></math></span></eq> to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⊕</mo><msub><mi>s</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_{i - 1} \oplus s_i</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">c_i</annotation></semantics></math></span></eq> is going to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>∧</mo><msub><mi>s</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>∨</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mi>i</mi></msub><mo>∧</mo><msub><mi>b</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(c_{i - 1} \land s_i) \lor (a_i \land b_i)</annotation></semantics></math></span></eq>.</p>
+<p>What does it mean? Let's see.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Let's say <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">a_0</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">b_0</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_0</annotation></semantics></math></span></eq> is going to be the sum of them (the operation XOR), which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">d_0</annotation></semantics></math></span></eq> is going to be the XOR of the carry from before (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">c_{0 - 1 }</annotation></semantics></math></span></eq>) and the sum (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_0</annotation></semantics></math></span></eq>). We don't have a carry from a previous addition as there is none (that would be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">c_{-1}</annotation></semantics></math></span></eq>!), so it is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">s_0</annotation></semantics></math></span></eq> was <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.  The XOR of them is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, so <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">d_0</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">We already know we don't have a carry (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1 + 0</annotation></semantics></math></span></eq> doesn't have a carry), but still, let's continue decoding the formula.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">c_0</annotation></semantics></math></span></eq> which is our carry has to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>c</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub><mo>∧</mo><msub><mi>s</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>∨</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>0</mn></msub><mo>∧</mo><msub><mi>b</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(c_{0 - 1} \land s_0) \lor (a_0 \land b_0)</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Plugging in our values, we get <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>∧</mo><mn>1</mn><mo stretchy="false">)</mo><mo>∨</mo><mo stretchy="false">(</mo><mn>1</mn><mo>∧</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0 \land 1) \lor (1 \land 0)</annotation></semantics></math></span></eq>. It results in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>∨</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0 \lor 0</annotation></semantics></math></span></eq>, so the final result is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>, which is our carry!</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4>Satisfiability &amp; Validity</h4>
+<p>A formula is <em>satisfiable</em> iff it is true in some environment (which can <em>sometimes</em> be true), for example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span></eq>.</p>
+<p>An example of a formula that is not satisfiable is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∧</mo><mi mathvariant="normal">¬</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P \land \neg P</annotation></semantics></math></span></eq>.</p>
+<p>A formula is <em>valid</em> iff it is true in all environments (which is <em>always</em> true), for example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∨</mo><mo stretchy="false">(</mo><mi mathvariant="normal">¬</mi><mi>P</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P \lor (\neg P)</annotation></semantics></math></span></eq> (also called a <em>tautology</em>).</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/the-well-ordering-principle/">previous</a></li><li><a href="/unit-01-proofs/quantifiers-and-predicate-logic/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

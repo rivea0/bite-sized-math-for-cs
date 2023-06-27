@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Independence &amp; Causality</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Independence &amp; Causality</h1>
+<p><mark>Independent events</mark> are independent; they have nothing to do with each other.</p>
+<p>One common misconception is when flipping a coin: if you got tails the first five times, are you more likely to get tails the sixth time?<br>
+Well, the answer is, of course not. Each flip is an independent event.</p>
+<p>If it's hard to see why, imagine that after you flipped the coin the fifth time, you put it in a box, and don't open that box for years. After a long time, you finally open the box and flip the coin. Now, does it make sense that it's more likely to get tails? Hopefully not. The coin doesn't remember anything, you can try asking it. Although, that would be weird.</p>
+<p>Let's define it better:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] = \text{Pr}[A \ | \ B]</annotation></semantics></math></span></eqn></section><p>So, the fact that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> happened doesn't affect the probability of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>.</p>
+<p>Another definition is:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] \cdot \text{Pr}[B] = \text{Pr}[A \cap B]</annotation></semantics></math></span></eqn></section></p>
+<p>That means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> are independent events. This is called the <a href="https://brilliant.org/wiki/probability-rule-of-product/"><mark>product rule</mark></a>. So, the <em>two events are equivalent if the product of their probabilities is equal to the probability that they both happen</em> (which is their intersection).</p>
+<p>We stated that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] = \text{Pr}[A \ | \ B]</annotation></semantics></math></span></eq>, but let's prove that.</p>
+<blockquote>
+<p>By the product rule, we can write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A]</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\text{Pr}[A \cap B]}{\text{Pr}[B]}</annotation></semantics></math></span></eq>.</p>
+<p>Well, we know that is just conditional probability: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A \ | \ B] = \frac{\text{Pr}[A \cap B]}{\text{Pr}[B]}</annotation></semantics></math></span></eq>.</p>
+<p>Therefore, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo><mi mathvariant="normal">.</mi><mtext>  </mtext><mi mathvariant="normal">■</mi></mrow><annotation encoding="application/x-tex">\text{Pr}[A] = \text{Pr}[A \ | \ B]. \ \ \blacksquare</annotation></semantics></math></span></eq></p>
+</blockquote>
+<p>Another way to see that is with just plugging in the definitions.<br>
+For example, remember that the difference rule says that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A - B] = \text{Pr}[A] - \text{Pr}[A \cap B]</annotation></semantics></math></span></eq>.<br>
+<strong>So, we can write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A]</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cap B] + \text{Pr}[A - B]</annotation></semantics></math></span></eq></strong></p>
+<p>Also, by the difference rule, <strong><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cap B]</annotation></semantics></math></span></eq> can be written as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] - \text{Pr}[A - B]</annotation></semantics></math></span></eq>.</strong></p>
+<p>We want to prove that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] = \text{Pr}[A \ | \ B]</annotation></semantics></math></span></eq>.</p>
+<p>Substituting <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A]</annotation></semantics></math></span></eq> with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cap B] + \text{Pr}[A - B]</annotation></semantics></math></span></eq>, we have:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cap B] + \text{Pr}[A - B] = \text{Pr}[A \ | \ B]</annotation></semantics></math></span></eqn></section><p>Substituting <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cap B]</annotation></semantics></math></span></eq> with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] - \text{Pr}[A - B]</annotation></semantics></math></span></eq>, we have:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] - \text{Pr}[A - B] + \text{Pr}[A - B] = \text{Pr}[A \ | \ B]</annotation></semantics></math></span></eqn></section><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>B</mi><mo stretchy="false">]</mo><mtext>  </mtext><mi mathvariant="normal">■</mi></mrow><annotation encoding="application/x-tex">= \text{Pr}[A] = \text{Pr}[A \ | \ B] \ \ \blacksquare</annotation></semantics></math></span></eqn></section><p>It's just a long-winded of saying the same thing, the point is that the math, of course, works.</p>
+<hr>
+<p>Independent events are not just for two events. When there are more independent events, it is called <mark>mutual independence</mark>.</p>
+<p>So, if we have events <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>A</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_1, \ A_2, \ ..., \ A_n</annotation></semantics></math></span></eq>, they are mutually independent when the probability of one of them (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A_i</annotation></semantics></math></span></eq>) occurs is unchanged by the probability of other ones occurring.</p>
+<p>Formally:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>i</mi></msub><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><msub><mi>A</mi><mi>j</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>k</mi></msub><mo>∩</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>∩</mo><msub><mi>A</mi><mi>m</mi></msub><mo stretchy="false">]</mo><mtext>  </mtext><mo stretchy="false">(</mo><mi>i</mi><mo mathvariant="normal">≠</mo><mi>j</mi><mo separator="true">,</mo><mtext> </mtext><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><mi>m</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A_i] = \text{Pr}[A_i \ | \ A_j \cap A_k \cap \ ... \ \cap A_m] \ \ (i \neq j, \ k, \ ..., \ m)</annotation></semantics></math></span></eqn></section><p>The second definition we used previously for two independent events looks like this for mutual independence:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>i</mi></msub><mo>∩</mo><msub><mi>A</mi><mi>j</mi></msub><mo>∩</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>∩</mo><msub><mi>A</mi><mi>m</mi></msub><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>j</mi></msub><mo stretchy="false">]</mo><mo>⋅</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>m</mi></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A_i \cap A_j \cap \ ... \ \cap A_m = \text{Pr}[A_i] \cdot \text{Pr}[A_j] \cdot \ ... \ \cdot \text{Pr}[A_m]</annotation></semantics></math></span></eqn></section><p>The simplest example for mutual independence is the flipping a coin example we mentioned. You can flip a million times, and none of them depends on the others.</p>
+<hr>
+<blockquote>
+<p>A set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>A</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A_1, \ A_2, \ ...</annotation></semantics></math></span></eq>, of events is <mark>k-way independent</mark> iff every set of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> of those events is mutually independent. The set is <mark>pairwise independent</mark> iff it is 2-way independent.</p>
+</blockquote>
+<p>So, when we have a set of random variables in which any two of them are independent, it is called <em>pairwise independent</em>.</p>
+<p>Let's look at <a href="http://mnstats.morris.umn.edu/introstat/stat2611/independence.html">an example</a>.<br>
+Imagine we have a box that has four tickets with labels: <strong>112</strong>, <strong>121</strong>, <strong>211</strong>, and <strong>222</strong>.</p>
+<p>Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_1</annotation></semantics></math></span></eq> be the event that 1 occurs at the first place.<br>
+Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_2</annotation></semantics></math></span></eq> be the event that 1 occurs at the second place.<br>
+Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_3</annotation></semantics></math></span></eq> be the event that 1 occurs at the third place.</p>
+<p>The probability of each of these events is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A_1] = \frac{1}{2}</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A_2] = \frac{1}{2}</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A_3] = \frac{1}{2}</annotation></semantics></math></span></eq></p>
+<p>We choose one ticket at random.</p>
+<p>Remember that we defined independence as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] \cdot \text{Pr}[B] = \text{Pr}[A \cap B]</annotation></semantics></math></span></eq>.</p>
+<p>The intersection of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_1</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_2</annotation></semantics></math></span></eq> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_1 \cap A_2</annotation></semantics></math></span></eq>) is <strong>112</strong>.<br>
+The probability of choosing <strong>112</strong> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A_1 \cap A_2]</annotation></semantics></math></span></eq>) is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span></eq>, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2} \cdot \frac{1}{2}</annotation></semantics></math></span></eq>, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_1 \cdot A_2</annotation></semantics></math></span></eq>.</p>
+<p>It is the same for other pairings as well:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_1 \cap A_3</annotation></semantics></math></span></eq> = <strong>121</strong>. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A_1 \cap A_3] = \frac{1}{4}</annotation></semantics></math></span></eq>.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_2 \cap A_3</annotation></semantics></math></span></eq> = <strong>211</strong>. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∩</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\text{Pr}[A_2 \cap A_3] = \frac{1}{4}</annotation></semantics></math></span></eq>.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">A_1</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A_2</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">A_3</annotation></semantics></math></span></eq> are pairwise independent.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-04-probability/conditional-probability/">previous</a></li><li><a href="/unit-04-probability/random-variables-density-functions/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

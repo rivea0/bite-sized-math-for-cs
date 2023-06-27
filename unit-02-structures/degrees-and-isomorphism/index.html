@@ -1,0 +1,229 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Degrees and Isomorphism</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Degrees &amp; Isomorphism</h1>
+<p>In a graph, when two different vertices are connected by only one edge, and that edge is <em>undirected</em>, we have a <mark>simple graph</mark>. Simple as that.<br>
+We can represent an edge connecting <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> as: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><mi>u</mi><mtext>—</mtext><mi>v</mi></mrow><mtext>〉</mtext></mrow><annotation encoding="application/x-tex">\textlangle{u — v} \textrangle</annotation></semantics></math></span></eq></p>
+<p>The vertices of an undirected edge are called the <mark>endpoints</mark> of that edge.<br>
+So, where <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo mathvariant="normal">≠</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u \neq v</annotation></semantics></math></span></eq>,  the endpoints of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><mi>u</mi><mtext>—</mtext><mi>v</mi></mrow><mtext>〉</mtext></mrow><annotation encoding="application/x-tex">\textlangle{u — v} \textrangle</annotation></semantics></math></span></eq> are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>.</p>
+<p>Here is an example of a simple graph:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Simple_graph.png" alt="Simple graph example"></p>
+<p>If we call this graph <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span></eq>, then the vertices can be represented as:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>A</mi><mo separator="true">,</mo><mtext> </mtext><mi>B</mi><mo separator="true">,</mo><mtext> </mtext><mi>C</mi><mo separator="true">,</mo><mtext> </mtext><mi>D</mi><mo separator="true">,</mo><mtext> </mtext><mi>E</mi><mo separator="true">,</mo><mtext> </mtext><mi>F</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">V(H) = \{A, \ B, \ C, \ D, \ E, \ F\}</annotation></semantics></math></span></eq></p>
+<p>And, the edges are:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">(</mo><mi>H</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mtext>〈</mtext><mrow><mi>A</mi><mtext>—</mtext><mi>B</mi></mrow><mtext>〉</mtext><mo separator="true">,</mo><mtext> 〈</mtext><mrow><mi>A</mi><mtext>—</mtext><mi>C</mi></mrow><mtext>〉</mtext><mo separator="true">,</mo><mtext> 〈</mtext><mrow><mi>B</mi><mtext>—</mtext><mi>D</mi></mrow><mtext>〉</mtext><mo separator="true">,</mo><mtext> 〈</mtext><mrow><mi>C</mi><mtext>—</mtext><mi>D</mi></mrow><mtext>〉</mtext><mo separator="true">,</mo><mtext> 〈</mtext><mrow><mi>C</mi><mtext>—</mtext><mi>E</mi></mrow><mtext>〉</mtext><mo separator="true">,</mo><mtext> 〈</mtext><mrow><mi>E</mi><mtext>—</mtext><mi>F</mi></mrow><mtext>〉</mtext><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">E(H) = \{\textlangle{A — B} \textrangle, \  \textlangle{A — C} \textrangle, \ \textlangle{B — D} \textrangle, \ \textlangle{C — D} \textrangle, \ \textlangle{C — E} \textrangle, \ \textlangle{E — F} \textrangle   \}</annotation></semantics></math></span></eq></p>
+<p><em>Note that using capital letters for vertices is probably not a good idea.</em></p>
+<p>Two vertices are <mark>adjacent</mark> if they are the endpoints of the same edge.<br>
+For example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> are adjacent.<br>
+An edge is <mark>incident</mark> to its endpoints.<br>
+For example, the edge <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><mi>A</mi><mtext>—</mtext><mi>B</mi></mrow><mtext>〉</mtext></mrow><annotation encoding="application/x-tex">\textlangle{A — B} \textrangle</annotation></semantics></math></span></eq> is incident to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>.<br>
+The number of edges incident to a vertex is called that vertex's <mark>degree</mark>.<br>
+For example, the degree of the vertex <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>.</p>
+<p>Simple graphs don't have self-loops.<br>
+As opposed to simple graphs, <em>multigraphs</em> have two endpoints that have more than one edge connecting them.</p>
+<hr>
+<p>According to the <a href="https://en.wikipedia.org/wiki/Handshaking_lemma">handshaking lemma</a>:</p>
+<blockquote>
+<p>The sum of the degrees of vertices in a simple graph equals twice the number of edges.</p>
+</blockquote>
+<p>It's because <em>every edge contributes <strong>two</strong> to the sum of the degrees, one for each of its endpoints.</em></p>
+<p>It also implies that the sum of the degrees can't be odd, because it's <strong>twice</strong> the number of edges:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>2</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>v</mi><mo>∈</mo><mi>V</mi></mrow></munder><mtext>deg</mtext><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">2|E| = \displaystyle\sum_{v \in V} \text{deg}(v)</annotation></semantics></math></span></eqn></section><hr>
+<p>A <mark>complete graph</mark> <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">K_n</annotation></semantics></math></span></eq> is a simple graph that has exactly one edge between each pair of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> distinct vertices.</p>
+<p>An example:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Complete_graph_K5.svg/180px-Complete_graph_K5.svg.png" alt=""></p>
+<p>On the other hand, an <mark>empty graph</mark> has no edges.</p>
+<p>An example:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/0-regular_graph.svg/213px-0-regular_graph.svg.png" alt="Empty graph example"></p>
+<p><em>Note: For more special types of graphs, <a href="https://www.youtube.com/watch?v=OgvGo09kAvA">Kimberly Brehm's video</a> does a pretty good overview.</em></p>
+<hr>
+<p>We mentioned the concept of isomorphism briefly in <a href="/unit-02-structures/partial-orders-and-equivalence">Partial Orders and Equivalence</a>, but let's take a look at it once more.</p>
+<p>An <mark>isomorphism</mark> between graphs <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span></eq> is a bijection <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mtext> </mtext><mo>:</mo><mtext> </mtext><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mo>→</mo><mi>V</mi><mo stretchy="false">(</mo><mi>H</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f \ : \ V(G) \rightarrow V(H)</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>〈</mtext><mrow><mi>u</mi><mtext>—</mtext><mi>v</mi></mrow><mtext>〉</mtext><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo><mtext>  iff  〈</mtext><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mtext>—</mtext><mi>f</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><mtext>〉</mtext><mo>∈</mo><mi>E</mi><mo stretchy="false">(</mo><mi>H</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\textlangle{u — v} \textrangle \in E(G) \ \text{ iff } \ \textlangle{f(u) — f(v)} \textrangle \in E(H)</annotation></semantics></math></span></eq> for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V(G)</annotation></semantics></math></span></eq>.</p>
+<p>So, two graphs should have the same <em>connections</em>.</p>
+<p>An example:</p>
+<table>
+<thead>
+<tr>
+<th><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span></eq></th>
+<th><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span></eq></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Graph_isomorphism_a.svg/120px-Graph_isomorphism_a.svg.png" alt="Graph isomorphism a"></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Graph_isomorphism_b.svg/240px-Graph_isomorphism_b.svg.png" alt="Graph isomorphism b"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>A simple graph is a <mark>bipartite graph</mark> <em>if its vertices can be partitioned into two sets</em>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">L(G)</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(G)</annotation></semantics></math></span></eq> such that every edge has one endpoint in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">L(G)</annotation></semantics></math></span></eq> and the other endpoint in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(G)</annotation></semantics></math></span></eq>:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Simple-bipartite-graph.svg/240px-Simple-bipartite-graph.svg.png" alt="Bipartite graph example"></p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/partial-orders-and-equivalence/">previous</a></li><li><a href="/unit-02-structures/coloring-and-connectivity/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Induction</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Induction</h1>
+<p>Here is one of the most important ideas in logic (and, obviously, computer science).</p>
+<p><mark>Induction</mark> is <em>a powerful method for showing a property is true for all nonnegative integers</em>.</p>
+<p>The common analogy for inductive method is this: if we climb the first step of the ladder, we can climb the next step, and the next step, and therefore climb the entire ladder.</p>
+<p>Let's see how it goes with another example. Say, we have 5 books on our bookshelf:</p>
+<pre><code>       .--.           
+   .---|__|           
+.--|===|--|_          
+|  |===|  |'\     .---.
+|  |   |  |.'\    |===|
+|  |   |  |\.'\   |   |
+|  |   |  | \  \  |===|
+|  |   |__|  \.'\ |   |
+|  |===|--|   \.'\|===|
+^--^---'--^    `-'`---^
+ 0   1   2      3    4
+</code></pre>
+<p style="font-size: 14px;"><i>ASCII art from https://www.asciiart.eu/books/books</i></p>
+<p>Looking at the books from left to right, we state two rules for ourselves:</p>
+<ol>
+<li>We are going to read the first book.</li>
+<li>If a book is read, then we are going to read the following book.</li>
+</ol>
+<p>We start by reading book <code>0</code>. We know that if we read <code>0</code>, we are going to read the following one, book <code>1</code>.<br>
+If we read book <code>1</code>, we know that we are going to read the following one, book <code>2</code>.<br>
+If we read book <code>2</code>, we know that we are going to read the following one, book <code>3</code>.<br>
+...</p>
+<p>So, we know that if book <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is read, then book <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n + 1</annotation></semantics></math></span></eq> is going to be read.<br>
+We can conclude that every book on this bookshelf is going to be read. And, that's the idea of induction.</p>
+<p>It's similar to the domino effect. The first domino falls, and the others follow.</p>
+<p>Putting it in formal logic:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mi mathvariant="normal">∀</mi><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo stretchy="true">‾</mo></munder></mrow><annotation encoding="application/x-tex">\underline{P(0), \forall n \in \mathbb{N}. \ P(n) \implies P(n + 1)}</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mi mathvariant="normal">∀</mi><mi>m</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>P</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\quad \quad \quad \quad \forall m \in \mathbb{N}. \ P(m)</annotation></semantics></math></span></eq></p>
+<p>In our example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(0)</annotation></semantics></math></span></eq>, having read the book <code>0</code>, is the <mark>basis step</mark>, or the <mark>base case</mark>.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq> is the <mark>induction hypothesis</mark>.<br>
+The proposition <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n) \implies P(n + 1)</annotation></semantics></math></span></eq> is the <mark>inductive step</mark>.</p>
+<p>In a proof, we first need to show that the base case holds. Then, we have to assume <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq> is true, then go on to show that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n + 1)</annotation></semantics></math></span></eq> holds.</p>
+<h4>Why do we assume <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">?</mo></mrow><annotation encoding="application/x-tex">P(n)?</annotation></semantics></math></span></eq></h4>
+<p>Remember that in an implication, the only specific case we need to look at is the case where the antecedent, the &quot;if part&quot;, is true, because the only case where the whole implication is false is when <strong>T</strong> <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span></eq> <strong>F</strong>.<br>
+So, if we show that the consequent is true while the antecedent is also true, we show that the implication holds for all cases.</p>
+<p>Let's try an example.<br>
+We can prove the summation formula with induction.</p>
+<p>Remember that the sum of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> numbers is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n(n + 1)}{2}</annotation></semantics></math></span></eq>:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n = \frac{n(n + 1)}{2}</annotation></semantics></math></span></eqn></section></p>
+<p>Or, to put it more precisely:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>i</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{i = 1} ^{n} i = \frac{n(n + 1)}{2}</annotation></semantics></math></span></eqn></section><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">We're going to show that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n = \frac{n(n + 1)}{2}</annotation></semantics></math></span></eq> using induction.</td>
+</tr>
+<tr>
+<td style="text-align:left">Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq>:  <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n = \frac{n(n + 1)}{2}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Base case</em>: Prove <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(1)</annotation></semantics></math></span></eq> is true.  <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mfrac><mrow><mn>1</mn><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1 = \frac{1(1 + 1)}{2} = \frac{1(2)}{2} = 1</annotation></semantics></math></span></eq> ✅</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Inductive step</em>: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n) \implies P(n + 1)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left">Inductive hypothesis: We assume that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq> (which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n = \frac{n(n + 1)}{2}</annotation></semantics></math></span></eq>) is true.</td>
+</tr>
+<tr>
+<td style="text-align:left">We have to show that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n + 1)</annotation></semantics></math></span></eq> is true. So, we have to show that this is true: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n \ + \ (n + 1) = \frac{(n + 1)(n + 2)}{2}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left">Now, let's add <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n + 1</annotation></semantics></math></span></eq> to both sides in our inductive hypothesis: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>2</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mn>3</mn><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>n</mi><mtext> </mtext><mo>+</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>+</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">1 \ + \ 2 \ + \ 3 \ + \ ... \ + \ n \ + (n + 1) = \frac{n(n + 1)}{2} + (n + 1)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left">Let's do the math on the right side: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n(n + 1)}{2} + \frac{2n + 2}{2} = \frac{n^2 + 3n + 2}{2}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left">If we factor it, we can see that it is the same thing we have wanted: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac><mtext> </mtext><mi mathvariant="normal">■</mi></mrow><annotation encoding="application/x-tex">\frac{n^2 + 3n + 2}{2} = \frac{(n + 1)(n + 2)}{2} \ \blacksquare</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>What we've seen was <em>ordinary induction</em>. There is another kind of induction called <mark>strong induction</mark>. The difference is that strong induction just lets you make more assumptions.</p>
+<blockquote>
+<p>In an ordinary induction argument, you assume that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq> is true and try to prove that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n + 1)</annotation></semantics></math></span></eq> is also true. In a strong induction argument, you may assume that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>P</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">P(0), P(1), \ ...,</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n)</annotation></semantics></math></span></eq> are all true when you go to prove <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(n + 1)</annotation></semantics></math></span></eq>.</p>
+</blockquote>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/binary-relations/">previous</a></li><li><a href="/unit-01-proofs/state-machines-invariants/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

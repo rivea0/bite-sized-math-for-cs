@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Repetitions &amp; Binomial Theorem</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Repetitions &amp; Binomial Theorem</h1>
+<p>First, let's look at another rule, namely, the <mark>generalized bijection rule</mark>.</p>
+<p>If we have a total function from set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, and it is <em>k-to-1</em> (each <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> element is hit by exactly <em>k</em> elements), then the cardinality of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> times the cardinality of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>k</mi><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| = k|B|</annotation></semantics></math></span></eqn></section><p>We can use a simple example.<br>
+Let's say we want to count how many people are in a room. Given that everybody has <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> shoes, we can count the number of shoes and divide the number by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> to find the number of people. In this case, set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is the set of shoes, and set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> is the set of all people.</p>
+<hr>
+<p>The number of ways to choose the set of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq> elements among <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is <em><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> choose <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span></eq></em>, denoted by the <mark>binomial coefficient</mark> notation: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>m</mi></mfrac><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\binom{n}{m}</annotation></semantics></math></span></eq>.</p>
+<p>It is defined as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><mi>m</mi><mo stretchy="false">!</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>m</mi><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{n!}{m!(n - m)!}</annotation></semantics></math></span></eqn></section><hr>
+<p>Let's look at <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(1 + x)^2</annotation></semantics></math></span></eq>. We can expand it, and the result will be</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1 + 2x + x^2</annotation></semantics></math></span></eqn></section><p>Now, let's look at <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">(1 + x)^3</annotation></semantics></math></span></eq>. We get</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1 + 3x + 3x^2 + x^3</annotation></semantics></math></span></eqn></section><p>What we're looking for here is a pattern.</p>
+<p>And, that's where the <mark>binomial theorem</mark> comes in.</p>
+<p>Let's look at <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">(1 + x)^n</annotation></semantics></math></span></eq>.<br>
+There are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> terms in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 + x)</annotation></semantics></math></span></eq>, each term will <em>correspond to selecting <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> or <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> from each of the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> factors</em>, which means we will have in total <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span></eq> terms.<br>
+So, with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(1 + x)^2</annotation></semantics></math></span></eq>, our <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>, and the factors are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1 + x)(1 + x)</annotation></semantics></math></span></eq>.<br>
+Doing the computation, all the terms we have are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2</annotation></semantics></math></span></eq> — adding up to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1 + 2x + x^2</annotation></semantics></math></span></eq>.</p>
+<p>The coefficient of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">x^k</annotation></semantics></math></span></eq> is the number of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">x^k</annotation></semantics></math></span></eq>'s among the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span></eq> terms. In the case of our example, it is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> (we don't need to write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">1x^2</annotation></semantics></math></span></eq>).</p>
+<p>We can call this coefficient <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">c_k</annotation></semantics></math></span></eq>, then represent it as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>k</mi></msub><mo>=</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>k</mi></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">c_k = \binom{n}{k}</annotation></semantics></math></span></eq>.</p>
+<p>And, the binomial formula is:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>=</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>0</mn></mfrac><mo fence="true">)</mo></mrow><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>1</mn></mfrac><mo fence="true">)</mo></mrow><mi>x</mi><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>n</mi></mfrac><mo fence="true">)</mo></mrow><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">(1 + x)^n = \binom{n}{0} + \binom{n}{1}x + \binom{n}{2}x^2 + \ ... \ + \binom{n}{n}x^n</annotation></semantics></math></span></eq></p>
+<p>More generally, it can be written as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>=</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>0</mn></mfrac><mo fence="true">)</mo></mrow><msup><mi>y</mi><mi>n</mi></msup><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>1</mn></mfrac><mo fence="true">)</mo></mrow><mi>x</mi><msup><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>k</mi></mfrac><mo fence="true">)</mo></mrow><msup><mi>x</mi><mi>k</mi></msup><msup><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>n</mi></mfrac><mo fence="true">)</mo></mrow><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">(x + y)^n = \binom{n}{0}y^n + \binom{n}{1}xy^{n - 1} + \binom{n}{2}x^2y^{n - 2} + \binom{n}{k}x^ky^{n - k} + \ ... \ + \binom{n}{n}x^n</annotation></semantics></math></span></eqn></section><p>Even more precisely:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>+</mo><mi>y</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mi>k</mi></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mi>k</mi></msup><msup><mi>y</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi></mrow></msup></mstyle></mrow><annotation encoding="application/x-tex">(x + y)^n = \displaystyle\sum_{k = 0}^{n} \binom{n}{k} = x^ky^{n - k}</annotation></semantics></math></span></eqn></section><hr>
+<p>There is also the <mark>multinomial coefficient</mark>, which is defined as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi>n</mi><mrow><msub><mi>n</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>n</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><mi>k</mi></mrow></mfrac><mo fence="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><mrow><msub><mi>n</mi><mn>1</mn></msub><mo stretchy="false">!</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">!</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msub><mi>n</mi><mi>k</mi></msub><mo stretchy="false">!</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\binom{n}{n_1, \ n_2, \ ..., \ k} = \frac{n!}{n_1!  n_2! ... n_k!}</annotation></semantics></math></span></eqn></section><p>One example is to find the number of permutations of length-<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> word with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">n_1</annotation></semantics></math></span></eq> a's, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">n_2</annotation></semantics></math></span></eq> b's, ..., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">n_k</annotation></semantics></math></span></eq> z's.</p>
+<p>Let's look at how we can find the number of ways of rearranging the letters in the word &quot;banana.&quot;</p>
+<p>The question is, <em>what is the coefficient of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msup><mi>A</mi><mn>3</mn></msup><msup><mi>N</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">BA^3N^2</annotation></semantics></math></span></eq> in the expansion of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>+</mo><mi>A</mi><mo>+</mo><mi>N</mi><msup><mo stretchy="false">)</mo><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">(B + A + N)^6</annotation></semantics></math></span></eq></em>?</p>
+<p>Well, we can write the multinomial coefficient, which will be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mn>6</mn><mrow><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn></mrow></mfrac><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\binom{6}{1, \ 3, \ 2}</annotation></semantics></math></span></eq>.</p>
+<p>Therefore, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>6</mn><mo stretchy="false">!</mo></mrow><mrow><mn>1</mn><mo stretchy="false">!</mo><mo>⋅</mo><mn>3</mn><mo stretchy="false">!</mo><mo>⋅</mo><mn>2</mn><mo stretchy="false">!</mo></mrow></mfrac><mo>=</mo><mfrac><mn>720</mn><mn>12</mn></mfrac><mo>=</mo><mn>60</mn></mrow><annotation encoding="application/x-tex">\frac{6!}{1! \cdot 3! \cdot 2!} = \frac{720}{12} = 60</annotation></semantics></math></span></eq>.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-03-counting/counting-with-bijections/">previous</a></li><li><a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Sampling &amp; Confidence</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Sampling &amp; Confidence</h1>
+<p>Take a random variable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> with an expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq>.<br>
+Make <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> <em>trial observations</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>, and take the average of those observations.<br>
+See how close they are to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq>.</p>
+<p><em>The observed average of the results will approach the true expectation as the number of trial observations increases.</em></p>
+<p>So, we're doing <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> observations of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq>. They are mutually independent:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>R</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">R_1, \ R_2, \ ..., \ R_n</annotation></semantics></math></span></eq></p>
+<p>They all have the same expectation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq>.</p>
+<p>Taking the average of those values: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mtext> </mtext><mo>+</mo><mtext> </mtext><msub><mi>R</mi><mn>2</mn></msub><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><msub><mi>R</mi><mi>n</mi></msub></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">A_n = \frac{R_1 \ + \ R_2 \ + \ ... \ + \ R_n}{n}</annotation></semantics></math></span></eq><br>
+Is this average value close to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq> if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is big?</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi mathvariant="normal">∞</mi></msub><mtext> Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><msub><mi>A</mi><mi>n</mi></msub><mo>−</mo><mi>μ</mi><mi mathvariant="normal">∣</mi><mo>≤</mo><mi>δ</mi><mo stretchy="false">]</mo><mo>=</mo><mtext> </mtext><mo stretchy="false">?</mo></mrow><annotation encoding="application/x-tex">\lim_\infty \ \text{Pr}[|A_n - \mu| \leq \delta] = \ ?</annotation></semantics></math></span></eq></p>
+<p>The answer that the <mark>Weak Law of Large Numbers</mark> gives to that question is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi mathvariant="normal">∞</mi></munder><mtext> Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><msub><mi>A</mi><mi>n</mi></msub><mo>−</mo><mi>μ</mi><mi mathvariant="normal">∣</mi><mo>≤</mo><mi>δ</mi><mo stretchy="false">]</mo><mo>=</mo><mtext> </mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_\infty \ \text{Pr}[|A_n - \mu| \leq \delta] = \ 1</annotation></semantics></math></span></eqn></section></p>
+<p>Another way of saying it is:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi mathvariant="normal">∞</mi></munder><mtext> Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><msub><mi>A</mi><mi>n</mi></msub><mo>−</mo><mi>μ</mi><mi mathvariant="normal">∣</mi><mo>&gt;</mo><mi>δ</mi><mo stretchy="false">]</mo><mo>=</mo><mtext> </mtext><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_\infty \ \text{Pr}[|A_n - \mu| \gt \delta] = \ 0</annotation></semantics></math></span></eqn></section></p>
+<p>So, as the number of trials increases, the probability that <em>the average differs from the expectation more than delta</em> goes to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>.</p>
+<p><em>As the number of trials increases, the difference between the observed average and the theoretical average gets smaller.</em></p>
+<p><span style="font-size: 18px;">For a clear example to understand the concept of the Law of Large Numbers, <a href="https://www.youtube.com/watch?v=ihTpK6dXSas">The Organic Chemistry Tutor's video</a> is really great.</span></p>
+<hr>
+<p>Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>R</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><msub><mi>R</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">R_1, \ R_2, \ ..., \ R_n</annotation></semantics></math></span></eq> be pairwise independent random variables with same mean <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span></eq> and variance <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>σ</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sigma^2</annotation></semantics></math></span></eq>.<br>
+Their average <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">A_n</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>R</mi><mn>1</mn></msub><mtext> </mtext><mo>+</mo><mtext> </mtext><msub><mi>R</mi><mn>2</mn></msub><mtext> </mtext><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><msub><mi>R</mi><mi>n</mi></msub></mrow><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{R_1 \ + \ R_2 \ + \ ... \ + \ R_n}{n}</annotation></semantics></math></span></eq>.</p>
+<p>So, <em>the probability that their average differs from the mean by more than a given tolerance delta</em> is:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi mathvariant="normal">∣</mi><msub><mi>A</mi><mi>n</mi></msub><mo>−</mo><mi>μ</mi><mi mathvariant="normal">∣</mi><mo>&gt;</mo><mi>δ</mi><mo stretchy="false">]</mo><mo>≤</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">(</mo><mfrac><mi>σ</mi><mi>δ</mi></mfrac><msup><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{Pr}[|A_n - \mu| \gt \delta] \leq \frac{1}{n}\bigg(\frac{\sigma}{\delta}\bigg)^2</annotation></semantics></math></span></eqn></section><p>It is the <mark>Pairwise Independent Sampling Theorem</mark>.</p>
+<hr>
+<blockquote>
+<p><em>Confidence levels</em> refer to the results of estimation procedures for real-world quantities.</p>
+</blockquote>
+<p>So, when some facts are told to have high confidence level, the important thing to remember is that <em>behind this claim, a random experiment lies</em>.</p>
+<p><a href="https://imgs.xkcd.com/comics/significant.png"><em>95% confidence level is most common</em></a>, and as mentioned in the course video, <a href="https://xkcd.com/882/">this xkcd comic</a> illustrates the topic:</p>
+<p><img src="https://imgs.xkcd.com/comics/significant.png" alt="xkcd 882"></p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">previous</a></li><li><a href="/unit-04-probability/random-walks-and-pagerank/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

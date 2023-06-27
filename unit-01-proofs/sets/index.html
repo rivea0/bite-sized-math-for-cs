@@ -1,0 +1,444 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Sets</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Sets</h1>
+<p>There are a lot of things to talk about when it comes to sets.<br>
+Since it is <a href="/prerequisites-and-resources">assumed</a> that you already know about things like union, intersection, etc., we're not going to go over set operations.</p>
+<p>Some popular sets you might know are:</p>
+<table>
+<thead>
+<tr>
+<th><strong>symbols</strong></th>
+<th><strong>set</strong></th>
+<th><strong>elements</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math></span></eq></td>
+<td><em>the empty set</em></td>
+<td>none</td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span></eq></td>
+<td><em>natural numbers</em> (or, <em>nonnegative integers</em> if you don't like to get political)</td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0, \ 1, \ 2, \ ...\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math></span></eq></td>
+<td><em>integers</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><mo>−</mo><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{..., \ -2, \ -1, \ 0, \ 1, \ 2, \ ...\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Q</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math></span></eq></td>
+<td><em>rational numbers</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo separator="true">,</mo><mtext> </mtext><mo>−</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo separator="true">,</mo><mtext> </mtext><mn>16</mn><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mi>t</mi><mi>c</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\frac{1}{2}, \ -\frac{4}{3}, \ 16, \ etc.</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math></span></eq></td>
+<td><em>real numbers</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mo separator="true">,</mo><mtext> </mtext><mo>−</mo><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><msqrt><mn>2</mn></msqrt><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mi>t</mi><mi>c</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\pi, \ e, \ -3, \ \sqrt{2}, \ etc.</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">C</mi></mrow><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math></span></eq></td>
+<td><em>complex numbers</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo separator="true">,</mo><mtext> </mtext><mfrac><mn>19</mn><mn>2</mn></mfrac><mo separator="true">,</mo><mtext> </mtext><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>2</mn><mi>i</mi><mo separator="true">,</mo><mtext> </mtext><mi>e</mi><mi>t</mi><mi>c</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">i, \ \frac{19}{2}, \ \sqrt{2} - 2i, \ etc.</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Look at this formula:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi><mo>=</mo><mi mathvariant="normal">∀</mi><mi>x</mi><mo stretchy="false">[</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mo>∈</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A \subseteq B = \forall x [x \in A \implies x \in B]</annotation></semantics></math></span></eq></p>
+<p>This is the <em>subset</em> notation (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊆</mo></mrow><annotation encoding="application/x-tex">\subseteq</annotation></semantics></math></span></eq>), and the formula says that for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>, if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>. It also implies that both sets are equal.<br>
+When talking about a <em>proper subset</em>, the notation is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊂</mo></mrow><annotation encoding="application/x-tex">\subset</annotation></semantics></math></span></eq>, for example <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \subset B</annotation></semantics></math></span></eq>. That means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is a proper subset of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, and they are <strong>not</strong> equal.</p>
+<h3>Why is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math></span></eq> is a subset of every set?</h3>
+<p>Well, think of this: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\varnothing \subseteq B</annotation></semantics></math></span></eq>. That means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo stretchy="false">[</mo><mi>x</mi><mo>∈</mo><mi mathvariant="normal">∅</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mo>∈</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\forall x [x \in \varnothing \implies x \in B]</annotation></semantics></math></span></eq>.<br>
+That is an implication. The first part of it is clearly false, there is nothing in an empty set, yet we say <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">x \in \varnothing</annotation></semantics></math></span></eq>. Remember that in an implication, when the antecedent (the &quot;if part&quot;) is false, no matter what follows, the whole statement is true. So, both the statements <strong>F <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span></eq> T</strong> and <strong>F <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span></eq> F</strong> are true. It doesn't matter if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> is in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> or not, since <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">x \in \varnothing</annotation></semantics></math></span></eq> is clearly false, the whole statement is true.</p>
+<hr>
+<p>A <mark>power set</mark> is the set of all subsets of a set.</p>
+<p>For example, if our set is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{T, F\}</annotation></semantics></math></span></eq> then its power set is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">{</mo><mi>T</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>F</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>T</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\{T\}, \{F\}, \{T, F\}, \varnothing\}</annotation></semantics></math></span></eq>.</p>
+<p>Another example is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">Z</mi><mo>+</mo></msup><mo>∈</mo><mi>p</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi mathvariant="double-struck">Z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}^+ \in pow(\mathbb{Z})</annotation></semantics></math></span></eq>. It says that the set of positive integers is in the power set of integers.</p>
+<hr>
+<p><mark>Difference</mark> is <em>every element in set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and not in set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq></em>:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>−</mo><mi>B</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo stretchy="false">)</mo><mo>∩</mo><mo stretchy="false">(</mo><mi>x</mi><mo mathvariant="normal">∉</mo><mi>B</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A - B = \{x \ | \ (x \in A) \cap (x \notin B)\}</annotation></semantics></math></span></eqn></section></p>
+<p>The <mark>complement</mark> of a set is the set of all elements that are not in that set. It is denoted with an overline, like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>B</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{B}</annotation></semantics></math></span></eq>.</p>
+<p>An example, <em>if the domain we’re working with is the integers, then the <strong>complement</strong> of the nonnegative integers is the set of negative integers</em>: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi mathvariant="double-struck">N</mi><mo stretchy="true">‾</mo></mover><mo>=</mo><msup><mi mathvariant="double-struck">Z</mi><mo>−</mo></msup></mrow><annotation encoding="application/x-tex">\overline{\mathbb{N}} = \mathbb{Z}^-</annotation></semantics></math></span></eq>.</p>
+<hr>
+<h3>Finite Cardinality</h3>
+<p>When a set is finite, the number of elements it has is called its size, or <mark><em>cardinality</em></mark>, and it is denoted as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math></span></eq>.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math></span></eq> means the &quot;number of elements in set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>&quot;.</p>
+<hr>
+<p>There are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span></eq> number of subsets of a set that has <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> elements: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mo stretchy="false">(</mo><mi mathvariant="normal">∣</mi><mi>p</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mi mathvariant="normal">∣</mi><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(|A| = n) \implies (|pow(A)| = 2^n)</annotation></semantics></math></span></eq></p>
+<p>But, why is that?</p>
+<h3>Why is the size of a power set is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span></eq>?</h3>
+<p>Alright, we are going to use a string representation for all possible subsets, where an element can be in it, or not.<br>
+We're going to put <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> where the element exists in the set but not in the subset, and we're going to put <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> where the element exists both in the set and the subset.</p>
+<p>Let's say that our set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\}</annotation></semantics></math></span></eq>.</p>
+<p>We can say a subset could be the one where none of the elements exist — which is indeed the empty set, so we can represent it as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0, 0, 0</annotation></semantics></math></span></eq>.</p>
+<p>Another possibility is a subset where only <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> exists — we will represent it as such: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1, 0, 0</annotation></semantics></math></span></eq>. This is the subset <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a\}</annotation></semantics></math></span></eq>.</p>
+<p>Going on like this, let's see all the possibilities:</p>
+<table>
+<thead>
+<tr>
+<th><strong>string</strong></th>
+<th><strong>subset</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0, 0, 0</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\varnothing</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1, 0, 0</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0, 1, 0</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{b\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0, 0, 1</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{c\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1, 1, 0</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1, 0, 1</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, c\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0, 1, 1</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{b, c\}</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>1</mn><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1, 1, 1</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a, b, c\}</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<p>This is indeed our power set, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>o</mi><mi>w</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">pow(A)</annotation></semantics></math></span></eq> which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>c</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo><mo separator="true">,</mo><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">}</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\varnothing, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\}\}</annotation></semantics></math></span></eq>.</p>
+<p>The number of string representations (the number of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> bit strings) is the same as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span></eq>, which is the size of our power set!</p>
+<p>In our case, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq>, so the size of our power set is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn></mrow><annotation encoding="application/x-tex">8</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>And, here are some set identities:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Identity Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi mathvariant="normal">∅</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cup \varnothing = A</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>U</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap U = A</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Domination Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>U</mi><mo>=</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">A \cup U = U</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi mathvariant="normal">∅</mi><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">A \cap \varnothing = \varnothing</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Idempotent Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>A</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cup A = A</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>A</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap A = A</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Complementation Law</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>A</mi><mo stretchy="true">‾</mo></mover><mo stretchy="false">)</mo></mrow><mo stretchy="true">‾</mo></mover><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\overline{(\overline A)} = A</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Commutative Law</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>∪</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cup B = B \cup A</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>B</mi><mo>∩</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap B = B \cap A</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Associative Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∪</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \cup (B \cup C) = (A \cup B) \cup C</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \cap (B \cap C) = (A \cap B) \cap C</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Distributive Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∪</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A \cap (B \cup C) = (A \cap B) \cup (A \cap B)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo><mo>∩</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A \cup (B \cap C) = (A \cup B) \cap (A \cup B)</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>De Morgan's Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo stretchy="true">‾</mo></mover><mo>=</mo><mover accent="true"><mi>A</mi><mo stretchy="true">‾</mo></mover><mo>∩</mo><mover accent="true"><mi>B</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{A \cup B} = \overline A \cap \overline B</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo stretchy="true">‾</mo></mover><mo>=</mo><mover accent="true"><mi>A</mi><mo stretchy="true">‾</mo></mover><mo>∪</mo><mover accent="true"><mi>B</mi><mo stretchy="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">\overline{A \cap B} = \overline A \cup \overline B</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Absorption Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cup (A \cap B) = A</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mo stretchy="false">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \cap (A \cup B) = A</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Complement Laws</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mover accent="true"><mi>A</mi><mo stretchy="true">‾</mo></mover><mo>=</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">A \cup \overline{A} = U</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mover accent="true"><mi>A</mi><mo stretchy="true">‾</mo></mover><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">A \cap \overline{A} = \varnothing</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>For a deep dive into an introduction to set theory, you can check out <a href="https://builds.openlogicproject.org/courses/set-theory/">this wonderful book</a> from <a href="https://openlogicproject.org/">Open Logic Project</a>.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/quantifiers-and-predicate-logic/">previous</a></li><li><a href="/unit-01-proofs/binary-relations/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

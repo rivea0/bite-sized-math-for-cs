@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Euler&#39;s Theorem</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Euler's Theorem</h1>
+<p>We're going to briefly look at <a href="https://en.wikipedia.org/wiki/Euler%27s_totient_function">Euler's totient function</a>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(n)</annotation></semantics></math></span></eq>.</p>
+<p>It is defined as:</p>
+<p>For <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \gt 0</annotation></semantics></math></span></eq>,<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mtext>the number of integers in </mtext><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> that are relatively prime to </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">\phi(n) = \text{the number of integers in } [0, \ n), \text{ that are relatively prime to } n</annotation></semantics></math></span></eqn></section></p>
+<p><em>Note: We can also use the interval <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(0, \ n)</annotation></semantics></math></span></eq> because <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> is not relatively prime to anything.</em></p>
+<p>In other words, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(n)</annotation></semantics></math></span></eq> is the number of all positive integers up to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> that are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>.</p>
+<p>We can also say that if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> are relatively prime, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(k, \ n) = 1</annotation></semantics></math></span></eq>.<br>
+As we've seen in the <a href="/unit-02-structures/congruences">previous section</a>, it also means that it'll be the numbers that have inverses and are cancellable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq>.</p>
+<p>Let's call this set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n</annotation></semantics></math></span></eq>, and write it as: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>k</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{k \in [0, \ n) \ | \ \text{gcd}(k, \ n) = 1\}</annotation></semantics></math></span></eq>.</p>
+<p>Then, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">\phi(n) = |\mathbb{Z}^*_n|</annotation></semantics></math></span></eq>.</p>
+<p>A simple example is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\phi(7) = 6</annotation></semantics></math></span></eq>.<br>
+All <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span></eq> positive integers up to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 2, \ 3, \ 4, \ 5, \ 6\}</annotation></semantics></math></span></eq>) are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq>.<br>
+Another example is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\phi(12) = 4</annotation></semantics></math></span></eq>. All positive integers that are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn></mrow><annotation encoding="application/x-tex">12</annotation></semantics></math></span></eq> in that interval are <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn></mrow><annotation encoding="application/x-tex">1, \ 5, \ 7</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn></mrow><annotation encoding="application/x-tex">11</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is prime, everything in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">[1, \ p)</annotation></semantics></math></span></eq> is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq>.<br>
+Therefore, when <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is prime, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\phi(p) = p - 1</annotation></semantics></math></span></eq>, as we've seen with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\phi(7) = 6</annotation></semantics></math></span></eq>.</p>
+<p>Let's look at another example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(9)</annotation></semantics></math></span></eq>.<br>
+We can also write it as <em>a power of a prime</em>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><msup><mn>3</mn><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(3^2)</annotation></semantics></math></span></eq>.</p>
+<p>Here is the reasoning: a number is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span></eq> iff it is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq>. Because <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq> divides <em>every third number</em> in that interval (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>, <em><strong>3</strong></em>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq>, <em><strong>6</strong></em>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn></mrow><annotation encoding="application/x-tex">8</annotation></semantics></math></span></eq>), every third number will <em>not</em> be relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span></eq>.<br>
+So, it will be the set of all numbers minus <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span></eq> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn></mrow><annotation encoding="application/x-tex">9</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo><mo>=</mo><mn>9</mn><mo>−</mo><mn>9</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo stretchy="false">)</mo><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\phi(9) = 9 - 9(\frac{1}{3}) = 6</annotation></semantics></math></span></eq>.</p>
+<p>We can generalize, and say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>p</mi><mi>k</mi></msup><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{p^k}{p}</annotation></semantics></math></span></eq> of the numbers in that interval will <strong>not</strong> be relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">p^k</annotation></semantics></math></span></eq>.<br>
+Therefore, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><msup><mi>p</mi><mi>k</mi></msup><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mi>k</mi></msup><mo>−</mo><mfrac><msup><mi>p</mi><mi>k</mi></msup><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">\phi(p^k) = p^k - \frac{p^k}{p}</annotation></semantics></math></span></eq>.<br>
+To write it more simply:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><msup><mi>p</mi><mi>k</mi></msup><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mi>k</mi></msup><mo>−</mo><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\phi(p^k) = p^k - p^{k - 1}</annotation></semantics></math></span></eqn></section><p>What if the number we're dealing with is not a power of a prime, like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn></mrow><annotation encoding="application/x-tex">12</annotation></semantics></math></span></eq> as we've just seen?</p>
+<p>One fact is that if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> are relatively prime, then</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(ab) = \phi(a)\phi(b)</annotation></semantics></math></span></eqn></section><p>This is called <mark>multiplicativity</mark>; <em>a function is multiplicative when its value at a product of relatively prime numbers is the product of the values at those two relatively prime numbers</em>.<br>
+Again, if English is confusing, here is the same thing put more precisely: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mi>f</mi><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(ab) = f(a) f(b)</annotation></semantics></math></span></eq>.</p>
+<p>That means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span></eq> is a multiplicative function.</p>
+<p>Okay, let's go back to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(12)</annotation></semantics></math></span></eq>. We can now write it as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(3 \cdot 4)</annotation></semantics></math></span></eq>. That also means, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(12) = \phi(3) \cdot \phi(4)</annotation></semantics></math></span></eq>.<br>
+Our job is easy, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq> is a prime already, and we can write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span></eq> as a power of a prime, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2^2</annotation></semantics></math></span></eq>.<br>
+If we use the formulas we've just seen, then we can write the whole thing as:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>3</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mo stretchy="false">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo>−</mo><msup><mn>2</mn><mrow><mn>2</mn><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(3 - 1) \cdot (2^2 - 2^{2 - 1})</annotation></semantics></math></span></eq>.<br>
+That means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mo stretchy="false">(</mo><mn>4</mn><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 \cdot (4 - 2)</annotation></semantics></math></span></eq>, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span></eq>.<br>
+So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>12</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\phi(12) = 4</annotation></semantics></math></span></eq> — the size of the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo separator="true">,</mo><mtext> </mtext><mn>11</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 5, \ 7, \ 11\}</annotation></semantics></math></span></eq>. And, we're done.</p>
+<p>Isn't it elegant?</p>
+<p>So, to summarize, aside from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\phi(p) = p - 1</annotation></semantics></math></span></eq> when <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is a prime, we've seen two other rules:</p>
+<blockquote>
+<p><em>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is a prime, then</em><br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><msup><mi>p</mi><mi>k</mi></msup><mo stretchy="false">)</mo><mo>=</mo><msup><mi>p</mi><mi>k</mi></msup><mo>−</mo><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mtext> for </mtext><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\phi(p^k) = p^k - p^{k-1} \text{ for } k \geq 1</annotation></semantics></math></span></eqn></section></p>
+</blockquote>
+<blockquote>
+<p><em>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> are relatively prime, then</em><br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mi>ϕ</mi><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(ab) = \phi(a)\phi(b)</annotation></semantics></math></span></eqn></section></p>
+</blockquote>
+<hr>
+<p>Let's look at a wonderful thing.</p>
+<p>We used <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\phi(7)</annotation></semantics></math></span></eq> example, the result was <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span></eq> as it was the size of the set of those that are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq>: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 2, \ 3, \ 4, \ 5, \ 6\}</annotation></semantics></math></span></eq>.</p>
+<p>We called this set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n</annotation></semantics></math></span></eq>.<br>
+Now, if we take any number <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n</annotation></semantics></math></span></eq>, and multiply it by each number in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n</annotation></semantics></math></span></eq>, we'll still get the same set (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">\text{mod }n</annotation></semantics></math></span></eq>), but in a different order:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup><mo>=</mo><mi>k</mi><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup><mtext> for </mtext><mi>k</mi><mo>∈</mo><msubsup><mi mathvariant="double-struck">Z</mi><mi>n</mi><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_n = k \mathbb{Z}^*_n \text{ for } k \in \mathbb{Z}^*_n</annotation></semantics></math></span></eqn></section><p>So, in our example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mn>7</mn><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_7</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 2, \ 3, \ 4, \ 5, \ 6\}</annotation></semantics></math></span></eq>.<br>
+Let's pick any <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq>, for example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq>.<br>
+Multiplying each item in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mn>7</mn><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_7</annotation></semantics></math></span></eq>, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>10</mn><mo separator="true">,</mo><mtext> </mtext><mn>15</mn><mo separator="true">,</mo><mtext> </mtext><mn>20</mn><mo separator="true">,</mo><mtext> </mtext><mn>25</mn><mo separator="true">,</mo><mtext> </mtext><mn>30</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{5, \ 10, \ 15, \ 20, \ 25, \ 30\}</annotation></semantics></math></span></eq>, and of course, since it has to be in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(7)</annotation></semantics></math></span></eq>, it is the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{5, \ 3, \ 1, \ 6, \ 4, \ 2\}</annotation></semantics></math></span></eq>. It is the same set!</p>
+<p>We can try it with a different number in the set, say <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>.<br>
+This time we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo separator="true">,</mo><mtext> </mtext><mn>8</mn><mo separator="true">,</mo><mtext> </mtext><mn>10</mn><mo separator="true">,</mo><mtext> </mtext><mn>12</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{2, \ 4, \ 6, \ 8, \ 10, \ 12\}</annotation></semantics></math></span></eq>, and since this is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="double-struck">Z</mi><mn>7</mn><mo>∗</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^*_7</annotation></semantics></math></span></eq>, it is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo separator="true">,</mo><mtext> </mtext><mn>6</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{2, \ 4, \ 6, \ 1, \ 3, \ 5\}</annotation></semantics></math></span></eq>. The same set again!</p>
+<hr>
+<p>In terms of congruence, we can also say that if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> are relatively prime, then:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>k</mi><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo>≡</mo><mn>1</mn><mtext>   mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k^{\phi(n)} \equiv 1 \ \ \ \text{mod}(n)</annotation></semantics></math></span></eqn></section><p>Let's say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq>.</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></msup><mo>≡</mo><mn>1</mn><mtext>   mod</mtext><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2^{\phi(5)} \equiv 1 \ \ \ \text{mod}(5)</annotation></semantics></math></span></eq></p>
+<p>Those that are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq> less than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq> is the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 2, \ 3, \ 4\}</annotation></semantics></math></span></eq>. Its size is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span></eq>, so <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\phi(5) = 4</annotation></semantics></math></span></eq>:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>≡</mo><mn>1</mn><mtext>   mod</mtext><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2^4 \equiv 1 \ \ \ \text{mod}(5)</annotation></semantics></math></span></eq></p>
+<p>And, it is correct:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>≡</mo><mn>1</mn><mtext>   mod</mtext><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">16  \equiv 1 \ \ \ \text{mod}(5)</annotation></semantics></math></span></eq></p>
+<hr>
+<p><em>Fermat's Little Theorem</em> states,</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>k</mi><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k^{p - 1} \equiv 1 \ \ \text{mod}(p)</annotation></semantics></math></span></eqn></section><p>So, for example, the remainder of dividing <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msup><mn>4</mn><mn>78</mn></msup></mrow><annotation encoding="application/x-tex">24^{78}</annotation></semantics></math></span></eq> by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>79</mn></mrow><annotation encoding="application/x-tex">79</annotation></semantics></math></span></eq> will be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> — that is, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mn>2</mn><msup><mn>4</mn><mn>78</mn></msup><mo separator="true">,</mo><mtext> </mtext><mn>79</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{rem}(24^{78}, \ 79) = 1</annotation></semantics></math></span></eq>, or <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msup><mn>4</mn><mn>78</mn></msup><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mn>79</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">24^{78} \equiv 1 \ \ \text{mod}(79)</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>For primes <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq>,</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mi>p</mi><mi>q</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mtext> for primes </mtext><mi>p</mi><mo mathvariant="normal">≠</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\phi(pq) = (p - 1)(q - 1) \text{ for primes } p \neq q</annotation></semantics></math></span></eqn></section><p>A simple example, let's say <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq>.<br>
+So, this has to be true: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\phi(10) = 1 \cdot 4</annotation></semantics></math></span></eq>.</p>
+<p>The set of those relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span></eq> that are less than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>3</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo separator="true">,</mo><mtext> </mtext><mn>9</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ 3, \ 7, \ 9\}</annotation></semantics></math></span></eq>.<br>
+Indeed, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\phi(10) = 4</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>An example. We're asked</p>
+<blockquote>
+<p>How many numbers between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3780</mn></mrow><annotation encoding="application/x-tex">3780</annotation></semantics></math></span></eq> (inclusive) are relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3780</mn></mrow><annotation encoding="application/x-tex">3780</annotation></semantics></math></span></eq>?</p>
+</blockquote>
+<p>We know that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3780</mn></mrow><annotation encoding="application/x-tex">3780</annotation></semantics></math></span></eq> is not a prime. One thing to do is to either write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3780</mn></mrow><annotation encoding="application/x-tex">3780</annotation></semantics></math></span></eq> as a power of a prime, or write it as the product of two numbers that are relatively prime.<br>
+We can write it as the product of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>540</mn></mrow><annotation encoding="application/x-tex">540</annotation></semantics></math></span></eq>.<br>
+Then, we can solve this using the <code>gcd</code> function we used before, and newly defined <code>ring</code> and <code>phi</code> functions:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">gcd</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> y <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> x
+    <span class="token keyword">return</span> gcd<span class="token punctuation">(</span>y<span class="token punctuation">,</span> x <span class="token operator">%</span> y<span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">ring</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>i <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token keyword">if</span> gcd<span class="token punctuation">(</span>i<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">]</span>
+
+
+<span class="token keyword">def</span> <span class="token function">phi</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token builtin">len</span><span class="token punctuation">(</span>ring<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+a <span class="token operator">=</span> <span class="token number">7</span>
+b <span class="token operator">=</span> <span class="token number">540</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>phi<span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">*</span> phi<span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># -> Answer: 864</span></code></pre>
+<p>The answer is indeed <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>864</mn></mrow><annotation encoding="application/x-tex">864</annotation></semantics></math></span></eq>.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/congruences/">previous</a></li><li><a href="/unit-02-structures/rsa-encryption/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

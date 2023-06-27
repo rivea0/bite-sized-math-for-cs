@@ -1,0 +1,321 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Partial Orders and Equivalence</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Partial Orders and Equivalence</h1>
+<p>Remember that a digraph is a binary relation where the domain and codomain are the vertices.</p>
+<p>Let's say that a relation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">R : A \rightarrow A</annotation></semantics></math></span></eq> is a digraph with vertices <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>.</p>
+<p>We can say that</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>reflexive</mark> when every vertex has a self-loop:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x \in A. \ x \ R \ x</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>irreflexive</mark> when there are no self-loops:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">¬</mi><mo stretchy="false">[</mo><mi mathvariant="normal">∃</mi><mi>x</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\neg[\exists x \in A. \ x \ R \ x]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>symmetric</mark> if there is an edge from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq>, there is an edge back from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi></mrow><annotation encoding="application/x-tex">\forall x, \ y \in A. \ x \ R \ y \implies y \ R \ x</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>asymmetric</mark> when there is at most one directed edge between any two vertices, and there are no self-loops:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x, \ y \in A. \ x \ R \ y \implies \neg(y \ R \ x)</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>antisymmetric</mark> when there is at most one directed edge between any two distinct vertices, but there may be self-loops:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo mathvariant="normal">≠</mo><mi>y</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x \neq y \in A. \ x \ R \ y \implies \neg(y \ R \ x)</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td style="text-align:left">that is,</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mo>∧</mo><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\forall x, \ y \in A. \ (x \ R \ y \land y \ R \ x) \implies x = y</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>transitive</mark> if there is a positive length path from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>, then there is an edge from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo separator="true">,</mo><mtext> </mtext><mi>z</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mo>∧</mo><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>z</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>z</mi></mrow><annotation encoding="application/x-tex">\forall x, \ y, \ z \in A. \ (x \ R \ y \land y \ R \ z) \implies x \ R \ z</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is <mark>linear</mark> when given any two vertices, there is an edge between them in one direction or the other:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo mathvariant="normal">≠</mo><mi>y</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>x</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>y</mi><mo>∨</mo><mi>y</mi><mtext> </mtext><mi>R</mi><mtext> </mtext><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x \neq y \in A. \ (x \ R \ y \lor y \ R \ x)</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Let's now define what is called a <mark>strict partial order</mark>:</p>
+<blockquote>
+<p>A relation that is transitive and irreflexive is called a <em>strict partial order</em>.</p>
+</blockquote>
+<p><em>Transitivity</em> says that merging a walk from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> with a walk from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span></eq> gives a walk from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">w</annotation></semantics></math></span></eq>.</p>
+<p><em>Irreflexivity</em> says that there is no positive length walk from a vertex to itself.</p>
+<p>We defined them using graph terminology, but we can even think of an example for a strict partial order that has nothing to do with graphs at all. Imagine the &quot;less than&quot; operation:<br>
+If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x \lt y</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&lt;</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">y \lt z</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x \lt z</annotation></semantics></math></span></eq>. It is transitive.<br>
+Since <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≮</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x \nless x</annotation></semantics></math></span></eq> implies irreflexivity, we can say that the &quot;less than&quot; operation is both transitive and irreflexive.</p>
+<hr>
+<p>One distinction to note is that in <em>asymmetry</em>, self-loops are never allowed; it is <em>antisymmetry</em> that allows it. Since asymmetry implies irreflexivity, we can now better define strict partial orders:</p>
+<blockquote>
+<p>A binary relation <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> on a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is a <em>strict partial order</em> iff it is transitive and asymmetric.</p>
+</blockquote>
+<p>Aside from strict partial orders, there are also <mark>weak partial orders</mark>. They allow self-loops:</p>
+<blockquote>
+<p>A binary relation on a set is a <em>weak partial order</em> iff it is transitive, reflexive, and antisymmetric.</p>
+</blockquote>
+<hr>
+<p>If you have two different numbers, one will be larger than the other. Partial orders with this property are called <mark>linear orders</mark>. They are also called <mark>total orders</mark>.</p>
+<hr>
+<p>An <mark>equivalence relation</mark> is a relation that is reflexive, transitive, and symmetric.</p>
+<p>A trivial example of an equivalence relation is equality (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo></mrow><annotation encoding="application/x-tex">=</annotation></semantics></math></span></eq>). It's reflexive, transitive, and symmetric.</p>
+<p>One thing to note that if there is a walk from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq>, and a walk from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> (the symmetry property), it is also said that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> are <em>strongly connected</em>.</p>
+<p>The strong connectedness relation in a digraph is an equivalence relation.</p>
+<p>There are also <mark>equivalence classes</mark>:</p>
+<blockquote>
+<p>The <em>equivalence classes</em> of an equivalence relation on a set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> are the blocks of a partition of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>.</p>
+</blockquote>
+<p><em>Note: We mentioned <strong>partition</strong> briefly in the <a href="/unit-02-structures/directed-acyclic-graphs/">previous section</a>.</em></p>
+<hr>
+<p>Graphs with the same connections are called <mark>isomorphic</mark>.<br>
+When there is an <em>edge-preserving bijection</em> between two graphs, it means that they are isomorphic.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/directed-acyclic-graphs/">previous</a></li><li><a href="/unit-02-structures/degrees-and-isomorphism/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

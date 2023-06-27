@@ -1,0 +1,216 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Pigeonhole Principle, Inclusion-Exclusion</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Pigeonhole Principle, Inclusion-Exclusion</h1>
+<p>So, the pigeonhole principle. All that it says is this:</p>
+<blockquote>
+<p>If there are more pigeons than pigeonholes, that means some holes must have more than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> pigeons.</p>
+</blockquote>
+<p>It is a mapping rule: if there is a total injection from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>≤</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| \leq |B|</annotation></semantics></math></span></eq>.<br>
+That means, if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>&gt;</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| \gt |B|</annotation></semantics></math></span></eq>, there is no total injection.</p>
+<p>If we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> pigeons and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span></eq> holes, then some hole has more than or equal to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌈</mo><mfrac><mi>n</mi><mi>h</mi></mfrac><mo stretchy="false">⌉</mo></mrow><annotation encoding="application/x-tex">\lceil \frac{n}{h} \rceil</annotation></semantics></math></span></eq> (ceiling of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>n</mi><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{n}{h}</annotation></semantics></math></span></eq>, <em>ceiling</em> being the rounded up value, e.g., <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">⌈</mo><mn>2.0001</mn><mo stretchy="false">⌉</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\lceil 2.0001 \rceil = 3</annotation></semantics></math></span></eq>).</p>
+<p>For example, let's say we have 7 pigeons and 6 pigeonholes. Dividing <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq> by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.16</mn></mrow><annotation encoding="application/x-tex">1.16</annotation></semantics></math></span></eq>, when we round up that value, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> as a result. So, one of the pigeonholes has <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> pigeons in it.</p>
+<p>Another example: ignoring leap years and assuming that one year has 365 days, the minimum number of people there has to be for at least 2 of them being born on the same day is 366.<br>
+Why is that? Well, imagine 365 people, there is a chance that each of them was born on different days. In order to make sure that at least 2 of them were born on the same day, there must be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k + 1</annotation></semantics></math></span></eq> people, making it 366.</p>
+<p>Let's look at another example from the practice section of the course.</p>
+<blockquote>
+<p>At a certain school, there are 11 different classes offered to first-year students, and each student must enroll in exactly 4 of them. How many students must be in one class year to guarantee that at least 2 students will have the same schedule?</p>
+</blockquote>
+<p>This is firstly an <em>n choose k</em> problem, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> being 11, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> being 4. In order to have at least 2 students have the same schedule, we need to add 1 to the result.</p>
+<p>So, what we need to do is this: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>11</mn><mo stretchy="false">!</mo></mrow><mrow><mn>4</mn><mo stretchy="false">!</mo><mo>⋅</mo><mo stretchy="false">(</mo><mn>11</mn><mo>−</mo><mn>4</mn><mo stretchy="false">)</mo><mo stretchy="false">!</mo></mrow></mfrac><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{11!}{4! \cdot (11 - 4)!} + 1</annotation></semantics></math></span></eq>.</p>
+<p>We have 331 as the answer, so, there must be 331 students in one class year to guarantee that at least 2 students have the same schedule.</p>
+<hr>
+<p>Let's take a look at the <mark>Principle of Inclusion-Exclusion</mark>.</p>
+<p>We looked at the sum rule before, remember it says that if there are two disjoint sets, the size of their sum is the sum of the size of the first set and the size of the other set: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B| = |A| + |B|</annotation></semantics></math></span></eq>.</p>
+<p>But, what if they are not disjoint? Like this:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Set_intersection.svg/320px-Set_intersection.svg.png" alt=""></p>
+<p>Then, we would simply have to subtract the intersection from the above equation, and this is the <em>principle of inclusion-exclusion</em>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B| = |A| + |B| - |A \cap B|</annotation></semantics></math></span></eqn></section><p>The reason is that when we count <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math></span></eq>, we have already counted the intersection, and when we count <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B|</annotation></semantics></math></span></eq>, that means we are doing it for the second time.</p>
+<p>Another way to look at it is that when <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> are not disjoint, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cup B</annotation></semantics></math></span></eq> is the union of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> and all that is in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> that is not in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mi>A</mi><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A \cup B = A \cup (B - A)</annotation></semantics></math></span></eqn></section><p>So, by the sum rule,</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B| = |A| + |B - A|</annotation></semantics></math></span></eqn></section><p>From the picture, it looks like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B - A|</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B| - |A \cap B|</annotation></semantics></math></span></eq>. If that's true, we can prove the Principle of Inclusion-Exclusion. So in order to do that, let's prove this lemma which says <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B - A| = |B| - |A \cap B|</annotation></semantics></math></span></eq>.</p>
+<p>We can break the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> into two pieces, two disjoint sets: the intersection part, and the rest:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy="false">(</mo><mi>B</mi><mo>∩</mo><mi>A</mi><mo stretchy="false">)</mo><mo>∪</mo><mo stretchy="false">(</mo><mi>B</mi><mo>−</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">B = (B \cap A) \cup (B - A)</annotation></semantics></math></span></eqn></section><p>Therefore, by the sum rule:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mo>∩</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B| = |B \cap A| + |B - A|</annotation></semantics></math></span></eqn></section><p>With a little arrangement, we see that</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B - A| = |B| - |A \cap B|</annotation></semantics></math></span></eqn></section><p>which was our starting point.</p>
+<p>Plugging this definition of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B - A|</annotation></semantics></math></span></eq> into <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B| = |A| + |B - A|</annotation></semantics></math></span></eq>, we see:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B| = |A| + |B| - |A \cap B|</annotation></semantics></math></span></eqn></section><p>Therefore, it proves our lemma, and the Principle of Inclusion-Exclusion. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">■</mi></mrow><annotation encoding="application/x-tex">\blacksquare</annotation></semantics></math></span></eq></p>
+<hr>
+<p>What if we have three sets?<br>
+In that case, we would still subtract the intersections, but if we do, there will still be a small section where all the sets intersect that we need to add back in:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mi>B</mi><mo>∪</mo><mi>C</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>C</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B|- |A \cap C| - |B \cap C| + |A \cap B \cap C|</annotation></semantics></math></span></eqn></section><p>This picture taken from the slides of the lecture helps visualize it:</p>
+<img src="../images/inc-exc.png" alt="Inclusion-Exclusion" width="50%">
+<p>One thing to realize is that intersections with odd number of sets occur positively, and those with even numbers occur negatively. For example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cap B|</annotation></semantics></math></span></eq>, or <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cap C|</annotation></semantics></math></span></eq>, or, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|B \cap C|</annotation></semantics></math></span></eq> are intersections with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> sets, and they show up with a negative sign. But, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∩</mo><mi>B</mi><mo>∩</mo><mi>C</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cap B \cap C|</annotation></semantics></math></span></eq> has three sets, and it has a positive sign.</p>
+<p>So, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> sets that are overlapping, and want to know the size of their union, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∪</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>∪</mo><msub><mi>A</mi><mi>n</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A_1 \cup A_2 \cup \ ... \ \cup A_n|</annotation></semantics></math></span></eq>.<br>
+We can express it as the sum of the sizes of the intersections, the sizes of the intersection <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A_i</annotation></semantics></math></span></eq>'s that are in this set of indices.<br>
+We need to specify the <em>sign</em> of that particular size of intersection, if it is odd, we want to add it with a positive sign; if it's even, we add it negatively. We can use <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mrow><mi mathvariant="normal">∣</mi><mi>S</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(-1)^{|S| + 1}</annotation></semantics></math></span></eq>. If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>S</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|S|</annotation></semantics></math></span></eq> (the size of the intersection) is an odd number, it will be positive; if it's even, it'll be negative.</p>
+<p>To write it down precisely:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi mathvariant="normal">∅</mi><mo mathvariant="normal">≠</mo><mi>S</mi><mo>⊆</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">}</mo></mrow></munder><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><msup><mo stretchy="false">)</mo><mrow><mi mathvariant="normal">∣</mi><mi>S</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mn>1</mn></mrow></msup><mtext> </mtext><mrow><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">∣</mo><munder><mo>⋂</mo><mrow><mi>i</mi><mo>∈</mo><mi>S</mi></mrow></munder><msub><mi>A</mi><mi>i</mi></msub><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">∣</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{\varnothing \neq S \subseteq \{1, \ 2, \ ..., \ n\}} (-1)^{|S| + 1} \ {\Big| \bigcap_{i \in S} A_i \Big|}</annotation></semantics></math></span></eqn></section>
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-03-counting/repetitions-and-binomial-theorem/">previous</a></li><li><a href="/unit-04-probability/intro-to-discrete-probability/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

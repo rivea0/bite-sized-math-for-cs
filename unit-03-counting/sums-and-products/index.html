@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Sums &amp; Products</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p class="active-page-link">
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Sums &amp; Products</h1>
+<p>Alright, let's start with <mark>arithmetic sums</mark>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><mtext> first term </mtext><mo>+</mo><mtext> last term </mtext></mrow><mn>2</mn></mfrac><mo>⋅</mo><mtext> number of terms </mtext></mrow><annotation encoding="application/x-tex">A = \frac{\text{ first term } + \text{ last term }}{2} \cdot \text{ number of terms }</annotation></semantics></math></span></eqn></section><p>The sum of the first <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> integers (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1 + 2 + ... + (n - 1) + n</annotation></semantics></math></span></eq>) is:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n(1 + n)}{2}</annotation></semantics></math></span></eqn></section><p>Why?</p>
+<p>Say that we are looking for the sum of numbers from 1 to 5. What we are looking for is the answer to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">1 + 2 + 3 + 4 + 5</annotation></semantics></math></span></eq>.</p>
+<p>There is a constant amount of difference between each term, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>. The difference between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and so on.<br>
+That means, we can write it as</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mn>5</mn><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">1 + (1 + 1) + ... + (5 - 1) + 5</annotation></semantics></math></span></eqn></section><p>Let's use <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> to stand for our first term <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span></eq> to stand for our last term <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq>. We can also use <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span></eq> for the difference between terms, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is for the arithmetic sum, of course.</p>
+<p>Then, we can write it as</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>F</mi><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>L</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">A = F + (F + d) + ... + (L - d) + L</annotation></semantics></math></span></eqn></section><p>Addition is commutative, we can reverse the order of the terms:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mi>L</mi><mo>+</mo><mo stretchy="false">(</mo><mi>L</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">A = L + (L - d) + ... + (F + d) + F</annotation></semantics></math></span></eqn></section><p>Let's add those two together, and see what we have, because why not:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>F</mi><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>L</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">A = F + (F + d) + ... + (L - d) + L</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>L</mi><mo>+</mo><mo stretchy="false">(</mo><mi>L</mi><mo>−</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>d</mi><mo stretchy="false">)</mo><mo>+</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">A = L + (L - d) + ... + (F + d) + F</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><mrow><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mo>+</mo></mrow><mo stretchy="true">‾</mo></munder></mrow><annotation encoding="application/x-tex">\underline{\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad +}</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>L</mi><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>L</mi><mo stretchy="false">)</mo><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>L</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2A = (F + L) + (F + L) + ... + (F + L)</annotation></semantics></math></span></eq></p>
+<p>If you didn't catch it, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span></eq>'s are canceling out. And, what we have is</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>2</mn><mi>A</mi><mo>=</mo><mo stretchy="false">(</mo><mi>F</mi><mo>+</mo><mi>L</mi><mo stretchy="false">)</mo><mo>⋅</mo><mtext> the number of terms </mtext></mrow><annotation encoding="application/x-tex">2A = (F + L) \cdot \text{ the number of terms }</annotation></semantics></math></span></eqn></section><p>Dividing by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> to find <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, we get what we have started with:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mo>+</mo><mi>L</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">A = \frac{F + L}{2} \cdot n</annotation></semantics></math></span></eqn></section><p>Substituting our first and last terms, clearly we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>+</mo><mi>n</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\frac{1 + n}{2} \cdot n</annotation></semantics></math></span></eq>. We can also write it as</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{n(1 + n)}{2}</annotation></semantics></math></span></eqn></section><hr>
+<p>With <mark>geometric sums</mark>, each sum is a multiple of the previous sum.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">G_n = 1 + x + x^2 + ... + x^n</annotation></semantics></math></span></eq>.</p>
+<p>The formula we have to find that is this:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1 - x^{n + 1}}{1 - x}</annotation></semantics></math></span></eqn></section><p>Again, why?</p>
+<p>Let's use another trick, different from the one we used for arithmetic sums.</p>
+<p>This time let's multiply <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G_n</annotation></semantics></math></span></eq> by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq>. This will increase the power of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> in each term:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">xG_n = x + x^2 + x^3 + ... x^{n + 1}</annotation></semantics></math></span></eqn></section><p>Let's subtract it from the original <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G_n</annotation></semantics></math></span></eq>, because again, why not:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">G_n = 1 + x + x^2 + ... + x^n</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mi>x</mi><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">-xG_n = -x -x^2 -x^3 - ... x^{n + 1}</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder accentunder="true"><mrow><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mspace width="1em"/><mo>−</mo></mrow><mo stretchy="true">‾</mo></munder></mrow><annotation encoding="application/x-tex">\underline{\quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad -}</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>−</mo><mi>x</mi><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">G_n - xG_n = 1 - x^{n + 1}</annotation></semantics></math></span></eq></p>
+<p>What we end up having is</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>−</mo><mi>x</mi><msub><mi>G</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">G_n - xG_n = 1 - x^{n + 1}</annotation></semantics></math></span></eqn></section><p>We can factor <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G_n</annotation></semantics></math></span></eq> out to have:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">G_n (1 - x) = 1 - x^{n + 1}</annotation></semantics></math></span></eqn></section><p>That means, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G_n</annotation></semantics></math></span></eq> is</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1 - x^{n + 1}}{1 - x}</annotation></semantics></math></span></eqn></section><hr>
+<p>We had simple formulas for arithmetic and geometric sums, but this time, we'll look at a formula that can give an estimation.</p>
+<p>Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi mathvariant="double-struck">R</mi><mo>+</mo></msup><mo>→</mo><msup><mi mathvariant="double-struck">R</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">f : \mathbb{R}^+ \rightarrow \mathbb{R}^+</annotation></semantics></math></span></eq> be a weakly increasing function.</p>
+<p>The sum is:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">S = \displaystyle\sum_{i = 1}^n f(i)</annotation></semantics></math></span></eqn></section><p>Think of each term as a unit-width (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span></eq>) rectangle, with a height of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(i)</annotation></semantics></math></span></eq>.<br>
+Then, the number for the sum we are looking for has to be the total area under the curve of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math></span></eq>.</p>
+<p>The area under the curve <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math></span></eq> from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><msubsup><mo>∫</mo><mn>1</mn><mi>n</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">I = \int_{1}^{n} f(x) \ dx</annotation></semantics></math></span></eqn></section><p>Then:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≤</mo><mi>S</mi><mo>≤</mo><mi>I</mi><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I + f(1) \leq S \leq I + f(n)</annotation></semantics></math></span></eqn></section><p>Perhaps it would make more sense visually:</p>
+<img src="../images/sums1.png" alt="Sums1" width="50%">
+<p>And, shift it left by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>:</p>
+<img src="../images/sums2.png" alt="Sums2" width="50%">
+<p style="font-size: smaller; margin-bottom: 0;"><i>Figures 13.2 and 13.3 from the course notes <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/4fb79a8b271d75485a489411764ef691/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Session23.pdf">Mathematics for Computer Science</a>.</i></p>
+<hr>
+<blockquote>
+<p>Any product can be converted into a sum by taking its logarithm.</p>
+</blockquote>
+<p>Let's look at a factorial, for example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>⋅</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1 \cdot 2 \cdot 3 \cdot \ ... \ \cdot (n - 1) \cdot n</annotation></semantics></math></span></eq>.</p>
+<p>We can also denote it as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>i</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\prod_{i = 1}^n i</annotation></semantics></math></span></eqn></section><p>It can be turned into a sum by taking the logarithm:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{i = 1}^n ln(i)</annotation></semantics></math></span></eqn></section><p>It is because of the <a href="https://en.wikipedia.org/wiki/Logarithm#Characterization_by_the_product_formula">product rule</a>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">!</mo><mo stretchy="false">)</mo><mo>=</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>⋅</mo><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">ln(n!) = ln(1 \cdot 2 \cdot 3 \cdot \ ... \ \cdot (n - 1) \cdot n)</annotation></semantics></math></span></eqn></section><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>=</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex"> = ln(1) + ln(2) + ln(3) + \ ... \ + ln(n - 1) + ln(n)</annotation></semantics></math></span></eqn></section><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex"> = \displaystyle\sum_{i = 1}^n ln(i)</annotation></semantics></math></span></eqn></section><p>We have to estimate this sum to get a closed-form bound.<br>
+In order to do that, we are going to use the formula we defined above: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≤</mo><mi>S</mi><mo>≤</mo><mi>I</mi><mo>+</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I + f(1) \leq S \leq I + f(n)</annotation></semantics></math></span></eq>.</p>
+<p>So, plugging them in:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">(</mo><msubsup><mo>∫</mo><mn>1</mn><mi>n</mi></msubsup><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>≤</mo><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mo>≤</mo><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">(</mo><msubsup><mo>∫</mo><mn>1</mn><mi>n</mi></msubsup><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\bigg(\int_{1}^{n} ln(x) \ dx\bigg) + ln(1) \leq \displaystyle\sum_{i = 1}^n ln(i) \leq \bigg(\int_{1}^{n} ln(x) \ dx\bigg) + ln(n)</annotation></semantics></math></span></eqn></section><p>Looks beautiful.</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">ln(1)</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>. So, it is just</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msubsup><mo>∫</mo><mn>1</mn><mi>n</mi></msubsup><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo>≤</mo><mstyle scriptlevel="0" displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo><mo>≤</mo><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">(</mo><msubsup><mo>∫</mo><mn>1</mn><mi>n</mi></msubsup><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><mi>x</mi><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">)</mo><mo>+</mo><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\int_{1}^{n} ln(x) \ dx \leq \displaystyle\sum_{i = 1}^n ln(i) \leq \bigg(\int_{1}^{n} ln(x) \ dx\bigg) + ln(n)</annotation></semantics></math></span></eqn></section><p>After taking the integral, and exponentiating the whole thing (it was the product, remember, we are undoing it), the eventual result will be, <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/4fb79a8b271d75485a489411764ef691/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Session23.pdf">according to the book</a>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><msup><mi>n</mi><mi>n</mi></msup><msup><mi>e</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac><mo>≤</mo><mi>n</mi><mo stretchy="false">!</mo><mo>≤</mo><mfrac><msup><mi>n</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>e</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac></mrow><annotation encoding="application/x-tex">\frac{n^n}{e^{n - 1}} \leq n! \leq \frac{n^{n + 1}}{e^{n - 1}}</annotation></semantics></math></span></eqn></section><hr>
+<p>One example of <mark>asymptotic equivalence</mark> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo stretchy="false">)</mo><mo>∼</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(n^2 + n) \sim n^2</annotation></semantics></math></span></eq>.</p>
+<p>In order for two functions to be asymptotically equal, <em>the limit of their quotient has to go to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> approaches infinity</em>. Let's see.</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>=</mo><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">(</mo><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo fence="false" stretchy="true" minsize="2.4em" maxsize="2.4em">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim_{n \to \infty} \frac{n^2 + n}{n^2} = \lim_{n \to \infty} \bigg(1 + \frac{1}{n}\bigg) = 1</annotation></semantics></math></span></eqn></section><p>So, simplifying <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">\frac{n^2 + n}{n ^2}</annotation></semantics></math></span></eq> we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">1 + \frac{1}{n}</annotation></semantics></math></span></eq>. As <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> goes to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{n}</annotation></semantics></math></span></eq> goes to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>, so we're left with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>. And, that proves that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(n^2 + n)</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">n^2</annotation></semantics></math></span></eq> are asymptotically equal.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/stable-matching/">previous</a></li><li><a href="/unit-03-counting/asymptotics/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

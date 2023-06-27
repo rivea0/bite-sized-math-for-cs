@@ -1,0 +1,267 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Infinite Sets</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Infinite Sets</h1>
+<p>Dealing with infinity is not what you expect while studying discrete math. But, we've been working with infinite sets all along — using integers, rationals, etc., so let's look at them a bit more in depth.</p>
+<p>One obvious point is one difference between an infinite and a finite set. In a finite set, adding an element makes the set bigger, but that's not true for infinite sets.<br>
+Let's say <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is a finite set, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo mathvariant="normal">∉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">b \notin A</annotation></semantics></math></span></eq>.<br>
+Then, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|A \cup \{b\}| = |A| + 1</annotation></semantics></math></span></eq>.<br>
+We can see that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math></span></eq> (the size of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>) and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup \{b\}|</annotation></semantics></math></span></eq> (the size of A with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>) are not the same.</p>
+<p>However, now let's say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is an infinite set, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo mathvariant="normal">∉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">b \notin A</annotation></semantics></math></span></eq>. In this case, we can only say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is infinite iff there is <em>bijection</em> between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A|</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mo>∪</mo><mo stretchy="false">{</mo><mi>b</mi><mo stretchy="false">}</mo><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A \cup \{b\}|</annotation></semantics></math></span></eq>.<br>
+So, if we have an infinite set, and we add an element to it, we still have an infinite set.</p>
+<p>But, there is an important idea that <em>there are different sizes of infinities</em> (you might already be familiar with it if you've heard of <a href="https://en.wikipedia.org/wiki/Georg_Cantor">Cantor</a> before).</p>
+<p>Following that idea, we can also differentiate finite sets and infinite sets when it comes to relations. Now, when we think of a surjective relation between two finite sets (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mtext> surj </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">A \text{ surj } B</annotation></semantics></math></span></eq>), we can think of it differently when it comes to infinite sets, now it will mean that the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is larger or equal to the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, that is, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>≥</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| \geq |B|</annotation></semantics></math></span></eq>.<br>
+Likewise, when talking about a bijective relation (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mtext> bij </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">A \text{ bij } B</annotation></semantics></math></span></eq>), when it comes to infinite sets, it will mean that both infinite sets have the same sizes (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| = |B|</annotation></semantics></math></span></eq>) — so, two infinite sets have the same size when there is a bijection between them.</p>
+<p>There is also a related idea, the <em>Schroeder-Bernstein Theorem</em>. It says that if set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is at least as big as set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>, and conversely if set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> is at least as big as set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, then set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is the same size as set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq>. (if (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mtext> surj </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">A \text{ surj } B</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mtext> surj </mtext><mi>A</mi></mrow><annotation encoding="application/x-tex">B \text{ surj }A</annotation></semantics></math></span></eq>), then (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mtext> bij </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">A \text{ bij }B</annotation></semantics></math></span></eq>).)</p>
+<p>If English is slowing down your imaginative capabilities, here is the thing put precisely:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>≥</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi><mo>≥</mo><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi mathvariant="normal">∣</mi><mi>A</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi mathvariant="normal">∣</mi><mi>B</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|A| \geq |B| \geq |A| \implies |A| = |B|</annotation></semantics></math></span></eq></p>
+<hr>
+<p>Remember that a notation like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">A^*</annotation></semantics></math></span></eq> is used when it comes to the set of finite bit strings <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><msup><mo stretchy="false">}</mo><mo>∗</mo></msup></mrow><annotation encoding="application/x-tex">\{0, \ 1\}^*</annotation></semantics></math></span></eq>. Now, if that set is infinite, we'll denote it like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>ω</mi></msup></mrow><annotation encoding="application/x-tex">A^\omega</annotation></semantics></math></span></eq>, the infinite set of bit strings <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><msup><mo stretchy="false">}</mo><mi>ω</mi></msup></mrow><annotation encoding="application/x-tex">\{0, \ 1\}^\omega</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>A <mark>countable set</mark> is a set where you can list the elements as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">a_0, \ a_1, \ a_2, ...</annotation></semantics></math></span></eq>.<br>
+So, let's say we have a countable set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>; we can write down its elements like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>a</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">a_0, \ a_1, \ a_2, ...</annotation></semantics></math></span></eq> and, so on. It means that we can create a mapping between the elements and the set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span></eq> — what follows from that is there is a bijection between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span></eq> and our countable set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mtext> bij </mtext><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathbb{N} \text{ bij }A</annotation></semantics></math></span></eq>). In that case, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is <em>countably infinite</em>. But, finite sets can also be countable.</p>
+<p>Also, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mtext> surj </mtext><mi>A</mi></mrow><annotation encoding="application/x-tex">N \text{ surj } A</annotation></semantics></math></span></eq> implies that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is countable as well — remember that it means that the range of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> is its whole codomain, and that means all the elements are hit by at least one arrow from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span></eq>.</p>
+<p>Then, what about <mark>uncountable sets</mark>?<br>
+We can start with an example. <a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor's diagonal argument</a> shows that the set of infinite binary sequences <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><msup><mo stretchy="false">}</mo><mi>ω</mi></msup></mrow><annotation encoding="application/x-tex">\{0, \ 1\}^\omega</annotation></semantics></math></span></eq> is uncountable.</p>
+<p>We can think of &quot;a list&quot; of infinite binary sequences. However, using each element diagonally, we can create another new infinite binary sequence, like this:<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diagonal_argument_01_svg.svg/369px-Diagonal_argument_01_svg.svg.png" alt="An example of Cantor's diagonal argument"></p>
+<p>In that case, the set of natural numbers is strictly smaller than set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>, that is, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>&lt;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathbb{N} \lt A</annotation></semantics></math></span></eq>, as there is no surjection from the set of natural numbers to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>. That is, there are elements in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> that are not hit by arrows coming from the set of natural numbers.</p>
+<hr>
+<h3>The Halting Problem Basics</h3>
+<p>Let's take a look at the Halting Problem that's briefly touched upon in this course:</p>
+<blockquote>
+<p>The general Halting Problem for some programming language is, given an arbitrary program, to determine whether the program will run forever if it is not interrupted.</p>
+</blockquote>
+<p>The thing we're looking for is a way of detecting that a program does <em>not</em> halt.</p>
+<p>Let's say we have a string <code>s</code> that defines a procedure (a function) <code>P</code>.<br>
+We are going to write very crude pseudocode through this example.</p>
+<p>So, <code>s</code> is something like this:</p>
+<pre><code>s = '''
+def P(f):
+    # do stuff (return or not return, that is the question)
+'''
+</code></pre>
+<p>Now, <code>s</code> is said to halt iff <code>P(s)</code> returns (when a function returns, obviously it halts). Notice that what we're doing is passing <code>s</code> itself to what is defined by <code>s</code>.</p>
+<p>Let's assume that there is a function <code>Q</code> that decides whether <code>s</code> halts. We are arguing that it is impossible to exist, but for the sake of contradiction, let's say it does:</p>
+<pre><code># THIS CANNOT EXIST
+def Q(s):
+    If s halts:
+        return True
+    Else:
+        return False
+
+</code></pre>
+<p>So, <code>Q(s)</code> returns true if <code>s</code> halts, and false otherwise. It is a &quot;<em>halts decider</em>&quot;.</p>
+<p>We are now going to have another function <code>Q_PRIME</code> that is kind of a modified version of <code>Q</code>.</p>
+<pre><code>def Q_PRIME(s):
+    If !Q(s): # (that means s does not halt)
+        return True
+    Else:
+        go on forever # (that means s halts)
+</code></pre>
+<p>So, <code>Q_PRIME(s)</code> returns true if <code>Q(s)</code> returns false, and it returns nothing (it doesn't halt) if <code>Q(s)</code> returns true.</p>
+<p>Again, if <code>Q_PRIME(s)</code> returns nothing, that means <code>s</code> halts (because <code>Q_PRIME(s)</code> returns nothing when <code>Q(s)</code> returns true. And, <code>Q(s)</code> returns true when <code>s</code> halts).</p>
+<p>Now, just like <code>s</code> defining a function <code>P</code>, let's say that <code>t</code> defines the function <code>Q_PRIME</code> itself.</p>
+<p>So, <code>t</code> is said to halt iff <code>Q_PRIME</code> returns (when a function returns, obviously it halts).</p>
+<p>Here is the thing, though: When we pass <code>Q_PRIME</code> the string defining itself (<code>t</code>), there is a contradiction.<br>
+<code>Q_PRIME(t)</code> returns iff <code>t</code> doesn't halt (because <code>Q(t)</code> returns false). That is, if <code>Q_PRIME</code> doesn't halt, it returns — this is a contradiction.<br>
+So, <code>t</code> halts iff <code>t</code> doesn't halt.</p>
+<p>In short, if <code>Q_PRIME(t)</code> returns, that means it halts. But, it can only return if it doesn't halt, that is, if <code>Q(t)</code> returns false, because that's how we defined it.</p>
+<p>When applied to itself, we reach a contradiction.<br>
+And, therefore there cannot be such <code>Q</code>, a &quot;<em>halts decider</em>&quot;.<br>
+It is <em>undecidable</em>.</p>
+<hr>
+<p>Self-referentiality is more than an interesting idea. It has an important role in set theory, computer science, and the problem of consciousness as well.<br>
+For our purposes, <em>self-application</em>, the idea of taking a function and applying it to itself, is important.<br>
+There are some classic examples like</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>This sentence is false.</mtext></mrow><annotation encoding="application/x-tex">\text{This sentence is false.}</annotation></semantics></math></span></eqn></section><p>If it's false, then it has to be true; but when it's true, it means that it's false. That's a paradox.</p>
+<p>But, <em>self-application</em> is taken for granted in computer science. Take a look at the simple trivial example like the <code>pow</code> function that returns the result of taking <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> to the power of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq>:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">from</span> math <span class="token keyword">import</span> <span class="token builtin">pow</span>
+
+<span class="token builtin">pow</span><span class="token punctuation">(</span><span class="token builtin">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment"># 64.0</span>
+<span class="token builtin">pow</span><span class="token punctuation">(</span><span class="token builtin">pow</span><span class="token punctuation">(</span><span class="token builtin">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token comment"># 16777216.0</span>
+</code></pre>
+<hr>
+<h3>Russell's Paradox</h3>
+<p>What Russell was proposing was this:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mo stretchy="false">{</mo><mi>s</mi><mo>∈</mo><mtext>Sets </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>s</mi><mo mathvariant="normal">∉</mo><mi>s</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">W = \{s \in \text{Sets} \ | \ s \notin s\}</annotation></semantics></math></span></eq></p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span></eq> is a collection of sets <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> is not a member of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq>; <em>a collection of sets that are not members of themselves</em>.</p>
+<p>It implies that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>∈</mo><mi>W</mi><mtext> iff </mtext><mi>s</mi><mo mathvariant="normal">∉</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">s \in W \text{ iff }s \notin s</annotation></semantics></math></span></eq>.<br>
+Now, if we let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span></eq>, that's a contradiction: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>∈</mo><mi>W</mi><mtext> iff </mtext><mi>W</mi><mo mathvariant="normal">∉</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">W \in W \text{ iff }W \notin W</annotation></semantics></math></span></eq>.</p>
+<p>But, there is a fix: we can avoid this paradox if we don't allow <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span></eq> to be a set.<br>
+That's okay, but it raises another philosophical question: when is a <em>set</em> a set, and when is it not a set?</p>
+<p><mark>ZFC (Zermelo-Frankel set theory with Choice)</mark>, which provides an axiomatic system for set theory addresses this issue of self-referentiality, and states that <a href="https://en.wikipedia.org/wiki/Axiom_of_regularity#No_set_is_an_element_of_itself">no set can be a member of itself</a>:</p>
+<p>Also, all sets are <em>well-founded</em> under membership:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>y</mi><mo>∧</mo><mo stretchy="false">[</mo><mi mathvariant="normal">∀</mi><mi>z</mi><mtext> </mtext><mi>z</mi><mo>∈</mo><mi>x</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>z</mi><mo mathvariant="normal">∉</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">x \in y \land [\forall z \ z \in x \implies z \notin y]</annotation></semantics></math></span></eq><br>
+Meaning that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span></eq> is built out of things that are not in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span></eq>.<br>
+It's also said that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mtext> is </mtext><mi>ϵ</mi><mtext> minimal in </mtext><mi>y</mi></mrow><annotation encoding="application/x-tex">x \text{ is } \epsilon \text{ minimal in } y</annotation></semantics></math></span></eq>.<br>
+Remember the well-ordering principle? Every nonempty set of nonnegative integers has to have a <em>least</em> element, in other words, it can't be decreasing infinitely. It is a similar idea: you can't have an infinite sequence of sets where each of which is a member of the previous one.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/recursive-definitions/">previous</a></li><li><a href="/unit-02-structures/gcds/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

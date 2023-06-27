@@ -1,0 +1,306 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>GCDs</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>GCDs</h1>
+<p>Let's start off with what we know about divisibility:</p>
+<blockquote>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>b</mi></mrow><annotation encoding="application/x-tex">a \ | \ b</annotation></semantics></math></span></eq>) iff there is an integer <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>k</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">ak = b</annotation></semantics></math></span></eq>.</p>
+</blockquote>
+<p>Then, we know that for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>,</p>
+<ul>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">n \ | \ n</annotation></semantics></math></span></eq></li>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mn>0</mn></mrow><annotation encoding="application/x-tex">n \ | \ 0</annotation></semantics></math></span></eq></li>
+<li><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mn>1</mn><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">\pm1 \ | \ n</annotation></semantics></math></span></eq><br>
+To put it crudely, we can say that everything is a divisor of itself, everything divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>±</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\pm 1</annotation></semantics></math></span></eq> divides everything.</li>
+</ul>
+<p>We also know some basic facts about divisibility:</p>
+<ul>
+<li>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>b</mi></mrow><annotation encoding="application/x-tex">a \ | \ b</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>c</mi></mrow><annotation encoding="application/x-tex">b \ | \ c</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>c</mi></mrow><annotation encoding="application/x-tex">a \ | \ c</annotation></semantics></math></span></eq>.</li>
+<li>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>b</mi></mrow><annotation encoding="application/x-tex">a \ | \ b</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>c</mi></mrow><annotation encoding="application/x-tex">a \ | \ c</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>s</mi><mi>b</mi><mo>+</mo><mi>t</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">a \ | \ sb + tc</annotation></semantics></math></span></eq> for all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span></eq>.</li>
+<li>For all <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo mathvariant="normal">≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c \neq 0</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>b</mi></mrow><annotation encoding="application/x-tex">a \ | \ b</annotation></semantics></math></span></eq> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>a</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>c</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">ca \ | \ cb</annotation></semantics></math></span></eq>.</li>
+</ul>
+<p><em>Note</em>: The number of the form <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>b</mi><mo>+</mo><mi>t</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">sb + tc</annotation></semantics></math></span></eq> is called the <mark>linear combination</mark> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>As long as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> are not <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq>, they will have their <mark>greatest common divisor</mark>, and we can write it as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(a, b)</annotation></semantics></math></span></eq>.</p>
+<h3>Euclid's Algorithm</h3>
+<p>We can find <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext></mrow><annotation encoding="application/x-tex">\text{gcd}</annotation></semantics></math></span></eq>s with Euclid's Algorithm:</p>
+<p>For <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo mathvariant="normal">≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b \neq 0</annotation></semantics></math></span></eq>,</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>b</mi><mo separator="true">,</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(a, \ b) = \text{gcd}(b, \text{rem}(a, \ b))</annotation></semantics></math></span></eqn></section><p>Okay, we know that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mi>q</mi><mo>+</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">a = bq + r</annotation></semantics></math></span></eq>, where <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> is the <em>quotient</em>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq> is the <em>remainder</em>. Notice that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq>.<br>
+If something divides both <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>, then it also divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq>. And, if something divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span></eq>, then it divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq>, too.</p>
+<p>An easy example is to find the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext></mrow><annotation encoding="application/x-tex">\text{gcd}</annotation></semantics></math></span></eq> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>26</mn></mrow><annotation encoding="application/x-tex">26</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn></mrow><annotation encoding="application/x-tex">21</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>26</mn><mo separator="true">,</mo><mtext> </mtext><mn>21</mn><mo stretchy="false">)</mo><mo>=</mo><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>21</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo stretchy="false">)</mo><mo>=</mo><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(26, \ 21) = \text{gcd}(21, \ 5) = \text{gcd}(5, \ 1) = 1</annotation></semantics></math></span></eq>.</p>
+<p>We can think of the Euclidean Algorithm as a state machine.<br>
+<em>States</em> will be a pair of nonnegative integers, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>×</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N} \times \mathbb{N}</annotation></semantics></math></span></eq>.<br>
+The <em>start state</em> is the original pair we want to find out the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext></mrow><annotation encoding="application/x-tex">\text{gcd}</annotation></semantics></math></span></eq> of, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(a, \ b)</annotation></semantics></math></span></eq>. In the above example, it is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>26</mn><mo separator="true">,</mo><mtext> </mtext><mn>21</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(26, \ 21)</annotation></semantics></math></span></eq>.<br>
+State <em>transition rule</em> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo stretchy="false">)</mo><mo>⟶</mo><mo stretchy="false">(</mo><mi>y</mi><mo separator="true">,</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(x, \ y) \longrightarrow (y, \text{rem}(x, y))</annotation></semantics></math></span></eq> for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo mathvariant="normal">≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y \neq 0</annotation></semantics></math></span></eq>.<br>
+And, here is the more interesting part: the <em>preserved invariant</em> is the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext></mrow><annotation encoding="application/x-tex">\text{gcd}</annotation></semantics></math></span></eq> itself, it stays constant. In the example, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>26</mn><mo separator="true">,</mo><mtext> </mtext><mn>21</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(26, \ 21)</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>21</mn><mo separator="true">,</mo><mtext> </mtext><mn>5</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(21, \ 5)</annotation></semantics></math></span></eq> is also <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>5</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(5, \ 1)</annotation></semantics></math></span></eq> is also <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.<br>
+So, we can say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mtext> </mtext><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(x, \ y)</annotation></semantics></math></span></eq> at any point is the same as the original value, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(a, \ b)</annotation></semantics></math></span></eq>.</p>
+<p>We can write a short recursive function for it:</p>
+<pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">gcd</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> y <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'The result is: </span><span class="token interpolation"><span class="token punctuation">{</span>x<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> x
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Calculating gcd(</span><span class="token interpolation"><span class="token punctuation">{</span>x<span class="token punctuation">}</span></span><span class="token string">, </span><span class="token interpolation"><span class="token punctuation">{</span>y<span class="token punctuation">}</span></span><span class="token string">)...'</span></span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> gcd<span class="token punctuation">(</span>y<span class="token punctuation">,</span> x <span class="token operator">%</span> y<span class="token punctuation">)</span></code></pre>
+<p>In this case <code>gcd(26, 21)</code> gives the output of:</p>
+<pre><code>Calculating gcd(26, 21)...
+Calculating gcd(21, 5)...
+Calculating gcd(5, 1)...
+The result is: 1
+</code></pre>
+<hr>
+<p>There is also this fact:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>s</mi><mi>a</mi><mo>+</mo><mi>t</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\text{gcd}(a, \ b) = sa + tb</annotation></semantics></math></span></eq> says that <em>the greatest common divisor of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> is the linear combination of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq></em>.</p>
+<p>If that's the case, we can also reason that <em>an integer is a linear combination of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> iff it is a multiple of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(a, b)</annotation></semantics></math></span></eq></em>.</p>
+<p>First, let's take a look at linear combinations more closely.</p>
+<p>Let's say we want to write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mn>662</mn><mo separator="true">,</mo><mtext> </mtext><mn>414</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{gcd}(662, \ 414)</annotation></semantics></math></span></eq> as a linear combination.<br>
+It has to be in the form: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>662</mn><mi>s</mi><mo>+</mo><mn>414</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">662s + 414t</annotation></semantics></math></span></eq>.<br>
+We can use Euclid's Algorithm, but let's go step by step:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>662</mn></mrow><annotation encoding="application/x-tex">662</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>414</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>248</mn></mrow><annotation encoding="application/x-tex">= 414(1) + 248</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>414</mn></mrow><annotation encoding="application/x-tex">414</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>248</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>166</mn></mrow><annotation encoding="application/x-tex">= 248(1) + 166</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>248</mn></mrow><annotation encoding="application/x-tex">248</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>166</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>82</mn></mrow><annotation encoding="application/x-tex">= 166(1) + 82</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>166</mn></mrow><annotation encoding="application/x-tex">166</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>82</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">= 82(2) + 2</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn></mrow><annotation encoding="application/x-tex">82</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mn>41</mn><mo stretchy="false">)</mo><mo>+</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">= 2(41) + 0</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<p>You might already see the pattern.<br>
+Now, we're going to ignore the last row, and go reverse. We're going to rewrite everything with according to the remainder this time.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>82</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">= 1(166) - 2(82)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn></mrow><annotation encoding="application/x-tex">82</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">= 1(248) - 1(166)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>166</mn></mrow><annotation encoding="application/x-tex">166</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">= 1(414) - 1(248)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>248</mn></mrow><annotation encoding="application/x-tex">248</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>662</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">= 1(662) - 1(414)</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<p>Let's rewrite the same thing once again, but we'll plug in the values as shown.</p>
+<p>So, we can still write <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>82</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">= 1(166) - 2(82)</annotation></semantics></math></span></eq>, but let's plug in the value for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn></mrow><annotation encoding="application/x-tex">82</annotation></semantics></math></span></eq>:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = 1(166) - 2(1(248) - 1(166))</annotation></semantics></math></span></eq></p>
+<p>Let's simplify it a bit:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>1</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = 1(166) - 2(248) + 2(166)</annotation></semantics></math></span></eq>.</p>
+<p>And, even further:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mo stretchy="false">(</mo><mn>166</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = -2(248) + 3(166)</annotation></semantics></math></span></eq>.</p>
+<p>Okay, now where are we going with this?</p>
+<p>Let's continue plugging in values. This time for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>166</mn></mrow><annotation encoding="application/x-tex">166</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mo>−</mo><mn>2</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = -2(248) + 3(1(414) - 1(248))</annotation></semantics></math></span></eq>.</p>
+<p>Now, simplify it: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>3</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>248</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = 3(414) - 5(248)</annotation></semantics></math></span></eq>.</p>
+<p>It's time to plug in the value for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>248</mn></mrow><annotation encoding="application/x-tex">248</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>3</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">(</mo><mn>662</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = 3(414) - 5(1(662) + 1(414))</annotation></semantics></math></span></eq>.</p>
+<p>Simplify it: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>662</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">2 = -5(662) + 8(414)</annotation></semantics></math></span></eq>.</p>
+<p>In case you zoned out at some point during this process, let me repeat what we have as the end result: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>5</mn><mo stretchy="false">(</mo><mn>662</mn><mo stretchy="false">)</mo><mo>+</mo><mn>8</mn><mo stretchy="false">(</mo><mn>414</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">-5(662) + 8(414)</annotation></semantics></math></span></eq>.<br>
+That's exactly what we were looking for in the first place, a number of the form <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>662</mn><mi>s</mi><mo>+</mo><mn>414</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">662s + 414t</annotation></semantics></math></span></eq>!</p>
+<p>The <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span></eq> are also called <em>Bézout's coefficients</em>. It is <a href="https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity"><em>Bézout's identity</em></a> that says we can write the greatest common divisor as a linear combination:</p>
+<blockquote>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo>∈</mo><msup><mi mathvariant="double-struck">Z</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">a, \ b \in \mathbb{Z}^+</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∃</mi><mtext> </mtext><mi>s</mi><mo separator="true">,</mo><mtext> </mtext><mi>t</mi><mo>∈</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">\exists \ s, \ t \in Z</annotation></semantics></math></span></eq> such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>b</mi><mo stretchy="false">)</mo><mo>=</mo><mi>s</mi><mi>a</mi><mo>+</mo><mi>t</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\text{gcd}(a, \ b) = sa + tb</annotation></semantics></math></span></eq>.</p>
+</blockquote>
+<p>The method we used to find out <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span></eq> is called the <a href="https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm"><em>Extended Euclidean Algorithm</em></a> (the &quot;Pulverizer&quot;).</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-01-proofs/infinite-sets/">previous</a></li><li><a href="/unit-02-structures/congruences/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

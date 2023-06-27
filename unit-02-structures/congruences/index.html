@@ -1,0 +1,278 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Congruences</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Congruences</h1>
+<p>Take two integers <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq>.</p>
+<p>The notion of <em>congruence</em> is defined as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext> iff </mtext><mi>n</mi><mi mathvariant="normal">∣</mi><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ (\text{mod } n) \text{ iff } n | (a - b)</annotation></semantics></math></span></eqn></section><p>where <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is considered to be greater than <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is congruent to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">\text{mod }n</annotation></semantics></math></span></eq> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a - b</annotation></semantics></math></span></eq>.</p>
+<p>A simple example: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>≡</mo><mn>15</mn><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">29 \equiv 15 \ (\text{mod }7)</annotation></semantics></math></span></eq>. <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>−</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">29 - 15</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn></mrow><annotation encoding="application/x-tex">14</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi mathvariant="normal">∣</mi><mn>14</mn></mrow><annotation encoding="application/x-tex">7 | 14</annotation></semantics></math></span></eq>.</p>
+<p>Let's look at a more interesting one:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>66666663</mn><mo>≡</mo><mn>788253</mn><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>10</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">66666663 \equiv 788253 \ (\text{mod }10)</annotation></semantics></math></span></eq>.</p>
+<p>Both numbers have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq> in their units place, and because the result of their subtraction has <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> in its units place, it is divisible by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span></eq>.</p>
+<p>We can see that this is also true:<br>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext> iff rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>b</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ (\text{mod } n) \text{ iff } \text{rem}(a, \ n) = \text{rem}(b, \ n)</annotation></semantics></math></span></eqn></section></p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is congruent to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> iff both have the same remainder when divided by <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>.</p>
+<p>Applied to the first example, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>≡</mo><mn>15</mn><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">29 \equiv 15 \ (\text{mod } 7)</annotation></semantics></math></span></eq> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mn>29</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo stretchy="false">)</mo><mo>=</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mn>15</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{rem}(29, \ 7) = \text{rem}(15, \ 7)</annotation></semantics></math></span></eq>. It is true because <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mn>29</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{rem}(29, \ 7)</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mn>15</mn><mo separator="true">,</mo><mtext> </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{rem}(15, \ 7)</annotation></semantics></math></span></eq> is also <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>. Since they are equal to each other, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>≡</mo><mn>15</mn><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>7</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">29 \equiv 15 \ (\text{mod } 7)</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>There are some <a href="https://sites.math.washington.edu/~greenber/Congruences.pdf">basic properties of congruences</a>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Reflexive Property</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>a</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv a \ (\text{mod }n)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><em>Symmetric Property</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>b</mi><mo>≡</mo><mi>a</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ (\text{mod }n) \implies b \equiv a \ (\text{mod }n)</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><em>Transitive Property</em></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>∧</mo><mi>b</mi><mo>≡</mo><mi>c</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>a</mi><mo>≡</mo><mi>c</mi><mtext> </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ (\text{mod }n) \land b \equiv c \ (\text{mod }n) \implies a \equiv c \ (\text{mod }n)</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>A number is congruent to its own remainder <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod </mtext><mi>n</mi></mrow><annotation encoding="application/x-tex">\text{mod }n</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>a</mi><mo>≡</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv \text{rem}(a, \ n) \ \ (\text{mod }n)</annotation></semantics></math></span></eqn></section><p>Why is that?</p>
+<p>We can see that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and the remainder of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> have the same remainder by taking the remainder of both sides:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>≡</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{rem}(a, \ n) \equiv \text{rem}(\text{rem}(a, \ n), \ n) \ \ (\text{mod }n)</annotation></semantics></math></span></eqn></section><p>Let's look at it with an example:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Let's say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>≡</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mn>7</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">7 \equiv \text{rem}(7, \ 2) \ \ (\text{mod } 2)</annotation></semantics></math></span></eq>, so <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>≡</mo><mn>1</mn><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">7 \equiv 1 \ \ (\text{mod } 2)</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">Taking the remainder of both sides: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>rem</mtext><mo stretchy="false">(</mo><mn>7</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo>≡</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mn>7</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{rem}(7, \ 2) \equiv \text{rem}(\text{rem}(7, \ 2), \ 2) \ \ (\text{mod }2)</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≡</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><mn>2</mn><mo stretchy="false">)</mo><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">1 \equiv \text{rem}(1, \ 2) \ \ (\text{mod }2)</annotation></semantics></math></span></eq>.</td>
+</tr>
+<tr>
+<td style="text-align:left">And, finally, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>≡</mo><mn>1</mn><mtext>  </mtext><mo stretchy="false">(</mo><mtext>mod </mtext><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">1 \equiv 1 \ \ (\text{mod }2)</annotation></semantics></math></span></eq>.</td>
+</tr>
+</tbody>
+</table>
+<p>One point to remember is that the remainder is between <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>: <mark><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>≤</mo><mtext>rem</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>&lt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">0 \leq \text{rem}(a, \ n) \lt n</annotation></semantics></math></span></eq></mark>.</p>
+<hr>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ \ \text{mod}(n)</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>c</mi><mo>≡</mo><mi>b</mi><mo>+</mo><mi>c</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a + c \equiv b + c\ \ \text{mod}(n)</annotation></semantics></math></span></eq>.<br>
+And, why is that?<br>
+Since <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a - b</annotation></semantics></math></span></eq>, it will also divide <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a + c) - (b + c)</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">n \ | \ (a - b) \implies n \ | \ ((a + c) - (b + c))</annotation></semantics></math></span></eqn></section><p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ \ \text{mod}(n)</annotation></semantics></math></span></eq>, then <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mi>c</mi><mo>≡</mo><mi>b</mi><mo>⋅</mo><mi>c</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \cdot c \equiv b \cdot c\ \ \text{mod}(n)</annotation></semantics></math></span></eq>.<br>
+And, why is that again?<br>
+Since <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> divides <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a - b</annotation></semantics></math></span></eq>, it will also divide <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>⋅</mo><mi>c</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>b</mi><mo>⋅</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a \cdot c) - (b \cdot c)</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo>⋅</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">n \ | \ (a - b) \implies n \ | \ (a - b) \cdot c</annotation></semantics></math></span></eqn></section><p>Therefore,</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>n</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>a</mi><mo>⋅</mo><mi>c</mi><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>b</mi><mo>⋅</mo><mi>c</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">n \ | \ ((a \cdot c) - (b \cdot c))</annotation></semantics></math></span></eqn></section><p>That seems like ordinary arithmetic so far. But, let's take a look at an example:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>2</mn><mo>≡</mo><mn>3</mn><mo>⋅</mo><mn>2</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">8 \cdot 2 \equiv 3 \cdot 2 \ \ \text{mod}(10)</annotation></semantics></math></span></eq></p>
+<p>If you want to cancel the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>'s, guess what? You can't:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>≢</mo><mn>3</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mn>10</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">8 \not\equiv 3 \ \ \text{mod}(10)</annotation></semantics></math></span></eq></p>
+<p>Then, when can we cancel <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq>?</p>
+<p>The answer is <em>when it has no common factors with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq></em>. In other words, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(k, \ n) = 1</annotation></semantics></math></span></eq>.</p>
+<p>In order to cancel something, we have to have its inverse, a trivial example is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\frac{1}{2} \cdot 2</annotation></semantics></math></span></eq>, we can cancel the <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq>'s and get the result of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.</p>
+<p>Now, let's say that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">k&#x27;</annotation></semantics></math></span></eq> is an inverse of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k \ \ \text{mod}(n)</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>⋅</mo><mi>k</mi><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k&#x27; \cdot k \equiv 1 \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>We can think of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">k&#x27;</annotation></semantics></math></span></eq> as an integer that acts like <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>k</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{k}</annotation></semantics></math></span></eq>.</p>
+<p>What we know is that if <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(k, \ n) = 1</annotation></semantics></math></span></eq>, that means we have a linear combination of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> which is also <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>k</mi><mo>+</mo><mi>t</mi><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">sk + tn = 1</annotation></semantics></math></span></eq>.</p>
+<p>Since <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>k</mi><mo>+</mo><mi>t</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">sk + tn</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> are equal, they are congruent to each other <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>k</mi><mo>+</mo><mi>t</mi><mi>n</mi><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">sk + tn \equiv 1 \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is congruent to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">0 \ \ \text{mod}(n)</annotation></semantics></math></span></eq>, so we can write it as such:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>k</mi><mo>+</mo><mi>t</mi><mn>0</mn><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">sk + t0 \equiv 1 \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>Then, what we're left with is this:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>k</mi><mo>≡</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">sk \equiv 1 \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>And, that means <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> is an inverse of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq>.</p>
+<p>So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span></eq> was indeed the inverse of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> all along, it is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">k&#x27;</annotation></semantics></math></span></eq>!</p>
+<hr>
+<p>There is another way to cancel <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> if it's relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>:</p>
+<p>If <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mi>k</mi><mo>≡</mo><mi>b</mi><mo>⋅</mo><mi>k</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \cdot k \equiv b \cdot k \ \ \text{mod}(n)</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(k, \ n) = 1</annotation></semantics></math></span></eq>, then we can multiply it by the inverse:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>⋅</mo><mi>k</mi><mo stretchy="false">)</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>≡</mo><mo stretchy="false">(</mo><mi>b</mi><mo>⋅</mo><mi>k</mi><mo stretchy="false">)</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(a \cdot k)k&#x27; \equiv (b \cdot k)k&#x27; \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>Reorganize it a bit:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mo stretchy="false">(</mo><mi>k</mi><mo>⋅</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mo>≡</mo><mi>b</mi><mo>⋅</mo><mo stretchy="false">(</mo><mi>k</mi><mo>⋅</mo><msup><mi>k</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \cdot (k \cdot k&#x27;) \equiv b \cdot (k \cdot k&#x27;) \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>Which means:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mn>1</mn><mo>≡</mo><mi>b</mi><mo>⋅</mo><mn>1</mn><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \cdot 1 \equiv b \cdot 1 \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>Therefore:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≡</mo><mi>b</mi><mtext>  mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">a \equiv b \ \ \text{mod}(n)</annotation></semantics></math></span></eq></p>
+<p>The point is that <em><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> is cancellable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> has an inverse <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>mod</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{mod}(n)</annotation></semantics></math></span></eq> iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>gcd</mtext><mo stretchy="false">(</mo><mi>k</mi><mo separator="true">,</mo><mtext> </mtext><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\text{gcd}(k, \ n) = 1</annotation></semantics></math></span></eq></em>.</p>
+<p>In other words, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> is cancellable iff <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span></eq> is relatively prime to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>.</p>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-02-structures/gcds/">previous</a></li><li><a href="/unit-02-structures/eulers-theorem/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

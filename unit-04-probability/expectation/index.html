@@ -1,0 +1,335 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Expectation</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p>
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p class="active-page-link">
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Expectation</h1>
+<p>The <mark>expected value</mark> of a random variable <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is the <em>average value</em> of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> where the values are <em>weighted against</em> their probabilities.</p>
+<p>So, the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> is the sum of all possible values <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span></eq> times the probability of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">R = v</annotation></semantics></math></span></eq>:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><mo>∑</mo><mi>v</mi><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>=</mo><mi>v</mi><mo stretchy="false">]</mo></mstyle></mrow><annotation encoding="application/x-tex">E[R] = \displaystyle\sum v \cdot \text{Pr}[R = v]</annotation></semantics></math></span></eqn></section><p>It sounds a bit complicated, but let's look at an example that's given in the lecture.</p>
+<p>Let's say that we pick a number beforehand, and we roll a dice three times. If we don't get the number we choose, we lose 1 dollar. If the number we choose comes up only once, we win 1 dollar. If it comes up twice, we win 2 dollars, and if all three rolls ends up with our number, we win 3 dollars.</p>
+<p>Looking at the probability of each of these three cases, the probability of <strong>not</strong> getting the number we choose is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><msup><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\Big(\frac{5}{6}\Big)^3</annotation></semantics></math></span></eq>, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>125</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{125}{216}</annotation></semantics></math></span></eq>.</p>
+<p>The probability of getting our number once is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mn>3</mn><mn>1</mn></mfrac><mo fence="true">)</mo></mrow><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><msup><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mn>2</mn></msup><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo></mrow><annotation encoding="application/x-tex">\binom{3}{1} \big(\frac{5}{6}\big)^2 \big(\frac{1}{6}\big)</annotation></semantics></math></span></eq>.<br>
+(Note that the order doesn't matter, we're looking at all possible sequences, that's why it is <em>3 choose 1</em> with possibility of one of them being our number and the rest different).</p>
+<p>The probability of getting our number twice is similar: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mn>3</mn><mn>2</mn></mfrac><mo fence="true">)</mo></mrow><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mfrac><mn>5</mn><mn>6</mn></mfrac><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msup><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\binom{3}{2} \big(\frac{5}{6}\big) \big(\frac{1}{6}\big)^2</annotation></semantics></math></span></eq>.</p>
+<p>Finally, the probability of getting our number all three times is: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mfrac><mn>1</mn><mn>6</mn></mfrac><msup><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\big(\frac{1}{6}\big)^3</annotation></semantics></math></span></eq>.</p>
+<p>Let's see what we have for now:</p>
+<table>
+<thead>
+<tr>
+<th>number of matches</th>
+<th>probability</th>
+<th>dollars won</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>125</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{125}{216}</annotation></semantics></math></span></eqn></section></td>
+<td>-1</td>
+</tr>
+<tr>
+<td>1</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>75</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{75}{216}</annotation></semantics></math></span></eqn></section></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>15</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{15}{216}</annotation></semantics></math></span></eqn></section></td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>1</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{216}</annotation></semantics></math></span></eqn></section></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>So, if we play 216 games, we <em>expect</em> to <strong>never</strong> get our number 125 times. We <em>expect</em> to get our number once 75 times, get it twice 15 times, and get it three times only once.</p>
+<p>So, on average, what we gain is:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>125</mn><mo stretchy="false">(</mo><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>75</mn><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>15</mn><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><mn>216</mn></mfrac><mo>=</mo><mo>−</mo><mfrac><mn>17</mn><mn>216</mn></mfrac><mo>≈</mo><mo>−</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\frac{125(-1) + 75(1) + 15(2) + 1(3)}{216} = - \frac{17}{216} \approx -8</annotation></semantics></math></span></eq> cents</p>
+<p>That's a negative! Which means that this is not a fair game, we're losing 8 cents on average.<br>
+Which means, we <em>expect</em> to lose 8 cents each time we play.</p>
+<hr>
+<p>Expectations can be defined alternatively:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>S</mi></mrow></munder><mi>R</mi><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>ω</mi><mo stretchy="false">]</mo></mstyle></mrow><annotation encoding="application/x-tex">E[R] = \displaystyle\sum_{\omega \in S} R(\omega) \cdot \text{Pr}[\omega]</annotation></semantics></math></span></eqn></section><p>So, it is <em>the sum over all the possible outcomes in the sample space of the value of the random variable at that outcome times the probability of that outcome</em>.</p>
+<p>In the example, all the possible outcomes in our sample space are the dollar values: -1, 1, 2, or 3. For each of them, we already calculated the probabilities, so the only thing is to multiply each and add them together. Which we did, and find that it was <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mfrac><mn>17</mn><mn>216</mn></mfrac></mrow><annotation encoding="application/x-tex">- \frac{17}{216}</annotation></semantics></math></span></eq>.</p>
+<p>This expected value (which was <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>−</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">-8</annotation></semantics></math></span></eq> in our example) can also be called the <mark>mean value</mark>, or just <em>mean</em>, or <mark>expectation</mark>.</p>
+<p>Let's look at another example from the practice exercises.</p>
+<p>We have a dice that lands on an even number with probability <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span></eq>. It lands on the values with equal probability. Let's find the expectation of it.</p>
+<p>We have 3 even numbers (2, 4, 6), and 3 odd numbers (1, 3, 5) it can land on.</p>
+<p>The probability that we get an even number is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4} \cdot \frac{1}{3} = \frac{1}{12}</annotation></semantics></math></span></eq>.<br>
+The probability of we get an odd number is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>12</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{3}{4} \cdot \frac{1}{3} = \frac{3}{12} = \frac{1}{4}</annotation></semantics></math></span></eq>.</p>
+<p>So, what we'll do is to sum up each value with its probability:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mn>3</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mn>4</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mn>5</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="false">)</mo><mo>+</mo><mn>6</mn><mo stretchy="false">(</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">1(\frac{1}{4}) + 2(\frac{1}{12}) + 3(\frac{1}{4}) + 4(\frac{1}{12}) + 5(\frac{1}{4}) + 6(\frac{1}{12})</annotation></semantics></math></span></eq>, which is equal to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>13</mn><mn>4</mn></mfrac><mo>=</mo><mn>3.25</mn></mrow><annotation encoding="application/x-tex">\frac{13}{4} = 3.25</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>The expectation of a binomial distribution (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><msub><mi>B</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo separator="true">,</mo><mtext> </mtext><mi>p</mi><mo stretchy="false">)</mo></mrow></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[B_{(n, \ p)}]</annotation></semantics></math></span></eq>) is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">np</annotation></semantics></math></span></eq>.<br>
+Let's look at an example.<br>
+All of our coins are fair, and we flip 200 of them. (Or, we flip a fair coin 200 times).<br>
+We want to know the expected number of heads.<br>
+Well,  <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> is 200, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math></span></eq>. Multiplying them, we have 100.<br>
+So, the expected number of heads is 100.</p>
+<hr>
+<p><mark>Conditional expectation</mark> is defined as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><mo>∑</mo><mi>v</mi><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>R</mi><mo>=</mo><mi>v</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><mi>A</mi><mo stretchy="false">]</mo></mstyle></mrow><annotation encoding="application/x-tex">E[R \ | \ A] = \displaystyle\sum v \cdot \text{Pr}[R = v \ | \ A]</annotation></semantics></math></span></eqn></section><p>It is the <em>sum over all possible values that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> might take of the probability that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> takes that value, given <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq>.</em></p>
+<p>An example: let's say we roll a dice. Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> be the probability of getting an even number (one of 2, 4, or 6); let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> be the probability of getting a prime number (one of 2, 3, or 5).</p>
+<p>Expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span></eq> given <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> (expectation of getting an even number given that it is a prime number) is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{3}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>The <mark>law of total expectation</mark> is similar to the law of total probability in the sense that it is helpful to reason by cases.<br>
+It is defined as:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo>=</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">]</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mo>+</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">]</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mtext> </mtext><mo>+</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">(</mo><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> </mtext><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">]</mo><mo>⋅</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">]</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">)</mo></mrow><annotation encoding="application/x-tex">E[R] = \big(E[R \ | \ A_1] \cdot \text{Pr}[A_1]\big) + \big(E[R \ | \ A_2] \cdot \text{Pr}[A_2]\big) + \ ... \ + \big(E[R \ | \ A_n] \cdot \text{Pr}[A_n]\big)</annotation></semantics></math></span></eqn></section><p>Let's see how we can use it to calculate the expectation of getting heads in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> times of flipping a coin.</p>
+<p>Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n)</annotation></semantics></math></span></eq> be the expected number of heads in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq> flips.<br>
+Then, if the first flip is a head, the expected number of heads is now <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">1 + e(n - 1)</annotation></semantics></math></span></eq>. So, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> head and the remaining expectations.</p>
+<p>On the other hand, if the first flip is a tail, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n)</annotation></semantics></math></span></eq> is going to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n - 1)</annotation></semantics></math></span></eq>. Because it wasn't heads, what we can look for is the remaining expectations.</p>
+<p>These are two cases.</p>
+<p>Now, let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> be the probability of a head, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> be the probability of a tail.</p>
+<p>By total expectation:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><mo stretchy="false">[</mo><mn>1</mn><mo>+</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>⋅</mo><mi>p</mi><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo><mo>+</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mi>q</mi><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo></mrow><annotation encoding="application/x-tex">e(n) = \Big([1 + e(n - 1)] \cdot p\Big) + \Big(e(n - 1) \cdot q\Big)</annotation></semantics></math></span></eq></p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">1 - p</annotation></semantics></math></span></eq>, so replacing it, we get<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><mo stretchy="false">[</mo><mn>1</mn><mo>+</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>⋅</mo><mi>p</mi><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo><mo>+</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>⋅</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo></mrow><annotation encoding="application/x-tex">e(n) = \Big([1 + e(n - 1)] \cdot p\Big) + \Big(e(n - 1) \cdot (1 - p)\Big)</annotation></semantics></math></span></eq></p>
+<p>Simplifying it further:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>+</mo><mo stretchy="false">(</mo><mi>p</mi><mo>⋅</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>+</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>p</mi><mo>⋅</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n) = p + (p \cdot e(n - 1)) + e(n - 1) - (p \cdot e(n - 1))</annotation></semantics></math></span></eq></p>
+<p>It all simplifies to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">e(n) = e(n - 1) + p</annotation></semantics></math></span></eq>.</p>
+<p>Look what a beautiful thing we have: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">e(n)</annotation></semantics></math></span></eq> is defined by itself, it is a recursive formula!</p>
+<p>So, we need to subtract <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span></eq>, and add a <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> (rather, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">np</annotation></semantics></math></span></eq>).</p>
+<p>Going further, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mi>e</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>2</mn><mo stretchy="false">)</mo><mo>+</mo><mn>2</mn><mi>p</mi></mrow><annotation encoding="application/x-tex">e(n - 1) = e(n - 2) + 2p</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">...</annotation></semantics></math></span></eq><br>
+So, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo><mo>=</mo><mi>e</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>+</mo><mi>n</mi><mi>p</mi><mo>=</mo><mi>n</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">e(1) = e(0) + np = np</annotation></semantics></math></span></eq>.<br>
+Therefore, the expectation of the number of heads in 1 flip, is just <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">np</annotation></semantics></math></span></eq>, which is just the probability of getting a head in a flip, which is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>The <mark>expected time to failure</mark> is just the answering how long we have to wait for something.</p>
+<p>Let's say we want to get a tail this time, so head will be indicating failure.<br>
+Then, the expected time to failure in this case is how long until a head comes up.</p>
+<p>Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq> be the probability of getting a head (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mtext>head</mtext><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[\text{head}]</annotation></semantics></math></span></eq>), let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> be the probability of getting a tail, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> be the number of flips until we get the first head.</p>
+<p>The probability of getting a head on the first flip (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>F</mi><mo>=</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[F = 1]</annotation></semantics></math></span></eq>) is just <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span></eq>.</p>
+<p>The probability of getting a head on the second flip (<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>F</mi><mo>=</mo><mn>2</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[F = 2]</annotation></semantics></math></span></eq>) is going to be <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>⋅</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">q \cdot p</annotation></semantics></math></span></eq> because it means that our first flip resulted in tails.</p>
+<p><em>Note: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>D</mi><msub><mi>F</mi><mi>F</mi></msub><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>⋅</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">PDF_F(n) = q^{n - 1} \cdot p</annotation></semantics></math></span></eq>.</em></p>
+<p>The expected number of flips before we get a head is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{p}</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">E[F] = \frac{1}{p}</annotation></semantics></math></span></eq></p>
+<p>Why?</p>
+<p>Let's look at this tree that we're going to call <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> that helps us see it:</p>
+<img src="../images/exp-failtree1.png" alt="Mean time to failure tree example 1" width="50%">
+<p>Branches correspond to the act of flipping the coin, so the number of times until we get a head as a result can be counted by following the branches.</p>
+<p>This tree is recursive, which means that we can replace a part of it by itself:</p>
+<img src="../images/exp-failtree2.png" alt="Mean time to failure tree example 2" width="50%">
+<p>As the slide says, we can use Total Expectation to find <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[F]</annotation></semantics></math></span></eq>, which is just the expected number of branches we have to follow until we reach an <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span></eq>.<br>
+It will be <em>(the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> given that the first one is a head) times (the probability of getting a head)</em> plus <em>(the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> given that the first one is a tail) times (the probability of getting a tail)</em>.</p>
+<p>English can be confusing sometimes, so:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> first = H</mtext><mo stretchy="false">]</mo><mo>⋅</mo><mi>p</mi><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> first = T</mtext><mo stretchy="false">]</mo><mo>⋅</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F] = E[F \ | \ \text{first = H}] \cdot p + E[F \ | \ \text{first = T}] \cdot q</annotation></semantics></math></span></eq></p>
+<p>Well, the first part (the expected number of flips before getting a head on the first time) is just 1:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mn>1</mn><mo>⋅</mo><mi>p</mi><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> first = T</mtext><mo stretchy="false">]</mo><mo>⋅</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F] = 1 \cdot p + E[F \ | \ \text{first = T}] \cdot q</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mi>p</mi><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mtext> </mtext><mi mathvariant="normal">∣</mi><mtext> first = T</mtext><mo stretchy="false">]</mo><mo>⋅</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F] = p + E[F \ | \ \text{first = T}] \cdot q</annotation></semantics></math></span></eq></p>
+<p>The expected number of flips until we get a head given that the first flip resulted in a tail is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">1 + E[F]</annotation></semantics></math></span></eq>. Realize that after we get a tail, following the branch going through <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq>, we still have the tree <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> itself. So, we already passed one branch (that's for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>), and we're still expecting to get a head (that's for <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[F]</annotation></semantics></math></span></eq>), therefore <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">1 + E[F]</annotation></semantics></math></span></eq>.</p>
+<p>Putting it all together, we have <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mi>p</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo stretchy="false">)</mo><mo>⋅</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F] = p + (1 + E[F]) \cdot q</annotation></semantics></math></span></eq>.</p>
+<p>Simplifying it:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi><mo>+</mo><mi>q</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">E[F] = p + q + q(E[F])</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>−</mo><mi>q</mi><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F] - q(E[F]) = p + q</annotation></semantics></math></span></eq></p>
+<p>Factoring out <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[F]</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>q</mi><mo stretchy="false">)</mo><mo>=</mo><mi>p</mi><mo>+</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">E[F](1 - q) = p + q</annotation></semantics></math></span></eq></p>
+<p>Then:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">E[F] = \frac{p + q}{1 - q}</annotation></semantics></math></span></eq></p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi></mrow><annotation encoding="application/x-tex">q</annotation></semantics></math></span></eq> can be written as <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">1 - p</annotation></semantics></math></span></eq>:<br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mrow><mi>p</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">E[F] = \frac{p + (1 - p)}{1 - (1 - p)}</annotation></semantics></math></span></eq><br>
+<eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">E[F] = \frac{1}{p}</annotation></semantics></math></span></eq></p>
+<p>So, the expected number of flips before we get a head is indeed <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{p}</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Two things to note:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Expectation is <em>linear</em>:</td>
+</tr>
+<tr>
+<td style="text-align:left">Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span></eq> be random variables, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span></eq> constants. Then,</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>a</mi><mi>R</mi><mo>+</mo><mi>b</mi><mi>S</mi><mo stretchy="false">]</mo><mo>=</mo><mi>a</mi><mi>E</mi><mo stretchy="false">[</mo><mi>R</mi><mo stretchy="false">]</mo><mo>+</mo><mi>b</mi><mi>E</mi><mo stretchy="false">[</mo><mi>S</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[aR + bS] = aE[R] + bE[S]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">For <em>independent</em> <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span></eq> and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span></eq>,</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>X</mi><mi>Y</mi><mo stretchy="false">]</mo><mo>=</mo><mi>E</mi><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo><mo>⋅</mo><mi>E</mi><mo stretchy="false">[</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[XY] = E[X] \cdot E[Y]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-04-probability/random-variables-density-functions/">previous</a></li><li><a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>

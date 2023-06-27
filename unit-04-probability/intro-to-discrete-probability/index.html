@@ -1,0 +1,353 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href=/bite-sized-math-for-cs/public/apple-touch-icon.png>
+    <link rel="icon" type="image/png" sizes="32x32" href=/bite-sized-math-for-cs/public/favicon-32x32.png>
+    <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
+    <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
+    <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>Intro to Discrete Probability</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href=/bite-sized-math-for-cs/>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      
+      
+      
+      
+      
+      <details>
+        <summary>Table of Contents</summary>
+          <p>
+            <a href="/">Introduction</a>
+          </p>
+          <p>
+            <a href="/prerequisites-and-resources/">Prerequisites &amp; Resources</a>
+          </p>
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+            <p>
+              <a href="/unit-01-proofs/introduction-to-proofs/">00. Introduction to Proofs</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/two-proof-methods/">01. (Two) Proof Methods</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/the-well-ordering-principle/">02. The Well Ordering Principle</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/logic-and-propositions/">03. Logic &amp; Propositions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/quantifiers-and-predicate-logic/">04. Quantifiers and Predicate Logic</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/sets/">05. Sets</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/binary-relations/">06. Binary Relations</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/induction/">07. Induction</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/state-machines-invariants/">08. State Machines — Invariants</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/recursive-definitions/">09. Recursive Definitions</a>
+            </p>
+            <p>
+              <a href="/unit-01-proofs/infinite-sets/">10. Infinite Sets</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+            <p>
+              <a href="/unit-02-structures/gcds/">11. GCDs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/congruences/">12. Congruences</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/eulers-theorem/">13. Euler&#39;s Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/rsa-encryption/">14. RSA Encryption</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/digraphs-walks-and-paths/">15. Digraphs: Walks and Paths</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/directed-acyclic-graphs/">16. Directed Acyclic Graphs</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/partial-orders-and-equivalence/">17. Partial Orders and Equivalence</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/degrees-and-isomorphism/">18. Degrees &amp; Isomorphism</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/coloring-and-connectivity/">19. Coloring &amp; Connectivity</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/trees/">20. Trees</a>
+            </p>
+            <p>
+              <a href="/unit-02-structures/stable-matching/">21. Stable Matching</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+            <p>
+              <a href="/unit-03-counting/sums-and-products/">22. Sums &amp; Products</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/asymptotics/">23. Asymptotics</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/counting-with-bijections/">24. Counting with Bijections</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/repetitions-and-binomial-theorem/">25. Repetitions &amp; Binomial Theorem</a>
+            </p>
+            <p>
+              <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">26. Pigeonhole Principle, Inclusion-Exclusion</a>
+            </p>
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+            <p class="active-page-link">
+              <a href="/unit-04-probability/intro-to-discrete-probability/">27. Intro to Discrete Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/conditional-probability/">28. Conditional Probability</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/independence-and-causality/">29. Independence &amp; Causality</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-variables-density-functions/">30. Random Variables, Density Functions</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/expectation/">31. Expectation</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/deviation-markov-and-chebyshev-bounds/">32. Deviation: Markov &amp; Chebyshev Bounds</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/sampling-and-confidence/">33. Sampling &amp; Confidence</a>
+            </p>
+            <p>
+              <a href="/unit-04-probability/random-walks-and-pagerank/">34. Random Walks &amp; PageRank</a>
+            </p>
+        </div>
+      </details>
+      <div class="content">
+      <h1>Intro to Discrete Probability</h1>
+<p>It doesn't matter how your relationship with probability theory was in the past, let's look at it with a fresh pair of eyes this time.</p>
+<p>What we have in the first place is a set of random outcomes. Some portion of those outcomes (a subset) is an event. What we'll be looking for is the probability of an event:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Probability(event)</mtext><mo>=</mo><mfrac><mtext>number of outcomes in the event</mtext><mtext>number of total outcomes</mtext></mfrac></mrow><annotation encoding="application/x-tex">\text{Probability(event)} = \frac{\text{number of outcomes in the event}}{\text{number of total outcomes}}</annotation></semantics></math></span></eqn></section><p>Before looking at an example, we can keep in mind what is called a <em>4-part method</em>:</p>
+<ol>
+<li>Identify the outcomes</li>
+<li>Identify the event</li>
+<li>Assign outcome probabilities</li>
+<li>Compute event probabilities</li>
+</ol>
+<p>Now, let's look at an example from a practice exercise of the course.</p>
+<blockquote>
+<p>Parker has two pairs of black shoes and three pairs of brown shoes. He also has three pairs of red socks, four pairs of brown socks and six pairs of black socks.<br>
+Now let's say that Parker chooses a pair of shoes at random and a pair of socks at random. We would like to know the probability of him choosing shoes and socks of the same color.</p>
+</blockquote>
+<p>Let's construct a table to see what we have better:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>shoes</strong></th>
+<th><strong>socks</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>black</strong></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><strong>red</strong></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><strong>brown</strong></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn></mrow><annotation encoding="application/x-tex">4</annotation></semantics></math></span></eq></td>
+</tr>
+<tr>
+<td><strong>TOTAL</strong></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn></mrow><annotation encoding="application/x-tex">5</annotation></semantics></math></span></eq></td>
+<td><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn></mrow><annotation encoding="application/x-tex">13</annotation></semantics></math></span></eq></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>The first thing we need to do</strong></em> is to identify the outcomes.<br>
+In this case, an outcome is <em>a pair of colors</em>.</p>
+<p><em><strong>The second thing to do</strong></em> is to identify the event of interest, to find <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mtext>number of outcomes in the event</mtext><mtext>number of total outcomes</mtext></mfrac></mrow><annotation encoding="application/x-tex">\frac{\text{number of outcomes in the event}}{\text{number of total outcomes}}</annotation></semantics></math></span></eq>.</p>
+<p>The number of total outcomes is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn></mrow><annotation encoding="application/x-tex">6</annotation></semantics></math></span></eq> (we have two possible colors for shoes—black and brown—, and three possible colors for socks: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2 \cdot 3 = 6</annotation></semantics></math></span></eq>).</p>
+<p>The number of outcomes in the event is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span></eq> because we can only have 2 colors that are in both shoes and socks: black and brown.</p>
+<p>Now, <em><strong>the third step</strong></em> is to assign outcome probabilities. We have to do it for everything: So,</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Probability of choosing a pair of...</td>
+<td></td>
+</tr>
+<tr>
+<td>...black shoes:</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{2}{5}</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td>...brown shoes:</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{3}{5}</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td>...black socks:</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>6</mn><mn>13</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{6}{13}</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td>...red socks:</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>3</mn><mn>13</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{3}{13}</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td>...brown socks:</td>
+<td><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mfrac><mn>4</mn><mn>13</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{4}{13}</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+<p><em><strong>The final step</strong></em> is to compute the event probabilities to find the probability that he chooses shoes and socks of the same color.<br>
+In order to do that, let's look at the <mark>probability tree</mark> that is constructed:</p>
+<img src="../images/probabilitytree.png" alt="Probability tree" width="50%">
+<p style="font-size: smaller; margin-top: 0;"><i>From <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/ae07e9bd124c922847eaf485bffd634e/asset-v1:OCW+6.042J+2T2019+type@asset+block/6.042J_Unit_IV_4.1_Q4.jpg">Q4 Explanation</a>.</i></p>
+<p>Now that we see the probability of choosing black shoes and black socks is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>12</mn><mn>65</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{12}{65}</annotation></semantics></math></span></eq> and the probability of choosing brown shoes and brown socks is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>12</mn><mn>65</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{12}{65}</annotation></semantics></math></span></eq>, we can sum the outcomes to find what we're looking for: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>12</mn><mn>65</mn></mfrac><mo>+</mo><mfrac><mn>12</mn><mn>65</mn></mfrac><mo>=</mo><mfrac><mn>24</mn><mn>65</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{12}{65} + \frac{12}{65} = \frac{24}{65}</annotation></semantics></math></span></eq>.<br>
+So, the probability of choosing the same color of shoes and socks is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>24</mn><mn>65</mn></mfrac><mo>=</mo><mn>0.3692</mn></mrow><annotation encoding="application/x-tex">\frac{24}{65} = 0.3692</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Let's look at something called <mark>probability spaces</mark>.<br>
+A <em>probability space</em> consists of two things: a <mark>sample space</mark> and a <mark>probability function</mark>.</p>
+<p>A sample space is a countable set <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span></eq> whose elements are called <em>outcomes</em>.</p>
+<p>A probability function is a function that assigns probabilities (ranging from <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span></eq> to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq> inclusive) to outcomes.<br>
+The sum of the probabilities of all the outcomes should add up to <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span></eq>.<br>
+Let <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span></eq> be the sample space, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span></eq> be an outcome in <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span></eq>.<br>
+So, we should have a probability function <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>r</mi><mo>:</mo><mi>S</mi><mo>→</mo><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mtext> </mtext><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">Pr: S \rightarrow [0, \ 1]</annotation></semantics></math></span></eq>  such that <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>S</mi></mrow></munder><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>ω</mi><mo stretchy="false">]</mo><mo>=</mo><mn>1</mn></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{\omega \in S} \text{Pr}[\omega] = 1</annotation></semantics></math></span></eq>.</p>
+<p>The reason of constructing the tree model was to find a probability space.<br>
+So, the leaves of the tree correspond to outcomes; and we calculate the outcome probabilities from branch probabilities.</p>
+<p>An event is a subset of the sample space, some set of outcomes.<br>
+The probability of an event is the sum of the probabilities of all the outcomes in the event:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>E</mi><mo stretchy="false">]</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>ω</mi><mo>∈</mo><mi>E</mi></mrow></munder><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>ω</mi><mo stretchy="false">]</mo></mstyle></mrow><annotation encoding="application/x-tex">\text{Pr}[E] = \displaystyle\sum_{\omega \in E}\text{Pr}[\omega]</annotation></semantics></math></span></eqn></section><p>From that, we get what is called the <mark>sum rule</mark>: if we have pairwise disjoint events <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>0</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>A</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">A_0, \ A_1, \ ...</annotation></semantics></math></span></eq> (meaning that there are no outcomes in common), the probability of one or more of these events occurring (their union) is the sum of each probability:</p>
+<p><eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>0</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∪</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>0</mn></msub><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>0</mn></msub><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">]</mo><mo>+</mo><mtext> </mtext><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\text{Pr}[A_0 \cup A_1 \cup A_2 \cup \ ...] = \text{Pr}[A_0] + \text{Pr}[A_0] + \text{Pr}[A_1] + \text{Pr}[A_2] + \ ...</annotation></semantics></math></span></eq></p>
+<p>Defined precisely:</p>
+<section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo fence="false" stretchy="true" minsize="3em" maxsize="3em">[</mo><munder><mo>⋃</mo><mrow><mi>i</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow></munder><msub><mi>A</mi><mi>i</mi></msub><mo fence="false" stretchy="true" minsize="3em" maxsize="3em">]</mo><mo>=</mo><mstyle scriptlevel="0" displaystyle="true"><munder><mo>∑</mo><mrow><mi>i</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow></munder><mtext>Pr</mtext><mo stretchy="false">[</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="false">]</mo></mstyle></mrow><annotation encoding="application/x-tex">\text{Pr}\Bigg[\bigcup_{i \in \mathbb{N}} A_i\Bigg] = \displaystyle\sum_{i \in \mathbb{N}}\text{Pr}[A_i]</annotation></semantics></math></span></eqn></section><p>For example, if we have three pairwise disjoint events <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">E_0</annotation></semantics></math></span></eq>, <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">E_1</annotation></semantics></math></span></eq>, and <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">E_2</annotation></semantics></math></span></eq>, each one with the probability of occurring <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{4}</annotation></semantics></math></span></eq>.<br>
+Then, the probability of any one of them occurring is <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.75</mn></mrow><annotation encoding="application/x-tex">0.75</annotation></semantics></math></span></eq>, because <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0.75</mn></mrow><annotation encoding="application/x-tex">\frac{1}{4} + \frac{1}{4} + \frac{1}{4} = \frac{3}{4} = 0.75</annotation></semantics></math></span></eq>.</p>
+<hr>
+<p>Now let's define some rules:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">The <mark>difference rule</mark>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A - B] = \text{Pr}[A] - \text{Pr}[A \cap B]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td style="text-align:left">By the sum rule: <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] = \text{Pr}[A \cap B] + \text{Pr}[A - B]</annotation></semantics></math></span></eq>. Substituting it, we are left with <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>−</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A - B] = \text{Pr}[A - B]</annotation></semantics></math></span></eq>.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">The <mark>inclusion-Exclusion</mark>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">]</mo><mo>=</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo><mo>−</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cup B] = \text{Pr}[A] + \text{Pr}[B] - \text{Pr}[A \cap B]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td style="text-align:left">This is similar to what we have seen in <a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">this section</a>.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">The <mark>union bound</mark>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">]</mo><mo>≤</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>+</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A \cup B] \leq \text{Pr}[A] + \text{Pr}[B]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+<tr>
+<td style="text-align:left">This can be understood from the inclusion-exclusion of two sets, clearly it is defined as the sum of the probabilities of two sets <em>minus</em> the probability of their intersection. So, it has to be less than the sum of their probabilities.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">The <mark>monotonicity</mark>:</td>
+</tr>
+<tr>
+<td style="text-align:left"><section><eqn><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo><mo>≤</mo><mtext>Pr</mtext><mo stretchy="false">[</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\text{Pr}[A] \leq \text{Pr}[A \cup B]</annotation></semantics></math></span></eqn></section></td>
+</tr>
+</tbody>
+</table>
+
+      <hr class="ending">
+          <ul class="links-nextprev"><li><a href="/unit-03-counting/pigeonhole-principle-inclusion-exclusion/">previous</a></li><li><a href="/unit-04-probability/conditional-probability/">next</a></li>
+          </ul> 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
