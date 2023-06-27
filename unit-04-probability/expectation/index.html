@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href=/bite-sized-math-for-cs/public/favicon-16x16.png>
     <link rel="manifest" href=/bite-sized-math-for-cs/public/site.webmanifest>
     <link rel="stylesheet" href=/bite-sized-math-for-cs/public/css/index.css>
-    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <link href=/bite-sized-math-for-cs/public/css/prism-material-light.css rel="stylesheet">
     <title>Expectation</title>
   </head>
   <body>
@@ -256,10 +256,10 @@ Then, the expected time to failure in this case is how long until a head comes u
 <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac></mrow><annotation encoding="application/x-tex">E[F] = \frac{1}{p}</annotation></semantics></math></span></eq></p>
 <p>Why?</p>
 <p>Let's look at this tree that we're going to call <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span></eq> that helps us see it:</p>
-<img src="../images/exp-failtree1.png" alt="Mean time to failure tree example 1" width="50%">
+<img src=../images/exp-failtree1.png alt="Mean time to failure tree example 1" width="50%">
 <p>Branches correspond to the act of flipping the coin, so the number of times until we get a head as a result can be counted by following the branches.</p>
 <p>This tree is recursive, which means that we can replace a part of it by itself:</p>
-<img src="../images/exp-failtree2.png" alt="Mean time to failure tree example 2" width="50%">
+<img src=../images/exp-failtree2.png alt="Mean time to failure tree example 2" width="50%">
 <p>As the slide says, we can use Total Expectation to find <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false">[</mo><mi>F</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">E[F]</annotation></semantics></math></span></eq>, which is just the expected number of branches we have to follow until we reach an <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span></eq>.<br>
 It will be <em>(the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> given that the first one is a head) times (the probability of getting a head)</em> plus <em>(the expectation of <eq><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span></eq> given that the first one is a tail) times (the probability of getting a tail)</em>.</p>
 <p>English can be confusing sometimes, so:<br>
