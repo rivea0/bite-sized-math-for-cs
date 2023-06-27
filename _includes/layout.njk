@@ -1,0 +1,97 @@
+---
+title: Bite-Sized Mathematics for Computer Science
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href={{ "/public/apple-touch-icon.png" | url }}>
+    <link rel="icon" type="image/png" sizes="32x32" href={{ "/public/favicon-32x32.png" | url }}>
+    <link rel="icon" type="image/png" sizes="16x16" href={{ "/public/favicon-16x16.png" | url }}>
+    <link rel="manifest" href={{ "/public/site.webmanifest" | url }}>
+    <link rel="stylesheet" href={{ "/public/css/index.css" | url }}>
+    <link href="/public/css/prism-material-light.css" rel="stylesheet">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <header class="title-header">
+      <a href={{ "/" | url }}>
+        <h1 class="title">Bite-Sized Mathematics for Computer Science</h1></a>
+        <h2 class="title-2">Notes on <a href="https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/course/">MIT's 6.042J</a></h2>
+      <span class="author-name">Eda Eren</span>
+    </header>
+    <main>
+      {% set introAll = collections.intro | eleventyNavigation %}
+      {% set proofsAll = collections.proofs | eleventyNavigation %}
+      {% set structuresAll = collections.structures | eleventyNavigation %}
+      {% set countingAll = collections.counting | eleventyNavigation %}
+      {% set probabilityAll = collections.probability | eleventyNavigation %}
+      <details>
+        <summary>Table of Contents</summary>
+        {%- for entry in introAll %}
+          <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
+            <a href="{{ entry.url }}">{{ entry.title }}</a>
+          </p>
+        {%- endfor %}
+        <div>
+          <p class="unit">Unit 1: Proofs</p>
+          {%- for entry in proofsAll %}
+            <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </p>
+          {%- endfor %}
+        </div>
+        <div>
+          <p class="unit">Unit 2: Structures</p>
+          {%- for entry in structuresAll %}
+            <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </p>
+          {%- endfor %}
+        </div>
+        <div>
+          <p class="unit">Unit 3: Counting</p>
+          {%- for entry in countingAll %}
+            <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </p>
+          {%- endfor %}
+        </div>
+        <div>
+          <p class="unit">Unit 4: Probability</p>
+          {%- for entry in probabilityAll %}
+            <p{% if entry.url == page.url %} class="active-page-link"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </p>
+          {%- endfor %}
+        </div>
+      </details>
+      <div class="content">
+      {{ content | safe }}
+      <hr class="ending">
+      {%- if collections.pages %}
+        {%- set previousPost = collections.pages | getPreviousCollectionItem %}
+        {%- set nextPost = collections.pages | getNextCollectionItem %}
+        {%- if nextPost or previousPost %}
+          <ul class="links-nextprev">
+            {%- if previousPost %}<li><a href="{{ previousPost.url }}">previous</a></li>{% endif %}
+            {%- if nextPost %}<li><a href="{{ nextPost.url }}">next</a></li>{% endif %}
+          </ul>
+        {%- endif %}
+      {%- endif %} 
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h3>License</h3>
+        <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="footer-links">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>.</p>
+      </div>
+      <div>
+        <h3>Open source</h3>
+        <p>The source is on <a href="https://github.com/rivea0/bite-sized-math-for-cs" class="footer-links">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
