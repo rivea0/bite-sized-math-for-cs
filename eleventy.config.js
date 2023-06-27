@@ -28,10 +28,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({
-    'unit-01-proofs/images/': 'unit-01-proofs/images/',
-    'unit-02-structures/images/': 'unit-02-structures/images/',
-    'unit-03-counting/images/': 'unit-03-counting/images/',
-    'unit-04-probability/images/': 'unit-04-probability/images/',    
+    '/unit-01-proofs/images/': '/unit-01-proofs/images/',
+    '/unit-02-structures/images/': '/unit-02-structures/images/',
+    '/unit-03-counting/images/': '/unit-03-counting/images/',
+    '/unit-04-probability/images/': '/unit-04-probability/images/',    
   });
 
   // eleventyConfig.addWatchTarget("notes/**/*.{svg,webp,png,jpeg}");
