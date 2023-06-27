@@ -86,7 +86,6 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem;
-    font-size: 21px;
     gap: 2rem;
     max-width: 75%;
 }
