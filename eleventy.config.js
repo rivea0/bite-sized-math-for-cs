@@ -57,6 +57,6 @@ module.exports = function(eleventyConfig) {
       includes: '../_includes',
       output: '_site',
     },
-    pathPrefix: '/',
+    pathPrefix: '/bite-sized-math-for-cs/',
   }
 };
