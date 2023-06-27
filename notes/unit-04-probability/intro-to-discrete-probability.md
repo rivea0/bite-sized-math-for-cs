@@ -60,7 +60,7 @@ Now, _**the third step**_ is to assign outcome probabilities. We have to do it f
 _**The final step**_ is to compute the event probabilities to find the probability that he chooses shoes and socks of the same color.
 In order to do that, let's look at the ==probability tree== that is constructed:
 
-<img src={{ "../images/probabilitytree.png" | url }} alt="Probability tree" width="50%">
+<img src="https://raw.githubusercontent.com/rivea0/bite-sized-math-for-cs/main/notes/unit-04-probability/images/probabilitytree.png" alt="Probability tree" width="50%">
 <p style="font-size: smaller; margin-top: 0;"><i>From <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/ae07e9bd124c922847eaf485bffd634e/asset-v1:OCW+6.042J+2T2019+type@asset+block/6.042J_Unit_IV_4.1_Q4.jpg">Q4 Explanation</a>.</i></p>
 
 

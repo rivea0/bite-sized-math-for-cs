@@ -45,7 +45,7 @@ It is a law for reasoning about probability _by cases_. If you remember from the
 
 So, let's say that in a sample space $S$, we have a set $A$ which is actually an event. Let's say that we have three more sets $B_1$, $B_2$, and $B_3$ partitioning the sample space, and none of them intersects with each other. Each of these sets has to intersect with $A$, though, so it looks like this:
 
-<img src={{ "../images/lotp.png" | url }} alt="Law of total probability" width="50%">
+<img src="https://raw.githubusercontent.com/rivea0/bite-sized-math-for-cs/main/notes/unit-04-probability/images/lotp.png" alt="Law of total probability" width="50%">
 
 Since $B_1$, $B_2$, and $B_3$ constitute everything, the union of each of their intersection with $A$ is $A$:
 

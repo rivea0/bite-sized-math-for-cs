@@ -57,7 +57,7 @@ To help visualize it better in our mind's eye, it'd be good to know that the siz
 
 Then, this image taken from the slides of the lecture would make more sense:
 
-<img src={{ "../images/antichains-chains.png" | url }} alt="Antichains times chains" width="50%">
+<img src="https://raw.githubusercontent.com/rivea0/bite-sized-math-for-cs/main/notes/unit-02-structures/images/antichains-chains.png" alt="Antichains times chains" width="50%">
 
 ---
 

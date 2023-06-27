@@ -152,13 +152,13 @@ Why?
 
 Let's look at this tree that we're going to call $B$ that helps us see it:
 
-<img src={{ "../images/exp-failtree1.png" | url }} alt="Mean time to failure tree example 1" width="50%">
+<img src="https://raw.githubusercontent.com/rivea0/bite-sized-math-for-cs/main/notes/unit-04-probability/images/exp-failtree1.png" alt="Mean time to failure tree example 1" width="50%">
 
 Branches correspond to the act of flipping the coin, so the number of times until we get a head as a result can be counted by following the branches.
 
 This tree is recursive, which means that we can replace a part of it by itself:
 
-<img src={{ "../images/exp-failtree2.png" | url }} alt="Mean time to failure tree example 2" width="50%">
+<img src="https://raw.githubusercontent.com/rivea0/bite-sized-math-for-cs/main/notes/unit-04-probability/images/exp-failtree2.png" alt="Mean time to failure tree example 2" width="50%">
 
 As the slide says, we can use Total Expectation to find $E[F]$, which is just the expected number of branches we have to follow until we reach an $H$.
 It will be _(the expectation of $F$ given that the first one is a head) times (the probability of getting a head)_ plus _(the expectation of $F$ given that the first one is a tail) times (the probability of getting a tail)_.
