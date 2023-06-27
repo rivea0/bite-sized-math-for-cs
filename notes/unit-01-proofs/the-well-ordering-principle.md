@@ -15,7 +15,7 @@ This is what the well ordering principle says:
 
 Yes, it looks like a grammatical mistake, but it isn't here. Let's see.
 
-When we proved [that $\sqrt{2}$ is irrational](/unit-01-proofs/two-proof-methods), we actually have taken this principle for granted, we assumed that $\frac{a}{b}$ can be written in the _lowest terms_. 
+When we proved [that $\sqrt{2}$ is irrational](bite-sized-math-for-cs/unit-01-proofs/two-proof-methods), we actually have taken this principle for granted, we assumed that $\frac{a}{b}$ can be written in the _lowest terms_. 
 
 We also have taken advantage of the _Prime Factorization Theorem_ in the proof mentioned above, so let's use Well Ordering Principle to prove it.
 

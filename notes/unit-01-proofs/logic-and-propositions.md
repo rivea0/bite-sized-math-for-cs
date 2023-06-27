@@ -84,7 +84,7 @@ A _half adder_ is a digital circuit that adds two 1-bit numbers. A _full adder_ 
 
 A binary addition circuit example (a "ripple carry") is as follows:
 
-<img src="../images/lgate.png" alt="Binary addition circuit example" width="50%" >
+<img src={{ "../images/lgate.png" | url }} alt="Binary addition circuit example" width="50%" >
 
 We can say that $d_0$ is $a_0 \oplus b_0$, and $c_0$ is $a_0 \land b_0$.
 (Imagine $a_0$ as $1$, and $b_0$ as $1$, adding them will result in $2$ which is $10$ in binary — so, you write $0$ and carry the $1$, and the operations hold. The bit you write is the **xor** of two bits, and the carry is the **and** of them).

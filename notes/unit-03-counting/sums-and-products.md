@@ -121,11 +121,11 @@ $$I + f(1) \leq S \leq I + f(n)$$
 
 Perhaps it would make more sense visually:
 
-<img src="../images/sums1.png" alt="Sums1" width="50%">
+<img src={{ "../images/sums1.png" | url }} alt="Sums1" width="50%">
 
 And, shift it left by $1$:
 
-<img src="../images/sums2.png" alt="Sums2" width="50%">
+<img src={{ "../images/sums2.png" | url }} alt="Sums2" width="50%">
 
 <p style="font-size: smaller; margin-bottom: 0;"><i>Figures 13.2 and 13.3 from the course notes <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/4fb79a8b271d75485a489411764ef691/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Session23.pdf">Mathematics for Computer Science</a>.</i></p>
 

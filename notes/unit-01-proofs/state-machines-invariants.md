@@ -19,7 +19,7 @@ State machines also have a specific _start state_.
 
 An example below is one that counts from 0 to 99 and overflows at 100. Not very useful.
 
-<img src="../images/state-machine.png" alt="State machine example" width="50%">
+<img src={{ "../images/state-machine.png" | url }} alt="State machine example" width="50%">
 
 <p style="font-size: 14px; margin-bottom: 0;"><i>Figure 5.7 State transitions for the 99-bounded counter.</i></p>
 <p style="font-size: 14px; margin-top: 0;"><i>From the course notes <a href="https://openlearninglibrary.mit.edu/assets/courseware/v1/3d66c5674cdf557081ff5baf836eb321/asset-v1:OCW+6.042J+2T2019+type@asset+block/MIT6_042JS15_Unit_I_1.9pdf.pdf">Mathematics for Computer Science</a>.</i></p>

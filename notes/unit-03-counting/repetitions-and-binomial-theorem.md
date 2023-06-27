@@ -79,5 +79,3 @@ The question is, _what is the coefficient of $BA^3N^2$ in the expansion of $(B +
 Well, we can write the multinomial coefficient, which will be $\binom{6}{1, \ 3, \ 2}$.
 
 Therefore, $\frac{6!}{1! \cdot 3! \cdot 2!} = \frac{720}{12} = 60$.
-
-

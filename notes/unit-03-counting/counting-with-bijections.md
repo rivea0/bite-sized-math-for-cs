@@ -17,7 +17,7 @@ That's not a "zen quote." What it implies is that counting one thing by counting
 
 The reason that it works is that when there is a bijection between two sets, that means the sets are of the same size. This is known as the ==Bijection Rule==.
 
-We did one example already (_Why is the size of a power set is $2^n$?_) in [sets](/unit-01-proofs/sets), where we counted the number of subsets of a set by counting the number of $n$-bit string representations. That example pretty much covers this concept.
+We did one example already (_Why is the size of a power set is $2^n$?_) in [sets](bite-sized-math-for-cs/unit-01-proofs/sets), where we counted the number of subsets of a set by counting the number of $n$-bit string representations. That example pretty much covers this concept.
 
 ---
 

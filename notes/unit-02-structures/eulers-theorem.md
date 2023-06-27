@@ -22,7 +22,7 @@ _Note: We can also use the interval $(0, \ n)$ because $0$ is not relatively pri
 In other words, $\phi(n)$ is the number of all positive integers up to $n$ that are relatively prime to $n$.
 
 We can also say that if $k$ and $n$ are relatively prime, then $\text{gcd}(k, \ n) = 1$.
-As we've seen in the [previous section](/unit-02-structures/congruences), it also means that it'll be the numbers that have inverses and are cancellable $\text{mod}(n)$.
+As we've seen in the [previous section](bite-sized-math-for-cs/unit-02-structures/congruences), it also means that it'll be the numbers that have inverses and are cancellable $\text{mod}(n)$.
 
 Let's call this set $\mathbb{Z}^*_n$, and write it as: $\{k \in [0, \ n) \ | \ \text{gcd}(k, \ n) = 1\}$.
 

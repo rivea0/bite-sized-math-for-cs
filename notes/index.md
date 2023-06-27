@@ -31,7 +31,7 @@ Let's start with some important points:
 
 - This collection as a whole will probably make the most sense as a very short and informal supplement to the course, especially if you don't have a mathematical background but still want to browse the material.
 
-- Still, **there are some prerequisites**. It is assumed you have studied a bit of math before. The course itself [requires background](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/courseware/30a3227b34eb4b2b8f1df191e7632f79/82b828ab487a4cd08a4357743d121e79/?activate_block_id=block-v1%3AOCW%2B6.042J%2B2T2019%2Btype%40sequential%2Bblock%4082b828ab487a4cd08a4357743d121e79) on Single Variable Calculus, and _familiarity with sequences and series, limits, and differentiation and integration of functions of one variable_. I provided some resources that I found helpful in the [Prerequisites & Resources](/prerequisites-and-resources) section, but here is the thing: a lack of background knowledge shouldn't deter you; quite the opposite, that means there's still a lot more opportunity to learn. That's a good thing. I don't think you need to be an expert on these subjects either; since this collection is only to provide familiarity with the concepts, that's okay if you don't know the intricacies of a topic.
+- Still, **there are some prerequisites**. It is assumed you have studied a bit of math before. The course itself [requires background](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/courseware/30a3227b34eb4b2b8f1df191e7632f79/82b828ab487a4cd08a4357743d121e79/?activate_block_id=block-v1%3AOCW%2B6.042J%2B2T2019%2Btype%40sequential%2Bblock%4082b828ab487a4cd08a4357743d121e79) on Single Variable Calculus, and _familiarity with sequences and series, limits, and differentiation and integration of functions of one variable_. I provided some resources that I found helpful in the [Prerequisites & Resources](bite-sized-math-for-cs/prerequisites-and-resources) section, but here is the thing: a lack of background knowledge shouldn't deter you; quite the opposite, that means there's still a lot more opportunity to learn. That's a good thing. I don't think you need to be an expert on these subjects either; since this collection is only to provide familiarity with the concepts, that's okay if you don't know the intricacies of a topic.
 
 - Sometimes, a section only consists of definitions without examples. These are just notes. The point is to keep it as simple and short as possible. Here and there, when there is no example, I provide links to other resources that explain the material at a very basic, introductory level. 
 
@@ -50,7 +50,7 @@ Learning is, admittedly, slow — especially mathematics. But I want to document
 
 ### Couldn't you have chosen a simpler resource rather than picking up an MIT course syllabus to "gain familiarity with concepts"?
 
-Yes, I could've. There are tons of resources, as I included in the [Prerequisites and Resources](/prerequisites-and-resources) page. However, it's easy to get lost in details; 6.042 is structured, and it is a challenge. And it's fun. 
+Yes, I could've. There are tons of resources, as I included in the [Prerequisites and Resources](bite-sized-math-for-cs/prerequisites-and-resources) page. However, it's easy to get lost in details; 6.042 is structured, and it is a challenge. And it's fun. 
 I also enjoyed Albert Meyer's explanations and teaching. That's another reason.
 
 
@@ -66,7 +66,7 @@ So, it's normal that `${subject}` is left out in `${section}`. There are many th
 ## Some points on notation:
 
 - The coursebook and slides use the symbol $::=$ (as in $x ::= y$, $x$ is assigned to $y$). I used $=$ (the equal sign) for this. 
-- "**iff**" is the biconditional, a shorthand for "if and only if", you can check out [Logic and Propositions](/unit-01-proofs/logic-and-propositions/), so it is not a grammatical mistake if you've not seen it before.
+- "**iff**" is the biconditional, a shorthand for "if and only if", you can check out [Logic and Propositions](bite-sized-math-for-cs/unit-01-proofs/logic-and-propositions/), so it is not a grammatical mistake if you've not seen it before.
 
 ---
 

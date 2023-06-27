@@ -88,7 +88,7 @@ $$|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B|- |A \cap C| - |B \cap C| + |A
 
 This picture taken from the slides of the lecture helps visualize it:
 
-<img src="../images/inc-exc.png" alt="Inclusion-Exclusion" width="50%">
+<img src={{ "../images/inc-exc.png" | url }} alt="Inclusion-Exclusion" width="50%">
 
 One thing to realize is that intersections with odd number of sets occur positively, and those with even numbers occur negatively. For example, $|A \cap B|$, or $|A \cap C|$, or, $|B \cap C|$ are intersections with $2$ sets, and they show up with a negative sign. But, $|A \cap B \cap C|$ has three sets, and it has a positive sign.
 

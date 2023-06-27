@@ -31,7 +31,7 @@ Let's see how it goes with another example. Say, we have 5 books on our bookshel
 ^--^---'--^    `-'`---^
  0   1   2      3    4
 ```
-<p style="font-size: 14px;"><i>ASCII art from https://www.asciiart.eu/books/books</i></p>
+<p style="font-size: smaller;"><i>ASCII art from https://www.asciiart.eu/books/books</i></p>
 
 Looking at the books from left to right, we state two rules for ourselves:
 1. We are going to read the first book.

@@ -73,7 +73,7 @@ _Note: For more special types of graphs, [Kimberly Brehm's video](https://www.yo
 
 --- 
 
-We mentioned the concept of isomorphism briefly in [Partial Orders and Equivalence](/unit-02-structures/partial-orders-and-equivalence), but let's take a look at it once more.
+We mentioned the concept of isomorphism briefly in [Partial Orders and Equivalence](bite-sized-math-for-cs/unit-02-structures/partial-orders-and-equivalence), but let's take a look at it once more.
 
 An ==isomorphism== between graphs $G$ and $H$ is a bijection $f \ : \ V(G) \rightarrow V(H)$ such that $\textlangle{u — v} \textrangle \in E(G) \ \text{ iff } \ \textlangle{f(u) — f(v)} \textrangle \in E(H)$ for all $u$, $v$ in $V(G)$.
 

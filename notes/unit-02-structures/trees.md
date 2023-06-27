@@ -19,7 +19,7 @@ Nodes with degrees of $1$ are called the ==leaves==.
 
 Here is one example:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Graph_theory_tree.svg/217px-Graph_theory_tree.svg.png)
+![Tree example](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Graph_theory_tree.svg/217px-Graph_theory_tree.svg.png)
 
 
 _Note: This section assumes some familiarity with terminology like the root node, parent node, child node, etc._

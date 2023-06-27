@@ -11,7 +11,7 @@ eleventyNavigation:
 # Sets
 
 There are a lot of things to talk about when it comes to sets.
-Since it is [assumed](/prerequisites-and-resources) that you already know about things like union, intersection, etc., we're not going to go over set operations.
+Since it is [assumed](bite-sized-math-for-cs/prerequisites-and-resources) that you already know about things like union, intersection, etc., we're not going to go over set operations.
 
 Some popular sets you might know are:
 

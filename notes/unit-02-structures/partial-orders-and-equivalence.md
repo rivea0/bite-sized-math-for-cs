@@ -101,7 +101,7 @@ There are also ==equivalence classes==:
 
 > The _equivalence classes_ of an equivalence relation on a set $A$ are the blocks of a partition of $A$.
 
-_Note: We mentioned **partition** briefly in the [previous section](/unit-02-structures/directed-acyclic-graphs/)._
+_Note: We mentioned **partition** briefly in the [previous section](bite-sized-math-for-cs/unit-02-structures/directed-acyclic-graphs/)._
 
 ---
 
