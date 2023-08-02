@@ -15,7 +15,7 @@ Welcome to _Bite-Sized Mathematics for Computer Science_!
 
 Let's start with some important points:
 
-- **This is a [learn in public](https://www.swyx.io/learn-in-public) project**, rather, experiment. That is, there is some chance that there might be mistakes. For feedback, feel free to contact `riveazero at gmail dot com`.
+- **This is a [learn in public](https://www.swyx.io/learn-in-public) project**, rather, an experiment. That is, there is some chance that there might be mistakes. For feedback, feel free to contact `riveazero at gmail dot com`.
 
 - The best way to learn something is to talk/write about it, or teach it to someone. This is the crux of the project: this collection consists mostly of very short notes **written in an informal tone to get familiar with the concepts**.
 
@@ -25,9 +25,9 @@ Let's start with some important points:
 
 - **The main goal is to get familiar with the concepts rather than do a deep-dive exploration.** That's why **so many things are left off**.
 
-- When you read something like "let's prove it," don't expect a rigorous mathematical proof. It is just a very, _very_ informal way to convey the idea, the reasoning, of a proof that's given in the course or the coursebook. 
+- If you encounter a sentence like "let's prove it," don't expect a rigorous mathematical proof. It is just a very, _very_ informal way to convey the idea, the reasoning, of a proof that's given in the course or [the coursebook](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf).
 
-- Some of the examples are from the practice exercises in the course's relevant section; some of them are from other resources. Sometimes I provide a solution I came up with myself; sometimes it's from the lecture videos or the coursebook. 
+- Some of the examples are from the practice exercises in the course's relevant section; some of them are from other resources. Sometimes I provide a solution I came up with myself; sometimes it's from the lecture videos or the coursebook.
 
 - This collection as a whole will probably make the most sense as a very short and informal supplement to the course, especially if you don't have a mathematical background but still want to browse the material.
 
@@ -65,7 +65,7 @@ So, it's normal that `${subject}` is left out in `${section}`. There are many th
 
 ## Some points on notation:
 
-- The coursebook and slides use the symbol $::=$ (as in $x ::= y$, $x$ is assigned to $y$). I used $=$ (the equal sign) for this. 
+- The coursebook and slides use the symbol $::=$ (as in $x ::= y$, $x$ is defined to be $y$). I used $=$ (the equal sign) for this. 
 - "**iff**" is the biconditional, a shorthand for "if and only if", you can check out [Logic and Propositions](bite-sized-math-for-cs/unit-01-proofs/logic-and-propositions/), so it is not a grammatical mistake if you've not seen it before.
 
 ---
