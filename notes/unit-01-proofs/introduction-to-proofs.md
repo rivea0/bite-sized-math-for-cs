@@ -34,7 +34,7 @@ But, we had to try only 40 different values to find that out. Now, imagine if th
 
 > You can’t check a claim about an infinite set by checking a finite set of its elements.
 
-A beautiful example of this is [Goldbach's conjecture](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture), which states that _every even integer greater than 2 is the sum of two primes_. We know that's [true for numbers up to $4 \times 10^{18}$](http://www.ieeta.pt/~tos/goldbach.html), but we don't know if the proposition itself is true.
+A beautiful example of this is [Goldbach's conjecture](https://en.wikipedia.org/wiki/Goldbach%27s_conjecture), which states that _every even integer greater than 2 is the sum of two primes_. We know that's [true for numbers up to $4 \times 10^{18}$](https://web.archive.org/web/20221027181947/http://sweet.ua.pt/tos/goldbach.html), but we don't know if the proposition itself is true.
 
 ## Predicates
 A ==predicate== is a proposition with a variable — which means that we don't know its truth value until we are given a value for the variable. 
