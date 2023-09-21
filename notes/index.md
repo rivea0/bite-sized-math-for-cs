@@ -15,7 +15,7 @@ Welcome to _Bite-Sized Mathematics for Computer Science_!
 
 Let's start with some important points:
 
-- **This is a [learn in public](https://www.swyx.io/learn-in-public) project**, rather, an experiment. That is, there is some chance that there might be mistakes. For feedback, feel free to contact `riveazero at gmail dot com`.
+- **This is a [learn in public](https://www.swyx.io/learn-in-public) project**, rather, an experiment. That is, there is some chance that there might be mistakes. For feedback, feel free to contact `edae dot space at gmail dot com`.
 
 - The best way to learn something is to talk/write about it, or teach it to someone. This is the crux of the project: this collection consists mostly of very short notes **written in an informal tone to get familiar with the concepts**.
 
