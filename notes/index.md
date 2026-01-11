@@ -72,4 +72,4 @@ So, it's normal that `${subject}` is left out in `${section}`. There are many th
 
 "_Anybody with enough curiosity ought to be able to explore a field_.<sup>*</sup>" - Eric Grimson, Chancellor for Academic Advancement at MIT, Professor of Computer Science
 
-<sup>*</sup><span style="font-size: smaller;">From <a href="https://chalk-radio.simplecast.com/episodes/opening-computer-science-to-everyone-with-chancellor-eric-grimson-Bpcx1tMI">MIT's Chalk Radio</a></span>.
+<sup>*</sup><span style="font-size: smaller;">From <a href="https://www.youtube.com/watch?v=Ad4HmoAkgBo">MIT's Chalk Radio</a></span>.
